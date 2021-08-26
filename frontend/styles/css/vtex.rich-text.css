@@ -1,0 +1,47 @@
+/*****  CONTAINER DESKTOP *****/
+.wrapper--container-title {
+    color: #ffffff;
+    font-weight: 800;
+    margin-left: 190px;
+    font: 36px "Helvetica Neue", arial, sans-serif;
+}
+
+.wrapper--container-subTitle {
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-left: 190px;
+    font: 22px "Helvetica Neue", arial, sans-serif;
+}
+
+.paragraph--container-description {
+    color: #232f3e;
+    font: 20px "Helvetica Neue", arial, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+/*****  CONTAINER MOBILE *****/
+
+.paragraph--container-descriptionMobile {
+    color: #232f3e;
+    font: "Helvetica Neue", arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wrapper--container-subTitleMobile {
+    color: #ffffff;
+    font-size: 18px;
+    justify-content: center;
+    margin-top: 52px;
+    font: "Helvetica Neue", arial, sans-serif;
+}
+
+.wrapper--container-titleMobile {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    font: "Helvetica Neue", arial, sans-serif;
+}

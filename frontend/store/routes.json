@@ -1,0 +1,8 @@
+{
+    "store.home": {
+      "path": "/"
+    },
+    "store.custom#mission8": {
+        "path": "/container"
+    }
+}
