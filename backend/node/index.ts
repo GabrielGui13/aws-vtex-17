@@ -1,8 +1,9 @@
-import type { ClientsConfig, ServiceContext, RecorderState } from '@vtex/api'
+import type { ClientsConfig, ServiceContext } from '@vtex/api'
 import { method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
 import { write } from './middlewares/write'
+import { read } from './middlewares/read'
 
 const TIMEOUT_MS = 800
 
@@ -23,7 +24,8 @@ declare global {
 export default new Service({
   clients,
   routes: {
-    write: method({
+    database: method({
+      GET: [read],
       POST: [write],
     }),
   },

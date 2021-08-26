@@ -1,6 +1,6 @@
 {
-  "name": "service-example",
-  "vendor": "vtex",
+  "name": "database-connection",
+  "vendor": "hiringcoders202117",
   "version": "0.2.0",
   "title": "Service Example",
   "description": "Reference app for VTEX IO Services",
