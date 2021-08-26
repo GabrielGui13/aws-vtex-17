@@ -1,12 +1,14 @@
-/*****  CONTAINER DESKTOP *****/
-.wrapper--container-title {
+/************************ DESKTOP **************************/
+
+/*****  CONTAINER *****/
+.wrapper--container-title { /* Título do stack layout - Contaianer - Dektop */
     color: #ffffff;
     font-weight: 800;
     margin-left: 190px;
     font: 36px "Helvetica Neue", arial, sans-serif;
 }
 
-.wrapper--container-subTitle {
+.wrapper--container-subTitle { /* Subtítulo do stack layout - Contaianer - Dektop */
     color: #ffffff;
     font-weight: 400;
     margin-top: 65px;
@@ -14,24 +16,39 @@
     font: 22px "Helvetica Neue", arial, sans-serif;
 }
 
-.paragraph--container-description {
+.paragraph--container-description { /* Descrição do container - Contaianer - Dektop */
     color: #232f3e;
     font: 20px "Helvetica Neue", arial, sans-serif;
     line-height: 1.5;
     text-align: justify;
 }
 
-
-/*****  CONTAINER MOBILE *****/
-
-.paragraph--container-descriptionMobile {
-    color: #232f3e;
-    font: "Helvetica Neue", arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+/***** REGIONS *****/
+.container--regionsTitle { /* Título - Regions - Dektop */
+    height: 50px;
+    width: 100%;
 }
 
-.wrapper--container-subTitleMobile {
+.wrapper--regionsSubTitle { /* Subtítulo - Regions - Dektop */
+    color: #232f3e;
+    font-weight: 400;
+    font: 20px "Helvetica Neue", arial, sans-serif;
+    width: 1000px;
+}
+
+
+/************************* MOBILE ********************************/
+
+/*****  CONTAINER *****/
+
+.wrapper--container-titleMobile { /* Título do stack layout - Contaianer - Mobile */
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    font: "Helvetica Neue", arial, sans-serif;
+}
+
+.wrapper--container-subTitleMobile { /* Subtítulo do stack layout - Contaianer - Mobile */
     color: #ffffff;
     font-size: 18px;
     justify-content: center;
@@ -39,9 +56,17 @@
     font: "Helvetica Neue", arial, sans-serif;
 }
 
-.wrapper--container-titleMobile {
-    color: #ffffff;
-    font-size: 28px;
-    font-weight: bold;
+.paragraph--container-descriptionMobile { /* Descrição do container - Contaianer - Mobile */
+    color: #232f3e;
     font: "Helvetica Neue", arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/***** REGIONS *****/
+
+.container--regionsTitleMobile { /* Título - Regions - Mobile */
+    height: 50px;
+    width: 100%;
 }

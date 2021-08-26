@@ -1,3 +1,4 @@
+/* CONTAINER */
 .imageElement--image-container{ /* imagem da descrição - coluna direta whats_in_a_container */
     width: 500px;
     height: 320px;
@@ -8,3 +9,4 @@
 .coverMobile {
     width: 100%;
 }
+

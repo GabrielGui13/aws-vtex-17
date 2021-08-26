@@ -1,0 +1,115 @@
+{
+    "store.custom#mission5": {
+        "blocks": [
+            "responsive-layout.desktop#regions",
+            "responsive-layout.mobile#regions"
+        ]
+    },
+    
+    // ******** DESKTOP ******** //
+  
+    "responsive-layout.desktop#regions": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#region1",
+            "flex-layout.row#region2",
+            "flex-layout.row#region3"
+        ]
+    },
+    "flex-layout.row#region1": { // Linha do Título - Regions - Desktop
+        "children": [
+            "rich-text#regionsTitle"
+        ]
+    },
+    "rich-text#regionsTitle": { // Título - Regions - Desktop
+        "props": {
+            "blockClass": "regionsTitle",
+            "text": "Rede global de regiões da AWS",
+            "font": "t-heading-1",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#region2": { // Linha do Subtítulo - Regions - Desktop
+        "children": [
+            "rich-text#regionsSubTitle"
+        ]
+    },
+    "rich-text#regionsSubTitle": { // Subtítulo - Regions - Desktop
+        "props": {
+            "blockClass": "regionsSubTitle",
+            "text": "A Nuvem AWS abrange 81 zonas de disponibilidade em 25 regiões geográficas em todo o mundo, com planos já divulgados para mais 21 zonas de disponibilidade e mais 7 regiões da AWS na Austrália, Índia, Indonésia, Israel, Espanha, Suíça e Emirados Árabes Unidos (EAU).",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#region3": { // Linha da Imagem - Regions - Desktop
+        "children": [
+            "image#regions"
+        ],
+        "props": {
+            "blockClass": "imageRegionRow"
+        }
+    },
+    "image#regions": { // Imagem - Regions - Desktop
+        "props": {
+            "blockClass": "image-regions",
+            "width": 1000,
+            "height": 550,
+            "src": "https://uploaddeimagens.com.br/images/003/400/592/original/aws_regions_map.png?1629998842"
+        }
+    },
+
+
+    // ******** MOBILE ******** //
+
+    "responsive-layout.mobile#regions": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#region1Mobile",
+            "flex-layout.row#region2Mobile",
+            "flex-layout.row#region3Mobile"
+        ]
+    },
+    "flex-layout.row#region1Mobile": { // Linha do Título - Regions - Mobile
+        "children": [
+            "rich-text#regionsTitleMobile"
+        ]
+    },
+    "rich-text#regionsTitleMobile": { // Título - Regions - Mobile
+        "props": {
+            "blockClass": "regionsTitleMobile",
+            "text": "Rede global de regiões da AWS",
+            "font": "t-heading-3",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#region2Mobile": { // Linha do Subtítulo - Regions - Mobile
+        "children": [
+            "rich-text#regionsSubTitleMobile"
+        ]
+    },
+    "rich-text#regionsSubTitleMobile": { // Subtítulo - Regions - Mobile
+        "props": {
+            "blockClass": "regionsSubTitleMobile",
+            "text": "A Nuvem AWS abrange 81 zonas de disponibilidade em 25 regiões geográficas em todo o mundo, com planos já divulgados para mais 21 zonas de disponibilidade e mais 7 regiões da AWS na Austrália, Índia, Indonésia, Israel, Espanha, Suíça e Emirados Árabes Unidos (EAU).",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#region3Mobile": { // Linha da Imagem - Regions - Mobile
+        "children": [
+            "image#regionsMobile"
+        ],
+        "props": {
+            "blockClass": "imageRegionRowMobile"
+        }
+    },
+    "image#regionsMobile": { // Imagem - Regions - Mobile
+        "props": {
+            "blockClass": "image-regionsMobile",
+            "width": "100%",
+            "height": "auto",
+            "src": "https://uploaddeimagens.com.br/images/003/400/592/original/aws_regions_map.png?1629998842"
+        }
+    }
+}

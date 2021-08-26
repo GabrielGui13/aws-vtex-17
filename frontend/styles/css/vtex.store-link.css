@@ -1,6 +1,6 @@
-/***** BOTÃO CTA CONTAINER DESKTOP *****/
+/***** CONTAINER DESKTOP *****/
 
-.buttonLink--button-container {
+.buttonLink--button-container { /* BOTÃO CTA CONTAINER DESKTOP */
     background-color: #f7dfa5;
     color: #333333;
     font: 14px "Helvetica Neue", arial, sans-serif;
@@ -21,9 +21,9 @@
 }
 
 
-/***** BOTÃO CTA CONTAINER MOBILE *****/
+/***** CONTAINER MOBILE *****/
 
-.buttonLink--button-containerMobile {
+.buttonLink--button-containerMobile { /* BOTÃO CTA CONTAINER - MOBILE */
     background-color: #f7dfa5;
     color: #333333;
     font: 14px "Helvetica Neue", arial, sans-serif;
@@ -36,3 +36,4 @@
     width: 100%;
     height: 35px;
 }
+

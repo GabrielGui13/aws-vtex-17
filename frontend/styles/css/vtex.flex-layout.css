@@ -1,0 +1,9 @@
+/***** CONTAINER *****/
+.flexRow--row-container-description {
+    margin-top: 5px;
+}
+
+/***** REGIONS *****/
+.flexRow--imageRegionRow {
+    background-color: #f2f4f4;
+}

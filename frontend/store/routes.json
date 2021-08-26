@@ -2,7 +2,10 @@
     "store.home": {
       "path": "/"
     },
-    "store.custom#mission8": {
+    "store.custom#container": {
         "path": "/container"
-    }
+    },
+    "store.custom#mission5": {
+      "path": "/mission5"
+  }
 }
