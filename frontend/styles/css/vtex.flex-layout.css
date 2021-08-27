@@ -81,3 +81,13 @@
     justify-content: space-around;
     height: 50vh;
 }
+.flexRow--footer1{
+    background-color:#232F3E ;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.flexRow--idiomas{
+    background-color:#232F3E ;
+    padding-bottom: 20px;
+}

@@ -37,3 +37,23 @@
     height: 35px;
 }
 
+ .link--linkfooter{
+    font-size: 0.9rem;
+    margin: 4px;
+    color:white;
+    font: 18px "Helvetica Neue", arial, sans-serif;
+    font-style: normal;
+    text-decoration: unset;
+    padding-bottom: 5px;
+    
+ }
+
+ .link--linkfooter:hover{
+    font-size: 0.9rem;
+    margin: 4px;
+    color: rgb(243, 137, 16);
+    font-style: normal;
+    text-decoration: unset;
+    font: 18px "Helvetica Neue", arial, sans-serif;
+    padding-bottom: 5px;
+ }

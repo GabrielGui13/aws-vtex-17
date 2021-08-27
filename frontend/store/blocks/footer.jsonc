@@ -39,8 +39,12 @@
           "flex-layout.col#footerDeutsch",
           "flex-layout.col#footerEnglish",
           "flex-layout.col#footerFraçais",
-          "flex-layout.col#footerPortugues"
-        ]
+          "flex-layout.col#footerPortugues",
+          "flex-layout.col#footerRusso"
+        ],
+        "props":{
+          "blockClass":"idiomas"
+        }
       },
 //*** listagem de cada bloco das informações individualmente***//
 
@@ -60,34 +64,39 @@
   "rich-text#TituloFooter": { 
     "props": { 
       "blockClass": "tittle-footer",
-      "text": "Saiba mais sobre a Aws"
+      "text": "Saiba mais sobre a Aws",
+      "blockClass":"linkfooter"
     }
   },
 
   "link#footersm1":{
       "props": {
         "href": "#",
-        "label": "O que é a AWS?"
+        "label": "O que é a AWS?",
+        "blockClass":"linkfooter"
       }
     },
 
     "link#footersm2":{
       "props": {
         "href": "#",
-        "label": "O que é a computação em nuvem?"
+        "label": "O que é a computação em nuvem?",
+        "blockClass":"linkfooter"
       }
     },
 
     "link#footersm3":{
       "props": {
         "href": "#",
-        "label": "O que é o DevOps?"
+        "label": "O que é o DevOps?",
+        "blockClass":"linkfooter"
       }
     },
     "link#footersm4":{
       "props": {
         "href": "#",
-        "label": "O que é um contêiner?"
+        "label": "O que é um contêiner?",
+        "blockClass":"linkfooter"
       }
     },
 //-- listagem de blocos recursos da AWS--//
@@ -245,10 +254,10 @@
     "flex-layout.col#footerConclua":{
       "children":[
         "link#container",
-        "flex-layout.row#icons"  
+        "flex-layout.row#iconss"  
       ]
     },
-    "flex-layout.row#icons":{
+    "flex-layout.row#iconss":{
       "children":[
        "link#iconfoot1",
        "link#iconfoot2",
@@ -318,8 +327,11 @@
     //---- lista de idiomas -------/
 
     "flex-layout.col#footerDeutsch":{
-      "children": ["link#deutsh"]
-    },
+      "children": ["link#deutsh"],
+      "props": {
+        "blockClass":"container-footer"
+    }
+  },
 
     
     "link#deutsh":{
@@ -330,8 +342,11 @@
       }
     },
     "flex-layout.col#footerEnglish":{
-      "children": ["link#english"]
-    },
+      "children": ["link#english"],
+      "props": {
+        "blockClass":"container-footer"
+    }
+  },
     "link#english":{
       "props": {
         "href": "#",
@@ -340,8 +355,11 @@
       }
     },
     "flex-layout.col#footerFraçais":{
-      "children": ["link#français"]
-    },
+      "children": ["link#français"],
+      "props": {
+        "blockClass":"container-footer"
+    }
+  },
     "link#français":{
       "props": {
         "href": "#",
@@ -351,16 +369,31 @@
     },
 
     "flex-layout.col#footerPortugues":{
-      "children": ["link#portugues"]
-    },
+      "children": ["link#portugues"],
+      "props": {
+        "blockClass":"container-footer"
+    }
+      },
+
     "link#portugues":{
       "props": {
         "href": "#",
         "label": "Portugues",
         "blockClass":"linkfooter"
       }
+    },
+
+    "flex-layout.col#footerRusso":{
+      "children": ["link#russo"]
+    
+    },
+  
+
+    "link#russo":{
+      "props": {
+        "href": "#",
+        "label": " Ρусский",
+        "blockClass":"linkfooter"
+      }
     }
-
-
-
 }

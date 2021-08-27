@@ -88,3 +88,14 @@
     height: 55px;
     margin-top: -20px;
 }
+/* FOOTER*/
+.paragraph--linkfooter{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.paragraph--tittle-footer{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
