@@ -1,14 +1,14 @@
 {
-    "store.home": {
-      "path": "/"
-    },
-    "store.custom#container": {
-        "path": "/container"
-    },
+  "store.home": {
+    "path": "/"
+  },
+  "store.custom#container": {
+      "path": "/container"
+  },
     "store.custom#mission5": {
-      "path": "/mission5"
-    },
-    "store.custom#cadastro": {
-      "path": "/leads"
-    }
+    "path": "/mission5"
+  },
+  "store.custom#cadastro": {
+    "path": "/lead"
+  }
 }
