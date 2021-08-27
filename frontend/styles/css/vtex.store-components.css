@@ -10,3 +10,9 @@
     width: 100%;
 }
 
+
+/* CONTAINER ICON IMGS */
+.imageElement--iconImg {
+    width: 110px;
+    height: auto;
+}

@@ -76,3 +76,10 @@
     height: 50px;
     width: 100%;
 }
+
+/* CONTAINER ICON RICH TEXT */
+
+.wrapper--iconColTitle {
+    height: 55px;
+    margin-top: -20px;
+}

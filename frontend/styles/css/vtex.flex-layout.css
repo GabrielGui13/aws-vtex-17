@@ -24,3 +24,16 @@
 .flexRow--imageRegionRow {
     background-color: #f2f4f4;
 }
+
+/* CONTAINER ICONS */
+
+.flexRow--containerIcons {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.flexColChild--iconCol {
+    display: flex;
+    justify-content: center;
+}
