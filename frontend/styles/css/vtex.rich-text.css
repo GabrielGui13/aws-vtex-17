@@ -33,6 +33,11 @@
     width: 100%;
 }
 
+.paragraph--regionTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .wrapper--regionsSubTitle { /* Subtítulo - Regions - Dektop */
     color: #232f3e;
     font-weight: 400;

@@ -37,3 +37,45 @@
     display: flex;
     justify-content: center;
 }
+
+/*****cadastro de leads e patrocinadores****/
+.flexCol--linha{
+    max-width:2px;
+    max-height:600px;
+    background-color: #c3c3c3;
+    margin-top: 60px;
+}
+
+.stretchChildrenWidth{
+    width:50vw;
+}
+
+.flexRowContent--cadastro{
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-self:center;
+    width:50vw;
+}
+.flexRow--cadastro{
+    width:99vw;
+    height:90vh;
+    align-items: center;
+    background-image: url("https://uploaddeimagens.com.br/images/003/401/082/original/backgroundaws.png?1630008498");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.flexCol--form{
+    padding-right: 80px;
+    position: absolute;
+    max-width:400px;
+}
+.flexRow--containerPatro{
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height: 50vh;
+}

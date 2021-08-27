@@ -1,0 +1,98 @@
+{
+    "store.custom#cadastro":{
+       "blocks": [
+           "flex-layout.row#logocadastro",
+           "flex-layout.row#deskCadastro"
+         ],
+         "props": {
+           "blockClass":"cadastro"
+         }
+       },
+        
+       "flex-layout.row#deskCadastro":{
+       "children":[
+         "flex-layout.col#image",
+         "flex-layout.col#linha",
+         "flex-layout.col#form"
+       ],
+       "props": {
+         "blockClass":"cadastro"
+       }
+     },
+   //linha que aparece no meio da tela
+     "flex-layout.col#linha":{
+       "props":{
+         "blockClass":"linha"
+       }
+     },
+   //componente react
+     "flex-layout.col#form":{
+       "children":[
+         "Formulario"
+       ],
+         "props":{
+           "blockClass":"form"
+         }
+     },
+   // parte esquerda da tela  
+     "flex-layout.col#image":{
+       "children":[   
+         "flex-layout.row#text1",
+         "flex-layout.row#text2",
+         "flex-layout.row#print"
+       ]
+     },
+     "flex-layout.row#text1":{
+       "children":[
+         "rich-text#tituloLead"
+       ]
+     },
+     "rich-text#tituloLead":{
+       "props":{
+         "blockClass":"regionTitle",
+         "text":"Receba novidades da AWS"
+       }
+     },
+   
+     "flex-layout.row#text2":{
+       "children":[
+         "rich-text#subtitulo"
+       ]
+     },
+     "rich-text#subtitulo":{
+       "props":{
+         "blockClass":"regionSubTitle",
+         "text":"Explore um mundo de possibilides com a AWS."
+       }
+     },
+   
+     "flex-layout.row#print":{
+       "children":["image#lead"],
+       "props":{
+         "blockClass":"imagelead"
+       }
+     },
+   
+     "image#lead":{
+       "props":{
+         "blockClass":"imageCadastro",
+         "width":500,
+         "heigth":1000,
+         "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+       }
+     },
+   // logo que fica no centro
+     "flex-layout.row#logocadastro":{
+       "children":["image#logo"],
+       "props":{
+         "blockClass":"imagelogo"
+       }
+     },
+     "image#logo":{
+       "props":{
+         "blockClass":"imageCadastro",
+         "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+       }
+     }
+   }
+   
