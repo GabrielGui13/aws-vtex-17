@@ -32,4 +32,4 @@ const footer = () =>
         </form>      
 </div>
 
-export default formulario
+export default footer

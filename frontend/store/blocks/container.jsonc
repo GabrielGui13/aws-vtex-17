@@ -97,11 +97,14 @@
       "children": [
         "image#containerIcon1",
         "rich-text#containerIconText1"
-      ]
+      ],
+      "props": {
+        "width": "100%" 
+      }
     },
     "image#containerIcon1": {
       "props": {
-        "src": "https://d1.awsstatic.com/webteam/product-pages/Product-Page_Standard-Icons_01_Product-Features_SqInk.a8d5666758afc5121b4eb818ae18126031c4b61e.pnghttps://d1.awsstatic.com/webteam/product-pages/Product-Page_Standard-Icons_01_Product-Features_SqInk.a8d5666758afc5121b4eb818ae18126031c4b61e.png"
+        "src": ""
       }
     },
     "rich-text#containerIconText1": {
