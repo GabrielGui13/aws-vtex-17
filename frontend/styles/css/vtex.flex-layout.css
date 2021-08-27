@@ -55,8 +55,14 @@
     display: flex;
     justify-content:center;
     align-self:center;
-    width:50vw;
+    width: 50vw;
 }
+
+.flexRow--imageLogo {
+    margin-top: 100px;
+    border: 1px solid red;
+}
+
 .flexRow--cadastro{
     width:99vw;
     height:90vh;
@@ -67,11 +73,6 @@
     background-position-x: center;
 }
 
-.flexCol--form{
-    padding-right: 80px;
-    position: absolute;
-    max-width:400px;
-}
 .flexRow--containerPatro{
 
     display:flex;

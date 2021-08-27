@@ -1,7 +1,42 @@
 {
   "store.search": {
     "blocks": [
-      
+      "search-result-layout"
     ]
+  },
+  "search-result-layout": {
+    "blocks": [
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf"
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "products"
+    }
   }
 }

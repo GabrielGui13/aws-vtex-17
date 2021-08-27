@@ -1,8 +1,8 @@
 {
     "Formulario":{
-        "component":"formlead"
+        "component":"Formlead"
     },
     "footeraws":{
-        "component":"footerAws"
+        "component":"FooterAws"
     }
 }

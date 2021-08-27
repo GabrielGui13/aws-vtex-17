@@ -1,36 +1,48 @@
 /* eslint-disable prettier/prettier */
-import React  from 'react'
+import React, { useState, FormEvent } from 'react'
 
 import styles from './styles.css';
 
-const formulario = () => 
-<div className={styles.container}>
-        <form className={styles.form}>
-            <>
-            <h1 className={styles.title}>
-            Cadastre seu email na AWS</h1>
-            </>
-            <>
-            <h4>Nome:</h4>
-            <input className={styles.input} type="text" name="name" id="name"
-            placeholder="Seu Nome"/>
-            </>        
+const Formulario = () => {
+    
+    const [nameField, setNameField] = useState('')
+    const [emailField, setEmailField] = useState('')
+    const [phoneField, setPhoneField] = useState('')
 
-            <>
-            <h4>email:</h4>
-            <input className={styles.input} type="email" name="email" id="email"
-            placeholder="Seu E-mail" required />    
-            </>
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+        
+        const formData = {
+            name: nameField,
+            email: emailField,
+            phone: phoneField
+        }
 
-            <>
-            <h4>Telefone:</h4>
-            <input className={styles.input} type="tel" name="tel" id="tel"
-            placeholder="Seu Telefone" required />
-            </>
-            <>
-            <button className={styles.button} type="submit">Cadastrar</button>
-            </>
-        </form>      
-</div>
+        setNameField('')
+        setEmailField('')
+        setPhoneField('')
 
-export default formulario
+        console.log(formData)
+    }
+
+    return (
+        <div className={styles.container}>
+            <form className={styles.form} onSubmit={handleSubmit}>
+                <h1 className={styles.title}> Cadastre seu email na AWS</h1>
+
+                <h4>Nome:</h4>
+                <input className={styles.input} type="text" name="name" id="name" placeholder="Seu Nome" value={nameField} onChange={(e) => setNameField(e.target.value)} />
+
+                <h4>Email:</h4>
+                <input className={styles.input} type="email" name="email" id="email"placeholder="Seu E-mail" value={emailField} onChange={(e) => setEmailField(e.target.value)} required />
+
+                <h4>Telefone:</h4>
+                <input className={styles.input} type="tel" name="tel" id="tel" placeholder="Seu Telefone" value={phoneField} onChange={(e) => setPhoneField(e.target.value)} required />
+
+                <button className={styles.button} type="submit">Cadastrar</button>
+            </form>
+        </div>
+    )
+}
+
+export default Formulario
