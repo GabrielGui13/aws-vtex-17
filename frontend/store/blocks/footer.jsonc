@@ -4,23 +4,363 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer",
+      "flex-layout.row#footerIdiomas"
     ]
   },
   "footer-layout.mobile": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer",
+      "flex-layout.row#footerIdiomas"
     ]
   },
+  //** declarando as duas linhas guias do footer**//
   "flex-layout.row#footer": { 
     "children": [
-      "image"
+      "flex-layout.row#footerInfos"
+    ],
+    "props": {
+      "blockClass":"footer1"
+    }
+  },
+  //** listagem dos subtitulos do footer**//
+  "flex-layout.row#footerInfos":{
+    "children":[
+        "flex-layout.col#footerSaibamais",
+        "flex-layout.col#footerRecursos",
+        "flex-layout.col#footerDesenvolvimento",
+        "flex-layout.col#footerAjuda",
+        "flex-layout.col#footerConclua"
+       ]
+      },
+//** listagem dos idiomas do footer**//
+      "flex-layout.row#footerIdiomas":{
+        "children":[
+          "flex-layout.col#footerDeutsch",
+          "flex-layout.col#footerEnglish",
+          "flex-layout.col#footerFraçais",
+          "flex-layout.col#footerPortugues"
+        ]
+      },
+//*** listagem de cada bloco das informações individualmente***//
+
+      //---listagem do bloco saiba mais---//
+
+  "flex-layout.col#footerSaibamais":{
+    "children":[
+      "rich-text#TituloFooter",
+      "link#footersm1",
+      "link#footersm2",
+      "link#footersm3",
+      "link#footersm4"
+
     ]
   },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+
+  "rich-text#TituloFooter": { 
+    "props": { 
+      "blockClass": "tittle-footer",
+      "text": "Saiba mais sobre a Aws"
     }
-  }
+  },
+
+  "link#footersm1":{
+      "props": {
+        "href": "#",
+        "label": "O que é a AWS?"
+      }
+    },
+
+    "link#footersm2":{
+      "props": {
+        "href": "#",
+        "label": "O que é a computação em nuvem?"
+      }
+    },
+
+    "link#footersm3":{
+      "props": {
+        "href": "#",
+        "label": "O que é o DevOps?"
+      }
+    },
+    "link#footersm4":{
+      "props": {
+        "href": "#",
+        "label": "O que é um contêiner?"
+      }
+    },
+//-- listagem de blocos recursos da AWS--//
+
+    "flex-layout.col#footerRecursos":{
+      "children":[
+        "rich-text#TituloFooter2",
+        "link#footerr1",
+        "link#footerr2",
+        "link#footerr3",
+        "link#footerr4"
+
+      ]
+    },
+
+    "rich-text#TituloFooter2": { 
+      "props": { 
+        "blockClass":"tittle-footer",
+        "text": "Recursos da AWS"
+      }
+    },
+
+    "link#footerr1":{
+        "props": {
+          "href": "#",
+          "label": "Conceitos básicos",
+          "blockClass":"linkfooter"
+        }
+      },
+
+      "link#footerr2":{
+        "props": {
+          "href": "#",
+          "label": "Treinamento e cetificações",
+          "blockClass":"linkfooter"
+        }
+      },
+
+      "link#footerr3":{
+        "props": {
+          "href": "#",
+          "label": "Portfólio de soluções da AWS",
+          "blockClass":"linkfooter"
+        }
+      },
+      "link#footerr4":{
+        "props": {
+          "href": "#",
+          "label": "Centro de arquitetura",
+          "blockClass":"linkfooter"
+        }
+      },
+///---  listagem de blocos desenvolvedores na aws---////
+
+"flex-layout.col#footerDesenvolvimento":{
+      "children":[
+        "rich-text#TituloFooter3",
+        "link#footed1",
+        "link#footed2",
+        "link#footed3",
+        "link#footed4"
+      ]
+    },
+    "rich-text#TituloFooter3": { 
+      "props": { 
+        "blockClass": "tittle-footer",
+        "text": "Recursos da AWS"
+      }
+    },
+
+    "link#footed1":{
+        "props": {
+          "href": "#",
+          "label": "Centro de desenvolvimento",
+          "blockClass":"linkfooter"
+        }
+      },
+
+       "link#footed2":{
+        "props": {
+          "href": "#",
+          "label": "SDKs e Ferramentas",
+          "blockClass":"linkfooter"
+        }
+      },
+
+      "link#footed3":{
+        "props": {
+          "href": "#",
+          "label": ".Net na AWS",
+          "blockClass":"linkfooter"
+        }
+      },
+
+      "link#footed4":{
+        "props": {
+          "href": "#",
+          "label": "Python na AWS",
+          "blockClass":"linkfooter"
+        }
+      },
+//--- Listagem do bloco Ajuda ----//
+
+      
+        "flex-layout.col#footerAjuda":{
+        "children":[
+          "rich-text#TituloFooter4",
+          "link#footea1",
+          "link#footea2",
+          "link#footea3",
+          "link#footea4"
+        ]
+      },
+      "rich-text#TituloFooter4": { 
+        "props": { 
+          "blockClass": "tittle-footer",
+          "text": "Ajuda"
+        }
+      },
+
+      "link#footea1":{
+          "props": {
+            "href": "#",
+            "label": "Entre em contato conosco",
+            "blockClass":"linkfooter"
+          }
+        },
+
+        "link#footea2":{
+          "props": {
+            "href": "#",
+            "label": "Carreiras da AWS",
+            "blockClass":"linkfooter"
+          }
+        },
+
+        "link#footea3":{
+          "props": {
+            "href": "#",
+            "label": "Crie um tíquete de suporte",
+            "blockClass":"linkfooter"
+          }
+        },
+
+        "link#footea4":{
+          "props": {
+            "href": "#",
+            "label": "Central de conhecimento",
+            "blockClass":"linkfooter"
+          }
+        },
+
+//---- footer de conclua cadastro-----//
+
+    "flex-layout.col#footerConclua":{
+      "children":[
+        "link#container",
+        "flex-layout.row#icons"  
+      ]
+    },
+    "flex-layout.row#icons":{
+      "children":[
+       "link#iconfoot1",
+       "link#iconfoot2",
+       "link#iconfoot3",
+       "link#iconfoot4"
+      ]
+    },
+
+    "link#iconfoot1":{
+      "children": [
+        "image#icontwitter"]
+    },
+
+    "image#icontwitter":{
+      "props":{
+        "blockClass":"iconTwitter",
+        "width":100,
+        "heigth":100,
+        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+      }
+    },
+
+    "link#iconfoot2":{
+      "children": [
+        "image#iconfacebook"]
+    },
+
+    "image#iconfacebook":{
+      "props":{
+        "blockClass":"iconTwitter",
+        "width":100,
+        "heigth":100,
+        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+      }
+    
+    },
+    "link#iconfoot3":{
+      "children": [
+        "image#iconTwitch"]
+    },
+
+    "image#iconTwitch":{
+      "props":{
+        "blockClass":"iconTwitter",
+        "width":100,
+        "heigth":100,
+        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+      }
+    
+    },
+
+    "link#iconfoot4":{
+      "children": [
+        "image#iconpoadcast"]
+    },
+
+    "image#iconpoadcast":{
+      "props":{
+        "blockClass":"iconPoadcast",
+        "width":100,
+        "heigth":100,
+        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+      }
+    
+    },
+
+    //---- lista de idiomas -------/
+
+    "flex-layout.col#footerDeutsch":{
+      "children": ["link#deutsh"]
+    },
+
+    
+    "link#deutsh":{
+      "props": {
+        "href": "#",
+        "label": "Deutsch",
+        "blockClass":"linkfooter"
+      }
+    },
+    "flex-layout.col#footerEnglish":{
+      "children": ["link#english"]
+    },
+    "link#english":{
+      "props": {
+        "href": "#",
+        "label": "English",
+        "blockClass":"linkfooter"
+      }
+    },
+    "flex-layout.col#footerFraçais":{
+      "children": ["link#français"]
+    },
+    "link#français":{
+      "props": {
+        "href": "#",
+        "label": "français",
+        "blockClass":"linkfooter"
+      }
+    },
+
+    "flex-layout.col#footerPortugues":{
+      "children": ["link#portugues"]
+    },
+    "link#portugues":{
+      "props": {
+        "href": "#",
+        "label": "Portugues",
+        "blockClass":"linkfooter"
+      }
+    }
+
+
+
 }
