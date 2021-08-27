@@ -12,7 +12,8 @@
       "children": [
         "stack-layout#container",
         "flex-layout.row#container",
-        "flex-layout.row#containerIcons"
+        "flex-layout.row#containerIcons",
+        "search-result-layout.customQuery#container"
       ]
     },
     "stack-layout#container": { // Banner container com CTA button
@@ -184,6 +185,19 @@
     "rich-text#containerIconDesc3": {
       "props": {
         "text": "Saiba como começar a usar containers na AWS."
+      }
+    },
+    "search-result-layout.customQuery#container": {
+      "blocks": [
+        "search-result-layout.desktop"
+      ],
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByPriceASC",
+          "hideUnavailableItems": false,
+          "maxItemsPerPage": 1,
+          "queryField": "cont"
+        }
       }
     },
   
