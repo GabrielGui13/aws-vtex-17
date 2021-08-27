@@ -27,6 +27,7 @@
 
 
 /*****cadastro de leads e patrocinadores****/
+
 .flexCol--linha{
     max-width:2px;
     max-height:600px;
@@ -47,7 +48,7 @@
 }
 .flexRow--cadastro{
     width:99vw;
-    height:90vh;
+    height:80vh;
     align-items: center;
     background-image: url("https://uploaddeimagens.com.br/images/003/401/082/original/backgroundaws.png?1630008498");
     background-repeat: no-repeat;
