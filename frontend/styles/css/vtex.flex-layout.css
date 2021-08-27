@@ -62,7 +62,6 @@
 
 .flexRow--imageLogo {
     margin-top: 100px;
-    border: 1px solid red;
 }
 
 .flexRow--cadastro{
@@ -82,6 +81,7 @@
     justify-content: space-around;
     height: 50vh;
 }
+/***footer*****/
 .flexRow--footer1{
     background-color:#232F3E ;
     padding-bottom: 10px;
@@ -92,3 +92,8 @@
     background-color:#232F3E ;
     padding-bottom: 20px;
 }
+
+.flexColChild--container-footer{
+    display: flex;
+    justify-content: center;
+  }

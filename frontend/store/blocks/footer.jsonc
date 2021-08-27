@@ -40,7 +40,9 @@
           "flex-layout.col#footerEnglish",
           "flex-layout.col#footerFraçais",
           "flex-layout.col#footerPortugues",
-          "flex-layout.col#footerRusso"
+          "flex-layout.col#footerRusso",
+          "flex-layout.col#footerViet",
+          "flex-layout.col#footerkoran"
         ],
         "props":{
           "blockClass":"idiomas"
@@ -253,10 +255,18 @@
 
     "flex-layout.col#footerConclua":{
       "children":[
-        "link#container",
+        "link#containerFooter",
         "flex-layout.row#iconss"  
       ]
     },
+    "link#containerFooter":{
+      "props": {
+        "blockClass": "button-footer",
+        "displayMode": "button",
+        "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+        "label": "CADRASTRE=SE"
+    }
+  },
     "flex-layout.row#iconss":{
       "children":[
        "link#iconfoot1",
@@ -274,9 +284,9 @@
     "image#icontwitter":{
       "props":{
         "blockClass":"iconTwitter",
-        "width":100,
-        "heigth":100,
-        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+        "width":30,
+        "heigth":30,
+        "src":"https://uploaddeimagens.com.br/images/003/403/190/original/pngegg.pn0g?1630101183"
       }
     },
 
@@ -288,9 +298,9 @@
     "image#iconfacebook":{
       "props":{
         "blockClass":"iconTwitter",
-        "width":100,
-        "heigth":100,
-        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+        "width":25,
+        "heigth":25,
+        "src":"https://uploaddeimagens.com.br/images/003/403/188/original/PngItem_5053860.png?1630101051"
       }
     
     },
@@ -302,9 +312,9 @@
     "image#iconTwitch":{
       "props":{
         "blockClass":"iconTwitter",
-        "width":100,
-        "heigth":100,
-        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+        "width":30,
+        "heigth":30,
+        "src":"https://uploaddeimagens.com.br/images/003/403/175/original/twitch.png?1630100633"
       }
     
     },
@@ -317,9 +327,9 @@
     "image#iconpoadcast":{
       "props":{
         "blockClass":"iconPoadcast",
-        "width":100,
-        "heigth":100,
-        "src":"https://uploaddeimagens.com.br/images/003/401/041/original/mission.png?1630007063"
+        "width":30,
+        "heigth":30,
+        "src":"https://uploaddeimagens.com.br/images/003/403/184/original/Daco_4075340.png?1630100765"
       }
     
     },
@@ -384,8 +394,10 @@
     },
 
     "flex-layout.col#footerRusso":{
-      "children": ["link#russo"]
-    
+      "children": ["link#russo"],
+      "props": {
+        "blockClass":"container-footer"
+      }
     },
   
 
@@ -393,6 +405,30 @@
       "props": {
         "href": "#",
         "label": " Ρусский",
+        "blockClass":"linkfooter"
+      }
+    },
+    
+    "flex-layout.col#footerViet":{
+      "children": ["link#viet"],
+      "props": {
+        "blockClass":"container-footer"
+    }
+  },
+    "link#viet":{
+      "props": {
+        "href": "#",
+        "label": "Tiếng Việt",
+        "blockClass":"linkfooter"
+      }
+    },
+    "flex-layout.col#footerkoran":{
+      "children": ["link#korean"]
+    },
+    "link#korean":{
+      "props": {
+        "href": "#",
+        "label": "한국어",
         "blockClass":"linkfooter"
       }
     }

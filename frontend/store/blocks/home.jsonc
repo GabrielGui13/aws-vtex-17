@@ -1,6 +1,8 @@
 {
   "store.home": { 
     "blocks": [
+      "responsive-layout.desktop#regions",
+      "responsive-layout.mobile#regions"
     ]
   }
 }
