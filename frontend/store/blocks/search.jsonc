@@ -6,6 +6,22 @@
   },
   "search-result-layout": {
     "blocks": [
+      "search-result-layout.desktop"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "search-fetch-previous",
+      "flex-layout.row#results"
+    ],
+    "props": {
+      "maxItemsPerPage": 8,
+      "defaultGalleryLayout": "grid",
+      "verticalALign": "middle"
+    }
+  },
+  "flex-layout.row#results": {
+    "children": [
       "flex-layout.col#search"
     ]
   },
@@ -16,7 +32,8 @@
   },
   "search-content": {
     "blocks": [
-      "gallery"
+      "gallery",
+      "not-found"
     ]
   },
   "gallery": {
@@ -31,7 +48,7 @@
       "OneOrTwoLineSummary": "product-summary.shelf"
     }
   },
-  "product-summary.shelf": {
+  "product-summary.shelf#aws-products": {
     "children": [
       "add-to-cart-button"
     ],

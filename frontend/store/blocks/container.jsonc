@@ -12,7 +12,7 @@
       "children": [
         "stack-layout#container",
         "flex-layout.row#container",
-        "flex-layout.row#icons"
+        "flex-layout.row#containerIcons"
       ]
     },
     "stack-layout#container": { // Banner container com CTA button
@@ -94,7 +94,7 @@
     },
 
     // parte dos icones de baixo do container
-    "flex-layout.row#icons": {
+    "flex-layout.row#containerIcons": {
       "children": [
         "flex-layout.col#icon1",
         "flex-layout.col#icon2",
