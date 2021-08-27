@@ -14,10 +14,14 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop1",
+      "flex-layout.row#desktop2"
+    ]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#desktop1": {
     "props": {
+      "blockClass": "header-aws",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -48,21 +52,23 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://uploaddeimagens.com.br/images/003/401/565/original/aws-logo-removebg-preview.png?1630033947",
+      "width": "120",
+      "height": "100%"
     }
   },
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
       "logo",
-      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ],
@@ -74,6 +80,49 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["vtex.menu@2.x:menu#categories"]
+  },
+  "flex-layout.row#desktop2": {
+    "props": {
+      "blockClass": "menu-header-aws"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categories"
+    ]
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "props": {
+      "blockClass":"main-menu",
+      "items": [
+        {
+          "id": "menu-item-category-produtos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 153,
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "Produtos",
+            "text": "Produtos"
+          }
+        },
+        {
+          "id": "menu-item-category-major-sobre-nos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 151,
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": true,
+            "tagTitle": "Sobre Nós",
+            "text": "Sobre Nós"
+          }
+        }
+      ]
+    }
   }
 }

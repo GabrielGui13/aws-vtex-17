@@ -5,7 +5,8 @@
     color: #ffffff;
     font-weight: 800;
     margin-left: 190px;
-    font: 36px "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 36px;
 }
 
 .wrapper--container-subTitle { /* Subtítulo do stack layout - Contaianer - Dektop */
@@ -13,18 +14,21 @@
     font-weight: 400;
     margin-top: 65px;
     margin-left: 190px;
-    font: 22px "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 22px;
 }
 
 .paragraph--container-description { /* Descrição do container - Contaianer - Dektop */
     color: #232f3e;
-    font: 20px "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
     line-height: 1.5;
     text-align: justify;
 }
 
 /***** REGIONS *****/
 .container--regionsTitle { /* Título - Regions - Dektop */
+    margin-top: 20px;
     height: 50px;
     width: 100%;
 }
@@ -32,7 +36,8 @@
 .wrapper--regionsSubTitle { /* Subtítulo - Regions - Dektop */
     color: #232f3e;
     font-weight: 400;
-    font: 20px "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
     width: 1000px;
 }
 
@@ -45,7 +50,7 @@
     color: #ffffff;
     font-size: 28px;
     font-weight: bold;
-    font: "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .wrapper--container-subTitleMobile { /* Subtítulo do stack layout - Contaianer - Mobile */
@@ -53,12 +58,12 @@
     font-size: 18px;
     justify-content: center;
     margin-top: 52px;
-    font: "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .paragraph--container-descriptionMobile { /* Descrição do container - Contaianer - Mobile */
     color: #232f3e;
-    font: "Helvetica Neue", arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -67,6 +72,7 @@
 /***** REGIONS *****/
 
 .container--regionsTitleMobile { /* Título - Regions - Mobile */
+    margin-top: 10px;
     height: 50px;
     width: 100%;
 }

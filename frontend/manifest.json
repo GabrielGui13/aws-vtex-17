@@ -48,7 +48,8 @@
     "vtex.store-link": "0.x",
     "vtex.condition-layout": "1.x",
     "vtex.modal-layout": "0.x",
-    "vtex.product-price": "1.x"
+    "vtex.product-price": "1.x",
+    "vtex.overlay-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
