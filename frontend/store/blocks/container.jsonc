@@ -1,295 +1,207 @@
 {
-    "store.custom#container": { 
-      "blocks": [
-        "responsive-layout.desktop#container",
-        "responsive-layout.mobile#container"
-      ]
-    },
-      
-    // ******** DESKTOP ******** //
-  
-    "responsive-layout.desktop#container": {
-      "children": [
-        "stack-layout#container",
-        "flex-layout.row#container",
-        "flex-layout.row#containerIcons",
-        "search-result-layout.customQuery#container"
-      ]
-    },
-    "stack-layout#container": { // Banner container com CTA button
-      "children": [
-        "image#container",
-        "rich-text#containerTitle",
-        "rich-text#containerSubTitle",
-        "link#container"
-      ]
-    },
-    "image#container": { // Imagem do banner container
-      "props": {
-        "blockClass": "cover",
-        "width": "100%",
-        "height": 300,
-        "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
-      }
-    },
-    "rich-text#containerTitle": {  // Título do container
-      "props": { 
-        "blockClass": "container-title",
-        "text": "O que é um container?"
-      }
-    },
-    "rich-text#containerSubTitle": { // Subtítulo do container
-      "props": { 
-        "blockClass": "container-subTitle",
-        "text": "Empacote seu código e execute-o em qualquer local"
-      }
-    },
-    "link#container": { // Botão CTA container
-      "props": {
-        "blockClass": "button-container",
-        "displayMode": "button",
-        "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
-        "label": "Comece a usar containers"
-      }
-    },
-    "flex-layout.row#container": { // Colunas esquerda (texto) e direita (imagem) da descrição do container
-      "children": [
-        "flex-layout.col#containerLeft",
-        "flex-layout.col#containerRight"
-      ],
-      "props": {
-        "blockClass": "row-container-description"
-      }
-    },
-    "flex-layout.col#containerLeft": { // Coluna da esquerda - texto da descrição
-      "children": [
-        "rich-text#containerDescription"
-      ],
-      "props": {
-        "blockClass": "container-left-col",
-        "horizontalAlign": "left",
-        "verticalAlign": "middle"
-      }
-    },
-    "rich-text#containerDescription": { // Texto da descrição do container
-      "props": {
-        "blockClass": "container-description",
-        "text": "Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. A Nuvem AWS oferece recursos de infraestrutura otimizados para a execução de containers, além de um conjunto de serviços de orquestração que facilitam a criação e execução de aplicativos conteinerizados em produção. A AWS oferece suporte a containers compatíveis com OCI, inclusive containers de docker."
-      }
-    },
-    "flex-layout.col#containerRight": { // Coluna direita - imagem da descrição
-      "children": [
-        "image#containerRight"
-      ],
-      "props": {
-        "blockClass": "container-right-col",
-        "horizontalAlign": "center",
-        "verticalAlign": "middle"
-      }
-    },
-    "image#containerRight": { // Imagem da descrição do container
-      "props": {
-        "blockClass": "image-container",
-        "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
-      }
-    },
+  "store.custom#container": { 
+    "blocks": [
+      "responsive-layout.desktop#container",
+      "responsive-layout.mobile#container"
+    ]
+  },
+    
+  // ******** DESKTOP ******** //
 
-    // parte dos icones de baixo do container
-    "flex-layout.row#containerIcons": {
-      "children": [
-        "flex-layout.col#icon1",
-        "flex-layout.col#icon2",
-        "flex-layout.col#icon3"
-      ],
-      "props": {
-        "width": "90%",
-        "blockClass": "containerIcons"
-      }
-    },
-    "flex-layout.col#icon1": { //icon 1 services
-      "children": [
-        "image#containerIcon1",
-        "rich-text#containerIconTitle1",
-        "rich-text#containerIconDesc1"
-      ],
-      "props": {
-        "blockClass": "iconCol"
-      }
-    },
-    "image#containerIcon1": {
-      "props": {
-        "src": "https://uploaddeimagens.com.br/images/003/402/307/thumb/foto_de_services.png?1630078127",
-        "blockClass": "iconImg"
-      }
-    },
-    "rich-text#containerIconTitle1": {
-      "props": {
-        "text": "###### **Visite a página de serviços**",
-        "blockClass": "iconColTitle"
-      }
-    },
-    "rich-text#containerIconDesc1": {
-      "props": {
-        "text": "Saiba mais como executar containers na AWS."
-      }
-    },
-    "flex-layout.col#icon2": { //icon 2 cadastro
-      "children": [
-        "image#containerIcon2",
-        "rich-text#containerIconTitle2",
-        "rich-text#containerIconDesc2"
-      ],
-      "props": {
-        "blockClass": "iconCol"
-      }
-    },
-    "image#containerIcon2": {
-      "props": {
-        "src": "https://uploaddeimagens.com.br/images/003/402/192/full/foto_de_cadastro.png?1630074978",
-        "blockClass": "iconImg"
-      }
-    },
-    "rich-text#containerIconTitle2": {
-      "props": {
-        "text": "###### **Cadastre-se para obter uma conta gratuita**",
-        "blockClass": "iconColTitle"
-      }
-    },
-    "rich-text#containerIconDesc2": {
-      "props": {
-        "text": "Obtenha acesso instantâneo ao nível gratuito da AWS."
-      }
-    },
-    "flex-layout.col#icon3": { //icon 3 ferramentas
-      "children": [
-        "image#containerIcon3",
-        "rich-text#containerIconTitle3",
-        "rich-text#containerIconDesc3"
-      ],
-      "props": {
-        "blockClass": "iconCol"
-      }
-    },
-    "image#containerIcon3": {
-      "props": {
-        "src": "https://uploaddeimagens.com.br/images/003/402/309/thumb/foto_de_ferramentas.png?1630078177",
-        "blockClass": "iconImg"
-      }
-    },
-    "rich-text#containerIconTitle3": {
-      "props": {
-        "text": "###### **Comece a criar com containers**",
-        "blockClass": "iconColTitle"
-      }
-    },
-    "rich-text#containerIconDesc3": {
-      "props": {
-        "text": "Saiba como começar a usar containers na AWS."
-      }
-    },
-    "search-result-layout.customQuery#container": {
-      "blocks": [
-        "search-result-layout.desktop"
-      ],
-      "props": {
-        "querySchema": {
-          "orderByField": "OrderByPriceASC",
-          "hideUnavailableItems": false,
-          "maxItemsPerPage": 1,
-          "queryField": "cont"
-        }
-      }
-    },
-  
-    // ******** MOBILE ******** //
-  
-    "responsive-layout.mobile#container": {
-      "children": [
-        "stack-layout#containerMobile",
-        "flex-layout.row#containerMobile"
-      ]
-    },
-    "stack-layout#containerMobile": { // Banner container com CTA button (Mobile)
-      "children": [
-        "image#containerMobile",
-        "rich-text#containerTitleMobile",
-        "rich-text#containerSubTitleMobile",
-        "link#containerMobile"
-      ],
-      "props": {
-        "blockClass": "containerMobile"
-      }
-    },
-    "image#containerMobile": { // Imagem do banner container (Mobile)
-      "props": {
-        "blockClass": "coverMobile",
-        "width": "100%",
-        "height": 200,
-        "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
-      }
-    },
-    "rich-text#containerTitleMobile": {  // Título do container (Mobile)
-      "props": { 
-        "blockClass": "container-titleMobile",
-        "text": "O que é um container?"
-      }
-    },
-    "rich-text#containerSubTitleMobile": { // Subtítulo do container (Mobile)
-      "props": { 
-        "blockClass": "container-subTitleMobile",
-        "text": "Empacote seu código e execute-o em qualquer local",
-        "text-position": "center"
-      }
-    },
-    "link#containerMobile": { // Botão CTA container (Mobile)
-      "props": {
-        "blockClass": "button-containerMobile",
-        "displayMode": "button",
-        "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
-        "label": "Comece a usar containers"
-      }
-    },
-    "flex-layout.row#containerMobile": { // Colunas esquerda (texto) e direita (imagem) da descrição do container (Mobile)
-      "children": [
-        "flex-layout.col#containerLeftMobile",
-        "flex-layout.col#containerRightMobile"
-      ],
-      "props": {
-        "blockClass": "row-container-description"
-      }
-    },
-    "flex-layout.col#containerLeftMobile": { // Coluna da esquerda - texto da descrição (Mobile)
-      "children": [
-        "rich-text#containerDescriptionMobile"
-      ],
-      "props": {
-        "blockClass": "container-left-colMobile",
-        "horizontalAlign": "center",
-        "verticalAlign": "middle"
-      }
-    },
-    "rich-text#containerDescriptionMobile": { // Texto da descrição do container (Mobile)
-      "props": {
-        "blockClass": "container-descriptionMobile",
-        "text": "Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. A Nuvem AWS oferece recursos de infraestrutura otimizados para a execução de containers, além de um conjunto de serviços de orquestração que facilitam a criação e execução de aplicativos conteinerizados em produção. A AWS oferece suporte a containers compatíveis com OCI, inclusive containers de docker.",
-        "textPosition": "CENTER",
-        "textAlignment": "CENTER"
-      }
-    },
-    "flex-layout.col#containerRightMobile": { // Coluna direita - imagem da descrição (Mobile)
-      "children": [
-        "image#containerRightMobile"
-      ],
-      "props": {
-        "blockClass": "container-right-colMobile",
-        "horizontalAlign": "center",
-        "verticalAlign": "middle"
-      }
-    },
-    "image#containerRightMobile": { // Imagem da descrição do container (Mobile)
-      "props": {
-        "blockClass": "image-containerMobile",
-        "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
-      }
+  "responsive-layout.desktop#container": {
+    "children": [
+      "stack-layout#container",
+      "flex-layout.row#container",
+      "flex-layout.row#iconsComplete"
+    ]
+  },
+  "stack-layout#container": { // Banner container com CTA button
+    "children": [
+      "image#container",
+      "rich-text#containerTitle",
+      "rich-text#containerSubTitle",
+      "link#container"
+    ]
+  },
+  "image#container": { // Imagem do banner container
+    "props": {
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 300,
+      "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
+    }
+  },
+  "rich-text#containerTitle": {  // Título do container
+    "props": { 
+      "blockClass": "container-title",
+      "text": "O que é um container?"
+    }
+  },
+  "rich-text#containerSubTitle": { // Subtítulo do container
+    "props": { 
+      "blockClass": "container-subTitle",
+      "text": "Empacote seu código e execute-o em qualquer local"
+    }
+  },
+  "link#container": { // Botão CTA container
+    "props": {
+      "blockClass": "button-container",
+      "displayMode": "button",
+      "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+      "label": "Comece a usar containers"
+    }
+  },
+  "flex-layout.row#container": { // Colunas esquerda (texto) e direita (imagem) da descrição do container
+    "children": [
+      "flex-layout.col#containerLeft",
+      "flex-layout.col#containerRight"
+    ],
+    "props": {
+      "blockClass": "row-container-description"
+    }
+  },
+  "flex-layout.col#containerLeft": { // Coluna da esquerda - texto da descrição
+    "children": [
+      "rich-text#containerDescription"
+    ],
+    "props": {
+      "blockClass": "container-left-col",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#containerDescription": { // Texto da descrição do container
+    "props": {
+      "blockClass": "container-description",
+      "text": "Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. A Nuvem AWS oferece recursos de infraestrutura otimizados para a execução de containers, além de um conjunto de serviços de orquestração que facilitam a criação e execução de aplicativos conteinerizados em produção. A AWS oferece suporte a containers compatíveis com OCI, inclusive containers de docker."
+    }
+  },
+  "flex-layout.col#containerRight": { // Coluna direita - imagem da descrição
+    "children": [
+      "image#containerRight"
+    ],
+    "props": {
+      "blockClass": "container-right-col",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#containerRight": { // Imagem da descrição do container
+    "props": {
+      "blockClass": "image-container",
+      "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
+    }
+  },
+  // parte dos icones de baixo do container
+  "flex-layout.row#iconsComplete": {
+    "children": [
+      "image#containerIcon1",
+      "rich-text#containerIconText1"
+    ],
+    "props": {
+      "width": "100%" 
+    }
+  },
+  "image#containerIcon1": {
+    "props": {
+      "src": ""
+    }
+  },
+  "rich-text#containerIconText1": {
+    "props": {
+      "text": "Teste"
+    }
+  },
+
+  // ******** MOBILE ******** //
+
+  "responsive-layout.mobile#container": {
+    "children": [
+      "stack-layout#containerMobile",
+      "flex-layout.row#containerMobile"
+    ]
+  },
+  "stack-layout#containerMobile": { // Banner container com CTA button (Mobile)
+    "children": [
+      "image#containerMobile",
+      "rich-text#containerTitleMobile",
+      "rich-text#containerSubTitleMobile",
+      "link#containerMobile"
+    ],
+    "props": {
+      "blockClass": "containerMobile"
+    }
+  },
+  "image#containerMobile": { // Imagem do banner container (Mobile)
+    "props": {
+      "blockClass": "coverMobile",
+      "width": "100%",
+      "height": 200,
+      "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
+    }
+  },
+  "rich-text#containerTitleMobile": {  // Título do container (Mobile)
+    "props": { 
+      "blockClass": "container-titleMobile",
+      "text": "O que é um container?"
+    }
+  },
+  "rich-text#containerSubTitleMobile": { // Subtítulo do container (Mobile)
+    "props": { 
+      "blockClass": "container-subTitleMobile",
+      "text": "Empacote seu código e execute-o em qualquer local",
+      "text-position": "center"
+    }
+  },
+  "link#containerMobile": { // Botão CTA container (Mobile)
+    "props": {
+      "blockClass": "button-containerMobile",
+      "displayMode": "button",
+      "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+      "label": "Comece a usar containers"
+    }
+  },
+  "flex-layout.row#containerMobile": { // Colunas esquerda (texto) e direita (imagem) da descrição do container (Mobile)
+    "children": [
+      "flex-layout.col#containerLeftMobile",
+      "flex-layout.col#containerRightMobile"
+    ],
+    "props": {
+      "blockClass": "row-container-description"
+    }
+  },
+  "flex-layout.col#containerLeftMobile": { // Coluna da esquerda - texto da descrição (Mobile)
+    "children": [
+      "rich-text#containerDescriptionMobile"
+    ],
+    "props": {
+      "blockClass": "container-left-colMobile",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#containerDescriptionMobile": { // Texto da descrição do container (Mobile)
+    "props": {
+      "blockClass": "container-descriptionMobile",
+      "text": "Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. A Nuvem AWS oferece recursos de infraestrutura otimizados para a execução de containers, além de um conjunto de serviços de orquestração que facilitam a criação e execução de aplicativos conteinerizados em produção. A AWS oferece suporte a containers compatíveis com OCI, inclusive containers de docker.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.col#containerRightMobile": { // Coluna direita - imagem da descrição (Mobile)
+    "children": [
+      "image#containerRightMobile"
+    ],
+    "props": {
+      "blockClass": "container-right-colMobile",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#containerRightMobile": { // Imagem da descrição do container (Mobile)
+    "props": {
+      "blockClass": "image-containerMobile",
+      "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
     }
   }
+}

@@ -5,7 +5,7 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
-  "header-layout.desktop": {
+  "header-layout.desktop": { // Desktop
     "children": [
       "sticky-layout#desktop"
     ]
@@ -15,11 +15,11 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.row#desktop1",
-      "flex-layout.row#desktop2"
+      "flex-layout.row#desktop1", // linha da logo/busca/carrinho
+      "flex-layout.row#desktop2" // linha do menu dropdown
     ]
   },
-  "flex-layout.row#desktop1": {
+  "flex-layout.row#desktop1": { // linha da logo/busca/carrinho
     "props": {
       "blockClass": "header-aws",
       "horizontalAlign": "center",
@@ -53,7 +53,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://uploaddeimagens.com.br/images/003/401/565/original/aws-logo-removebg-preview.png?1630033947",
-      "width": "120",
+      "width": "140",
       "height": "100%"
     }
   },
@@ -65,7 +65,7 @@
       "flex-layout.row#mobile"
     ]
   },
-  "flex-layout.row#mobile": {
+  "flex-layout.row#mobile": { // Menu mobile
     "children": [
       "drawer",
       "logo",
@@ -80,49 +80,110 @@
     }
   },
   "drawer": {
-    "children": ["vtex.menu@2.x:menu#categories"]
+    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
-  "flex-layout.row#desktop2": {
+  "flex-layout.row#desktop2": { // linha do menu dropdown
     "props": {
       "blockClass": "menu-header-aws"
     },
     "children": [
-      "vtex.menu@2.x:menu#categories"
+      "vtex.menu@2.x:menu#category-menu"
     ]
   },
-  "vtex.menu@2.x:menu#categories": {
+  "vtex.menu@2.x:menu#category-menu": { // MENU DROPDOWN
     "props": {
-      "blockClass":"main-menu",
-      "items": [
-        {
-          "id": "menu-item-category-produtos",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "categoryId": 153,
-            "type": "internal",
-            "href": "#",
-            "noFollow": true,
-            "tagTitle": "Produtos",
-            "text": "Produtos"
-          }
-        },
-        {
-          "id": "menu-item-category-major-sobre-nos",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "categoryId": 151,
-            "type": "internal",
-            "href": "/about-us",
-            "noFollow": true,
-            "tagTitle": "Sobre Nós",
-            "text": "Sobre Nós"
-          }
-        }
-      ]
+      "blockClass": "dropdown-menu",
+      "experimentalOptimizeRendering": true // Para carregar o menu apenas quando o usuário interagir com ele. Isso garante um melhor carregamento da página
+    },
+    "children": [ // CATEGORIAS
+      "menu-item#produtos",
+      "menu-item#quem-somos"
+    ]
+  },
+  "menu-item#produtos": { // MENU ITEM - PRODUTOS
+   "props": {
+      "id": "produtos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Produtos",
+        "text": "Produtos"
+      }
+    },
+    "blocks": [ "vtex.menu@2.x:submenu#produtos" ] // DECLARAÇÃO SUBMENU - PRODUTOS
+  },
+  "vtex.menu@2.x:submenu#produtos": { // Criação do block menu para servir de submenu
+    "children": ["vtex.menu@2.x:menu#produtos"]
+  },
+  "vtex.menu@2.x:menu#produtos": { // SUBMENU DA CATEGORIA PRODUTOS
+    "children": [
+      "menu-item#container",
+      "menu-item#blockchain",
+      "menu-item#migracao-nuvem"
+    ]
+  },
+  "menu-item#container": { // SUBITEM DO MENU PRODUTOS - CONTAINER
+    "props": {
+      "id": "container",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/container",
+        "noFollow": true,
+        "tagTitle": "Container",
+        "text": "Container"
+      }
+    }
+  },
+  "menu-item#blockchain": { // SUBITEM DO MENU PRODUTOS - BLOCKCHAIN
+    "props": {
+      "id": "blockchain",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blockchain",
+        "noFollow": true,
+        "tagTitle": "Blockchain",
+        "text": "Blockchain"
+      }
+    }
+  },
+  "menu-item#migracao-nuvem": { // SUBITEM DO MENU PRODUTOS - MIGRAÇÃO PARA A NUVEM AWS
+    "props": {
+      "id": "migracao-nuvem",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cloud-migration",
+        "noFollow": true,
+        "tagTitle": "Migração Para a Nuvem AWS",
+        "text": "Migração Para a Nuvem AWS"
+      }
+    }
+  },
+  "menu-item#quem-somos": { // MENU ITEM - QUEM SOMOS
+    "props": {
+      "id": "quem-somos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      }
     }
   }
 }

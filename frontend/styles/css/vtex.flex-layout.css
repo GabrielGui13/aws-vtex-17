@@ -8,13 +8,14 @@
     align-items: center;
     background-color: #232f3e;
     width: 100%;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .flexRowContent--main-header-mobile {
     align-items: center;
     background-color: #232f3e;
 }
-
 /***** CONTAINER *****/
 .flexRow--row-container-description {
     margin-top: 5px;
