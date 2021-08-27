@@ -1,0 +1,11 @@
+/***** MENU HEADER *****/
+.styledLinkContent--main-menu {
+    color: #ddd;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.menuContainer--main-menu {
+    background-color: #232f3e;
+    width: 100%;
+}

@@ -1,3 +1,20 @@
+/***** HEADER e MENU *****/
+.flexRowContent--header-aws {
+    align-items: center;
+    background-color: #232f3e;
+}
+
+.flexRow--menu-header-aws {
+    align-items: center;
+    background-color: #232f3e;
+    width: 100%;
+}
+
+.flexRowContent--main-header-mobile {
+    align-items: center;
+    background-color: #232f3e;
+}
+
 /***** CONTAINER *****/
 .flexRow--row-container-description {
     margin-top: 5px;
