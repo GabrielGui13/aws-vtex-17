@@ -1,3 +1,8 @@
 .menuIcon {
     color: #ddd;
 }
+
+.drawer {
+    background-color: #232f3e;
+    height: 100vW;
+}

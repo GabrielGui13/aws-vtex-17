@@ -11,9 +11,12 @@
 
 .menuContainer--dropdown-menu {
     background-color: #232f3e;
-    width: 100%;
 }
 
 .submenuWrapper {
     background-color: #232f3e;
+}
+
+.menuItem {
+    margin: 10px 0 10px 0;
 }

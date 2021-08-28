@@ -23,7 +23,7 @@
     "rich-text#regionsTitle2": { // Título - Regions - Desktop
         "props": {
             "blockClass": "regionsTitle",
-            "text": "Saiba como os clientes crian usando a AWS",
+            "text": "Saiba como os clientes criam usando a AWS",
             "font": "t-heading-1",
             "textPosition": "CENTER",
             "textAlignment": "CENTER"
@@ -174,7 +174,7 @@
     },
     "rich-text#regionsTitleMobile1": { // Título - Regions - Mobile
         "props": {
-            "blockClass": "regionsTitleMobile",
+            "blockClass": "patroTitleMobile",
             "text": "Saiba como os clientes criam usando a AWS",
             "font": "t-heading-3",
             "textPosition": "CENTER",

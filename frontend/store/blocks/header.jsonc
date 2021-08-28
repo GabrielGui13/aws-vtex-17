@@ -79,8 +79,17 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+  "drawer": { // Menu sanduiche - Mobile
+    "props": {
+      "blockClass": "drawer",
+      "isFullWidth": false,
+      "maxWidth": 200,
+      "slideDirection": "leftToRight",
+      "renderingStrategy": "lazy" // carrega os submenus apenas quando clicado. Isso melhora a renderização da página
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
   },
   "flex-layout.row#desktop2": { // linha do menu dropdown
     "props": {
@@ -97,7 +106,8 @@
     },
     "children": [ // CATEGORIAS
       "menu-item#produtos",
-      "menu-item#quem-somos"
+      "menu-item#quem-somos",
+      "menu-item#definicao-de-preco"
     ]
   },
   "menu-item#produtos": { // MENU ITEM - PRODUTOS
@@ -108,7 +118,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
+        "href": "#",
         "noFollow": true,
         "tagTitle": "Produtos",
         "text": "Produtos"
@@ -120,10 +130,23 @@
     "children": ["vtex.menu@2.x:menu#produtos"]
   },
   "vtex.menu@2.x:menu#produtos": { // SUBMENU DA CATEGORIA PRODUTOS
-    "children": [
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [ // itens da categoria produtos
       "menu-item#container",
       "menu-item#blockchain",
-      "menu-item#migracao-nuvem"
+      "menu-item#migracao-nuvem",
+      "menu-item#servicos-em-destaque",
+      "menu-item#analises",
+      "menu-item#integracao-de-aplicacoes",
+      "menu-item#gerenciamento-de-custos",
+      "menu-item#aplicacoes-empresariais",
+      "menu-item#computacao",
+      "menu-item#relacionamento",
+      "menu-item#banco-de-dados",
+      "menu-item#ferramentas-de-desenvolvedor",
+      "menu-item#internet-das-coisas"
     ]
   },
   "menu-item#container": { // SUBITEM DO MENU PRODUTOS - CONTAINER
@@ -183,6 +206,250 @@
         "noFollow": true,
         "tagTitle": "Quem Somos",
         "text": "Quem Somos"
+      }
+    }
+  },
+  "menu-item#servicos-em-destaque": { // SUBITEM DO MENU PRODUTOS - SERVIÇOS EM DESTAQUE
+    "props": {
+      "id": "servicos-em-destaque",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Servicos em Destaque",
+        "text": "Servicos em Destaque"
+      }
+    }
+  },
+  "menu-item#analises": { // SUBITEM DO MENU PRODUTOS - ANÁLISES
+    "props": {
+      "id": "analises",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Analises",
+        "text": "Analises"
+      }
+    }
+  },
+  "menu-item#integracao-de-aplicacoes": { // SSUBITEM DO MENU PRODUTOS - INTEGRAÇÃO DE APLICAÇÕES
+    "props": {
+      "id": "integracao-de-aplicacoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Integração de Aplicações",
+        "text": "Integração de Aplicações"
+      }
+    }
+  },
+  "menu-item#gerenciamento-de-custos": { // SUBITEM DO MENU PRODUTOS - GERENCIAMENTO DE CUSTOS
+    "props": {
+      "id": "gerenciamento-de-custos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Gerenciamento de Custos",
+        "text": "Gerenciamento de Custos"
+      }
+    }
+  },
+  "menu-item#aplicacoes-empresariais": { // SUBITEM DO MENU PRODUTOS - APLICAÇÕES EMPRESARIAIS
+    "props": {
+      "id": "aplicacoes-empresariais",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Aplicacoes Empresariais",
+        "text": "Aplicacoes Empresariais"
+      }
+    }
+  },
+  "menu-item#computacao": { // SUBITEM DO MENU PRODUTOS - COMPUTAÇÃO
+    "props": {
+      "id": "computacao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Computação",
+        "text": "Computação"
+      }
+    }
+  },
+  "menu-item#relacionamento": { // SUBITEM DO MENU PRODUTOS - RELACIONAMENTO
+    "props": {
+      "id": "relacionamento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Relacionamento",
+        "text": "Relacionamento"
+      }
+    }
+  },
+  "menu-item#banco-de-dados": { // SUBITEM DO MENU PRODUTOS - BANCO DE DADOS
+    "props": {
+      "id": "banco-de-dados",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Banco de Dados",
+        "text": "Banco de Dados"
+      }
+    }
+  },
+  "menu-item#ferramentas-de-desenvolvedor": { // SUBITEM DO MENU PRODUTOS - FERRAMENTAS DE DESENVOLVEDOR
+    "props": {
+      "id": "ferramentas-de-desenvolvedor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ferramentas de Desenvolvedor",
+        "text": "Ferramentas de Desenvolvedor"
+      }
+    }
+  },
+  "menu-item#internet-das-coisas": { // SUBITEM DO MENU PRODUTOS - INTERNET DAS COISAS
+    "props": {
+      "id": "internet-das-coisas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Internet das Coisas",
+        "text": "Internet das Coisas"
+      }
+    }
+  },
+  "menu-item#definicao-de-preco": { // MENU ITEM - DEFINIÇÃO DE PREÇO
+    "props": {
+      "id": "definicao-de-preco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Definição de Preço",
+        "text": "Definição de Preço"
+      }
+    },
+    "blocks": [ "vtex.menu@2.x:submenu#definicao-de-preco" ] // DECLARAÇÃO SUBMENU - DEFINIÇÃO DE PREÇO
+  },
+   "vtex.menu@2.x:submenu#definicao-de-preco": { // Criação do block menu para servir de submenu
+    "children": ["vtex.menu@2.x:menu#definicao-de-preco"]
+  },
+   "vtex.menu@2.x:menu#definicao-de-preco": { // SUBMENU DA CATEGORIA DEFINIÇÃO DE PREÇO
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [ // itens da categoria 
+      "menu-item#saiba-mais-preco",
+      "menu-item#nivel-grauito",
+      "menu-item#aws-pricing-calculator",
+      "menu-item#otimize-seus-custos"
+    ]
+  },
+  "menu-item#saiba-mais-preco": { // SUBITEM DO MENU DEFINIÇÃO DE PREÇO - SAIBA MAIS SOBRE A DEFINIÇÃO DE PREÇO
+    "props": {
+      "id": "saiba-mais-preco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "image": "",
+        "tagTitle": "Saiba mais sobre a definação preço da AWS",
+        "text": "Saiba mais sobre a definação preço da AWS"
+      }
+    }
+  },
+  "menu-item#nivel-grauito": { // SUBITEM DO MENU DEFINIÇÃO DE PREÇO - SAIBA MAIS SOBRE A DEFINIÇÃO DE PREÇO
+    "props": {
+      "id": "nivel-grauito",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "image": "",
+        "tagTitle": "Nível gratuito da AWS",
+        "text": "Nível gratuito da AWS"
+      }
+    }
+  },
+  "menu-item#aws-pricing-calculator": { // SUBITEM DO MENU DEFINIÇÃO DE PREÇO - SAIBA MAIS SOBRE A DEFINIÇÃO DE PREÇO
+    "props": {
+      "id": "aws-pricing-calculator",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "image": "",
+        "tagTitle": "AWS Pricing Calculator",
+        "text": "AWS Pricing Calculator"
+      }
+    }
+  },
+  "menu-item#otimize-seus-custos": { // SUBITEM DO MENU DEFINIÇÃO DE PREÇO - SAIBA MAIS SOBRE A DEFINIÇÃO DE PREÇO
+    "props": {
+      "id": "otimize-seus-custos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "image": "",
+        "tagTitle": "Otimize Seus Custos",
+        "text": "Otimize Seus Custos"
       }
     }
   }
