@@ -1,0 +1,90 @@
+// definindo a flex no qual o carousel vai ficar dentro**//
+{   "store.custom#cadastro":{
+    "blocks": [
+        "flex-layout.row#caroussel"
+      ],
+      "props": {
+        "blockClass":"caroussel"
+      }
+    },
+
+
+   //---- chamando o slider----///
+    "flex-layout.row#caroussel": {
+          "children": [
+           "slider-layout#home"
+          ],
+          "props":{
+            "blockClass":"caroussel",
+            "defaultActiveTabById":"home1"
+          }
+        },
+   //---- listagem da quantidade de botões que teremos----///
+        "slider-layout#home":{
+            "children":[  
+                "tab-layout#header1"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+        },
+  /// ----- definindo primeiro botão --------///
+        "tab-layout#header1":{
+    
+            "children":[
+            "tab-list#caroussel1"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+    },
+    ////---- criando conteudo do primeio botão-----------////
+    "tab-list#caroussel1":{
+            "children": [
+                "tab-list.item.children#home1"
+            ],
+            "props":{
+            "defaultActiveTab":0
+            }
+    
+        },
+
+        "tab-list.item.children#home1":{
+            "props":{
+                "defaultActiveTab":0,
+                "blockClass":"caroussel"
+            },
+              "children": ["flex-layout.col#buttoncaroussel"]    
+        },
+        "flex-layout.col#buttoncaroussel":{
+            "children": [ "link#containercaroussel"]
+        },
+
+        "link#containercaroussel":{   /// imagem e texto dentro do botão
+            "children": [ 
+                "image#containerCaroussel1",
+                "rich-text#containerCarrousel"
+                ],
+            "props":{
+                "blockClass":"caroussel"
+            }
+        },
+        
+      "image#containerCaroussel1": { // Imagem do banner container
+        "props": {
+          "blockClass": "cover",
+          "width": 150,
+          "height":150,
+          "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
+        }
+      },
+      "rich-text#containerCarrousel":{
+        "props": { 
+            "blockClass": "containerCaroussel",
+            "text": "O que é um container?"
+
+          }
+      }
+      }
+
+

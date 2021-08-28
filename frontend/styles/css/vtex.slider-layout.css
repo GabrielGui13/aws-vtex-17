@@ -1,0 +1,11 @@
+.slideChildrenContainer{
+    max-width: 50vw;
+}
+
+.paginationDotsContainer{
+    opacity: 0;
+}
+.caretIcon{
+    color:rgba(34, 72, 143, 0.452);
+    max-width:25px;
+}

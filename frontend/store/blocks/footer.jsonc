@@ -66,8 +66,7 @@
   "rich-text#TituloFooter": { 
     "props": { 
       "blockClass": "tittle-footer",
-      "text": "Saiba mais sobre a Aws",
-      "blockClass":"linkfooter"
+      "text": "Saiba mais sobre a Aws"
     }
   },
 
