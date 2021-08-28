@@ -1,7 +1,6 @@
 import { UserInputError } from '@vtex/api'
-import { json } from 'co-body'
 
-export async function updateClient(ctx: Context, next: () => Promise<any>) {
+export async function deleteClient(ctx: Context, next: () => Promise<any>) {
   const {
     vtex: {
         route: { params },
@@ -9,14 +8,13 @@ export async function updateClient(ctx: Context, next: () => Promise<any>) {
     clients: { dynamodb: database }
   } = ctx
 
-  const req = await json(ctx.req)
   const { email } = params 
 
-  if (!req || !email) {
+  if (!email) {
     throw new UserInputError('Empty values')
   }
 
-  const res = database.updateProspectToClient(email as string, {...req})
+  const res = database.deleteClient(email as string)
 
   ctx.set('Cache-Control', 'no-cache no-store')
   ctx.body = res

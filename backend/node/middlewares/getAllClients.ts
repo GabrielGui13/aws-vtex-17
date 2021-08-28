@@ -1,18 +1,18 @@
 import { UserInputError } from '@vtex/api'
 
-export async function read(ctx: Context, next: () => Promise<any>) {
+export async function getAllClients(ctx: Context, next: () => Promise<any>) {
   const {
     clients: { dynamodb: database },
   } = ctx
 
-  const query = await database.getClients()
+  const res = await database.getClients()
 
-  if (!query) {
+  if (!res) {
     throw new UserInputError('Empty values')
   }
 
-  ctx.body = query
   ctx.set('Cache-Control', 'no-cache no-store')
+  ctx.body = res
 
   await next()
 }

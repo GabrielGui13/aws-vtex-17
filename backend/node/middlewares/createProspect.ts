@@ -1,7 +1,7 @@
 import { UserInputError } from '@vtex/api'
 import { json } from 'co-body'
 
-export async function write(ctx: Context, next: () => Promise<any>) {
+export async function createProspect(ctx: Context, next: () => Promise<any>) {
   const {
     clients: { dynamodb: database },
   } = ctx
@@ -24,11 +24,11 @@ export async function write(ctx: Context, next: () => Promise<any>) {
     throw new UserInputError('Empty values')
   }
 
-  database.registerProspect(req)
+   const res = await database.registerProspect(req)
 
   ctx.set('Cache-Control', 'no-cache no-store')
   ctx.body = {
-    message: "Cliente prospectado"
+    res
   }
 
   await next()
