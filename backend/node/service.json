@@ -9,6 +9,10 @@
     "database": {
       "path": "/leads",
       "public": true
+    },
+    "databaseParams": {
+      "path": "/leads/:email",
+      "public": true
     }
   }
 }

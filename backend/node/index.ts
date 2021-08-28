@@ -2,10 +2,13 @@ import type { ClientsConfig, ServiceContext } from '@vtex/api'
 import { method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import { write } from './middlewares/write'
-import { read } from './middlewares/read'
+import { createProspect } from './middlewares/createProspect'
+import { getAllClients } from './middlewares/getAllClients'
+import { updateClient } from './middlewares/updateClient'
+import { getClient } from './middlewares/getClient'
+import { deleteClient } from './middlewares/deleteClient'
 
-const TIMEOUT_MS = 800
+const TIMEOUT_MS = 2000
 
 const clients: ClientsConfig<Clients> = {
   implementation: Clients,
@@ -25,8 +28,13 @@ export default new Service({
   clients,
   routes: {
     database: method({
-      GET: [read],
-      POST: [write],
+      GET: [getAllClients],
+      POST: [createProspect],
+    }),
+    databaseParams: method({
+      GET: [getClient],
+      PUT: [updateClient],
+      DELETE: [deleteClient]
     }),
   },
 })
