@@ -1,0 +1,187 @@
+{
+    "store.custom#patrocinadores": {
+        "blocks": [
+            "responsive-layout.desktop#patro",
+            "responsive-layout.mobile#patro1"
+        ]
+    },
+    
+    // ******** DESKTOP ******** //
+  
+    "responsive-layout.desktop#patro": { // Linhas da página (1ª Título, 2ª imagens)
+        "children": [
+            "flex-layout.row#patro1",
+            "flex-layout.row#logos1",
+            "flex-layout.row#logos2"
+        ]
+    },
+    "flex-layout.row#patro1": { // Linha do Título - Regions - Desktop
+        "children": [
+            "rich-text#regionsTitle2"
+        ]
+    },
+    "rich-text#regionsTitle2": { // Título - Regions - Desktop
+        "props": {
+            "blockClass": "regionsTitle",
+            "text": "Saiba como os clientes crian usando a AWS",
+            "font": "t-heading-1",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    //*** criando blocos de logos***//
+
+    "flex-layout.row#logos1":{
+        "children":[
+            "flex-layout.col#logo1",
+            "flex-layout.col#logo2",
+            "flex-layout.col#logo3",
+            "flex-layout.col#logo4"
+        ],
+        "props":{
+            "blockClass":"logos"
+        }
+    },
+
+    "flex-layout.row#logos2":{
+        "children":[
+            "flex-layout.col#logo5",
+            "flex-layout.col#logo6",
+            "flex-layout.col#logo7"
+        ],
+        "props":{
+            "blockClass":"logos"
+        }
+    },
+
+        "flex-layout.col#logo1":{
+            "children": ["image#logop1"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop1":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+        "flex-layout.col#logo2":{
+            "children": ["image#logop2"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop2":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+
+        "flex-layout.col#logo3":{
+            "children": ["image#logop3"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop3":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+
+        "flex-layout.col#logo4":{
+            "children": ["image#logop4"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop4":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+
+        "flex-layout.col#logo5":{
+            "children": ["image#logop5"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop5":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+
+        "flex-layout.col#logo6":{
+            "children": ["image#logop6"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop6":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+
+        "flex-layout.col#logo7":{
+            "children": ["image#logop7"],
+            "props":{
+                "blockClass":"logospatro"
+            }
+        },
+
+        "image#logop7":{
+            "props":{
+              "blockClass":"imageCadastro",
+              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+            }
+          },
+
+
+
+
+    // ******** MOBILE ******** //
+
+    "responsive-layout.mobile#patro1": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#patroMobile1",
+            "flex-layout.row#patroMobile2"]
+    },
+    "flex-layout.row#patroMobile1": { // Linha do Título - Regions - Mobile
+        "children": [
+            "rich-text#regionsTitleMobile1"
+        ]
+    },
+    "rich-text#regionsTitleMobile1": { // Título - Regions - Mobile
+        "props": {
+            "blockClass": "regionsTitleMobile",
+            "text": "Saiba como os clientes criam usando a AWS",
+            "font": "t-heading-3",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#patroMobile2": { // Linha do Subtítulo - Regions - Mobile
+        "children": []
+    }
+ }

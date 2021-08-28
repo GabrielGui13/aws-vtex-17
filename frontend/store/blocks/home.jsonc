@@ -1,6 +1,8 @@
 {
   "store.home": { 
     "blocks": [
+      "responsive-layout.desktop#patro",
+      "responsive-layout.mobile#patro1",
       "responsive-layout.desktop#regions",
       "responsive-layout.mobile#regions"
     ]

@@ -26,3 +26,13 @@
 .imageElement--imageCadastro{
     margin-top: 50px;
 }
+
+/*** patrocinadores***/
+
+.imageElement--imageCadastro{
+    filter: grayscale(100%);
+}
+
+.imageElement--imageCadastro:hover{
+    filter: grayscale(0%);
+}

@@ -61,6 +61,10 @@
 
  .buttonLink--button-footer{
     margin-top:35px;
+    margin-bottom:10px;
     width: 100%;
     height: 35px;
+ }
+ .label--linkfooter{
+    font-size: 0.9rem;
  }

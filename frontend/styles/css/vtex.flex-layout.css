@@ -40,7 +40,15 @@
 }
 
 /*****cadastro de leads e patrocinadores****/
-
+.flexColChild--logospatro{
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.flexRowContent--logos{
+    max-width: 900px;
+    margin: auto;
+}
 .flexCol--linha{
     max-width:2px;
     max-height:600px;

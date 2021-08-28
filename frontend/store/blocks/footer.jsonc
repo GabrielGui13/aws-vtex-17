@@ -284,9 +284,9 @@
     "image#icontwitter":{
       "props":{
         "blockClass":"iconTwitter",
-        "width":30,
-        "heigth":30,
-        "src":"https://uploaddeimagens.com.br/images/003/403/190/original/pngegg.pn0g?1630101183"
+        "width":38,
+        "heigth":38,
+        "src":"https://uploaddeimagens.com.br/images/003/403/264/original/pngegg.png?1630104297"
       }
     },
 
@@ -298,8 +298,8 @@
     "image#iconfacebook":{
       "props":{
         "blockClass":"iconTwitter",
-        "width":25,
-        "heigth":25,
+        "width":18,
+        "heigth":18,
         "src":"https://uploaddeimagens.com.br/images/003/403/188/original/PngItem_5053860.png?1630101051"
       }
     
