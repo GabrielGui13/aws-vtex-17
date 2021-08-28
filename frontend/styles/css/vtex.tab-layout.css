@@ -1,0 +1,13 @@
+/*** slider de serviços***/
+.listItemChildren--caroussel{
+    background-color:#232F3E;
+    padding-left: 10px;
+    margin: 10px;
+    max-width:160px;
+    max-height:160px;
+
+}
+
+.listItemChildren--caroussel:active{
+    background-color: #0073BB;
+}

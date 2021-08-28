@@ -1,5 +1,7 @@
 /***** CONTAINER DESKTOP *****/
-
+.link{
+    text-decoration: unset;
+}
 .buttonLink--button-container { /* BOTÃO CTA CONTAINER DESKTOP */
     background-color: #f7dfa5;
     color: #333333;

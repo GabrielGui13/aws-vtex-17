@@ -1,14 +1,50 @@
 // definindo a flex no qual o carousel vai ficar dentro**//
-{   "store.custom#cadastro":{
+{   "store.custom#carousssel":{
     "blocks": [
-        "flex-layout.row#caroussel"
+        "responsive-layout.desktop#carousselserv",
+        "responsive-layout.mobile#carousselserv"
       ],
       "props": {
         "blockClass":"caroussel"
       }
     },
-
-
+    "responsive-layout.desktop#carousselserv":{
+        "children": [
+        "flex-layout.row#servcarou",
+        "flex-layout.row#paicaroussel"]
+    },
+  
+    "responsive-layout.mobile#carousselserv":{
+        "children": [
+            "flex-layout.row#servcarou",
+            "flex-layout.row#paicaroussel"
+        ]
+    },
+    "flex-layout.row#paicaroussel":{
+        "children": [
+        "flex-layout.row#caroussel"],
+        "props": {
+            "blockClass":"carousell"
+        }
+    },
+    //--------chamando o titulo-------------///
+    "flex-layout.row#servcarou":{
+        "children": [
+            "rich-text#caroulssel"
+        ],
+        "props": {
+            "blockClass":"caroussell"
+        }
+    },
+    "rich-text#caroulssel": { // Título -caroulsel - Desktop
+        "props": {
+            "blockClass": "regionsTitle",
+            "text": "Venha conhecer alguns de nossos serviços",
+            "font": "t-heading-1",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
    //---- chamando o slider----///
     "flex-layout.row#caroussel": {
           "children": [
@@ -22,6 +58,13 @@
    //---- listagem da quantidade de botões que teremos----///
         "slider-layout#home":{
             "children":[  
+                "tab-layout#header1",
+                "tab-layout#header2",
+                "tab-layout#header3",
+                "tab-layout#header1",
+                "tab-layout#header1",
+                "tab-layout#header1",
+                "tab-layout#header1",
                 "tab-layout#header1"
             ],
             "props":{
@@ -72,19 +115,138 @@
         
       "image#containerCaroussel1": { // Imagem do banner container
         "props": {
-          "blockClass": "cover",
-          "width": 150,
-          "height":150,
-          "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
+          "blockClass": "caroussel",
+          "width": 55,
+          "height":55,
+          "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Business-Application_48.07da8d44cd6f680510a452ad25fbe72534d670c7.png"
         }
       },
       "rich-text#containerCarrousel":{
         "props": { 
             "blockClass": "containerCaroussel",
-            "text": "O que é um container?"
+            "text": "Serviços em destaque"
 
           }
-      }
+      },
+
+        /// ----- definindo segundo botão --------///
+        "tab-layout#header2":{
+    
+            "children":[
+            "tab-list#caroussel2"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+    },
+//---- criando o segundo botão------//
+        "tab-list#caroussel2":{
+            "children": [
+                "tab-list.item.children#home2"
+            ],
+            "props":{
+            "defaultActiveTab":0
+            }
+
+        },
+
+        "tab-list.item.children#home2":{
+            "props":{
+                "defaultActiveTab":0,
+                "blockClass":"caroussel"
+            },
+            "children": ["flex-layout.col#buttoncaroussel2"]    
+        },
+        "flex-layout.col#buttoncaroussel2":{
+            "children": [ "link#containercaroussel2"]
+        },
+
+        "link#containercaroussel2":{   /// imagem e texto dentro do botão
+            "children": [ 
+                "image#containerCaroussel2",
+                "rich-text#containerCarrouse2"
+                ],
+            "props":{
+                "blockClass":"caroussel"
+            }
+        },
+
+        "image#containerCaroussel2": { // Imagem do banner container
+        "props": {
+        "blockClass": "caroussel",
+        "width": 55,
+        "height":55,
+        "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Analytics_48_Beta-Test.a17050b6302d5cbbb261392059eae7bd5f71d221.png"
+        }
+        },
+        "rich-text#containerCarrouse2":{
+        "props": { 
+            "blockClass": "containerCaroussel",
+            "text": "Estruturas de Análises"
+
+        }
+        },
+                /// ----- definindo terceiro botão --------///
+                "tab-layout#header3":{
+    
+                    "children":[
+                    "tab-list#caroussel3"
+                    ],
+                    "props":{
+                        "blockClass":"caroussel"
+                }
+            },
+        //---- criando o segundo botão------//
+                "tab-list#caroussel3":{
+                    "children": [
+                        "tab-list.item.children#home3"
+                    ],
+                    "props":{
+                    "defaultActiveTab":0
+                    }
+        
+                },
+        
+                "tab-list.item.children#home3":{
+                    "props":{
+                        "defaultActiveTab":0,
+                        "blockClass":"caroussel"
+                    },
+                    "children": ["flex-layout.col#buttoncaroussel3"]    
+                },
+                "flex-layout.col#buttoncaroussel3":{
+                    "children": [ "link#containercaroussel3"]
+                },
+        
+                "link#containercaroussel3":{   /// imagem e texto dentro do botão
+                    "children": [ 
+                        "image#containerCaroussel3",
+                        "rich-text#containerCarrouse3"
+                        ],
+                    "props":{
+                        "blockClass":"caroussel"
+                    }
+                },
+        
+                "image#containerCaroussel3": { // Imagem do banner container
+                "props": {
+                "blockClass": "caroussel",
+                "width": 55,
+                "height":55,
+                "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Cost-Management_48.c5cf85dc4e0be655bd039f97c39f2f2467146762.png"
+                }
+                },
+                "rich-text#containerCarrouse3":{
+                "props": { 
+                    "blockClass": "containerCaroussel",
+                    "text": "Gerenciamento financeiro"
+        
+                }
+                }
+        
+
+
+      
       }
 
 
