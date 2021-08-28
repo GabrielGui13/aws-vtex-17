@@ -1,0 +1,430 @@
+{
+    "store.home": {
+        "blocks": [
+            "responsive-layout.desktop#container",
+            "responsive-layout.mobile#container"
+        ]
+    },
+    // DESKTOP //
+    "responsive-layout.desktop#container": {
+        "children": [
+            "rich-text#container-solutions",
+            "rich-text#container-sectors",
+            "flex-layout.row#line-sectors",
+            "link#container-all-sectors",
+            "rich-text#container-technologies",
+            "flex-layout.row#line-technologies",
+            "link#container-all-solutions"
+        ]
+    },
+    "rich-text#container-solutions": { //  TEXTO-TÍTULO-PRINCIPAL DAS SOLUTIONS
+        "props": {
+            "text": "### Confira as soluções",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "textColor": "#232f3e",
+            "font": "arial, sans serif" //  REVER: FONT AMAZON?
+        }
+    },
+    "rich-text#container-sectors": { //  TEXTO-TÍTULO DA LINHA SECTORS
+        "props": {
+            "text": "#### **Por setor**",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "#232f3e",
+            "font": "arial, sans serif" //REVER: FONT AMAZON?
+        }
+    },
+    "flex-layout.row#line-sectors": { //  LINHA DA PARTE DE SECTORS COM SUAS RESPECTIVAS COLUNAS
+        "children": [
+            "link#sectors-1",
+            "link#sectors-2",
+            "link#sectors-3",
+            "link#sectors-4"
+            ],
+        "props": {
+            "blockClass": "solutions-line"
+        }
+    },
+    "link#sectors-1": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 1
+        "children": [
+            "flex-layout.col#container-sectors-text-1"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-sectors-text-1": { //  PRIMEIRA COLUNA DA LINHA DE SECTORS
+        "children": [
+            "image#sectors-img-1",
+            "rich-text#sectors-title-1",
+            "rich-text#sectors-content-1",
+            "link#sectors-more-1"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#sectors-img-1": {  //  IMAGEM DO CONTAINER SECTORS 1
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/610/thumb/s1.png?1630157854",
+            "maxHeight": "60px",
+            "title": "AWS-Category-Icon_Digital-Marketing_60_Left-Aligned",
+            "alt": "AWS-Category-Icon_Digital-Marketing_60_Left-Aligned"
+        }
+    },
+    "rich-text#sectors-title-1": {
+         "props": {
+            "text": "Publicidade e marketing",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#sectors-content-1": {
+        "props": {
+            "text": "Obtenha economia para análises em escala de petabyte e cargas de trabalho de latência de um dígito em milissegundos.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#sectors-more-1": {},
+    "link#sectors-2": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 2
+        "children": [
+            "flex-layout.col#container-sectors-text-2"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-sectors-text-2": { //  SEGUNDA COLUNA DA LINHA DE SECTORS
+        "children": [
+            "image#sectors-img-2",
+            "rich-text#sectors-title-2",
+            "rich-text#sectors-content-2",
+            "link#sectors-more-2"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#sectors-img-2": {  //  IMAGEM DO CONTAINER SECTORS 2
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/616/thumb/s2.png?1630158182",
+            "maxHeight": "60px",
+            "title": "60-analytics",
+            "alt": "60-analytics"
+        }
+    },
+    "rich-text#sectors-title-2": {
+        "props": {
+            "text": "Serviços financeiros",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#sectors-content-2": {
+        "props": {
+            "text": "Baixo custo. Alta resiliência. Explore as soluções da AWS em serviços bancários, pagamentos, mercados de capital e seguros.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#sectors-more-2": {},
+    "link#sectors-3": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 3
+        "children": [
+            "flex-layout.col#container-sectors-text-3"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-sectors-text-3": { //  TERCEIRA COLUNA DA LINHA DE SECTORS
+        "children": [
+            "image#sectors-img-3",
+            "rich-text#sectors-title-3",
+            "rich-text#sectors-content-3",
+            "link#sectors-more-3"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#sectors-img-3": {  //  IMAGEM DO CONTAINER SECTORS 3
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/668/thumb/s3.png?1630160882",
+            "maxHeight": "60px",
+            "title": "AWS-Category-Icon_Gaming_60_Left-Aligned",
+            "alt": "AWS-Category-Icon_Gaming_60_Left-Aligned"
+        }
+    },
+    "rich-text#sectors-title-3": {
+        "props": {
+            "text": "Tecnologia de jogos",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#sectors-content-3": {
+        "props": {
+            "text": "Crie jogos computacionalmente simples em todos os gêneros e plataformas.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#sectors-more-3": {},
+    "link#sectors-4": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 4
+        "children": [
+            "flex-layout.col#container-sectors-text-4"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-sectors-text-4": { //  QUARTA COLUNA DA LINHA DE SECTORS
+        "children": [
+            "image#sectors-img-4",
+            "rich-text#sectors-title-4",
+            "rich-text#sectors-content-4",
+            "link#sectors-more-4"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#sectors-img-4": {  //  IMAGEM DO CONTAINER SECTORS 4
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/709/thumb/s4.png?1630163372",
+            "maxHeight": "60px",
+            "title": "AWS-Category-Icon_Media-&-Entertainment_60_Left-Aligned",
+            "alt": "AWS-Category-Icon_Media-&-Entertainment_60_Left-Aligned"
+        }
+    },
+    "rich-text#sectors-title-4": {
+        "props": {
+            "text": "Mídia e entretenimento",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#sectors-content-4": {
+        "props": {
+            "text": "Da criação à distribuição de conteúdo, soluções de mídia criadas especificamente para que sua empresa mude com mais inteligência e eficiência.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#sectors-more-4": {},
+    "link#container-all-sectors": { //  TEXTO-LINK PARA REDIRECIONAMENTO DO ALL SECTORS (PARA EXIBIR TODOS OS SETORES)
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Exibir todos os setores >>"
+        }
+    },
+    "rich-text#container-technologies": { //  TEXTO-TÍTULO DA LINHA TECHNOLOGIES
+        "props": {
+            "text": "#### **Por categoria de tecnologia**",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "#232f3e",
+            "font": "arial, sans serif" //REVER: FONT AMAZON?
+        }
+    },
+    "flex-layout.row#line-technologies": { //  LINHA DA PARTE DE TECHNOLOGIES COM SUAS RESPECTIVAS COLUNAS
+        "children": [
+            "link#technologies-1",
+            "link#technologies-2",
+            "link#technologies-3",
+            "link#technologies-4"
+            ],
+        "props": {
+            "blockClass": "solutions-line"
+        }
+    },
+    "link#technologies-1": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECHNOLOGIES 1
+        "children": [
+            "flex-layout.col#container-technologies-text-1"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-technologies-text-1": { // PRIMEIRA COLUNA DA LINHA DE TECHNOLOGIES
+        "children": [
+            "image#technologies-img-1",
+            "rich-text#technologies-title-1",
+            "rich-text#technologies-content-1",
+            "link#technologies-more-1"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#technologies-img-1": { // IMAGEM DO CONTAINER TECHNOLOGIES 1
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/520/thumb/t1.png?1630152448",
+            "maxHeight": "60px",
+            "title": "60-analytics",
+            "alt": "60-analytics"
+        }
+    },
+    "rich-text#technologies-title-1": {
+        "props": {
+            "text": "Análises e data lakes",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#technologies-content-1": {
+        "props": {
+            "text": "Armazene, categorize e analise todos os dados com segurança, em um único repositório centralizado.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#technologies-more-1": {},
+    "link#technologies-2": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECNOLOGIA 2
+        "children": [
+            "flex-layout.col#container-technologies-text-2"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-technologies-text-2": { //  SEGUNDA COLUNA DA LINHA DE TECHNOLOGIES
+        "children": [
+            "image#technologies-img-2",
+            "rich-text#technologies-title-2",
+            "rich-text#technologies-content-2",
+            "link#technologies-more-2"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#technologies-img-2": { // IMAGEM DO CONTAINER TECHNOLOGIES 2
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/553/thumb/t2.png?1630154233",
+            "maxHeight": "60px",
+            "title": "60-machine-learning",
+            "alt": "60-machine-learning"
+        }
+    },
+    "rich-text#technologies-title-2": {
+        "props": {
+            "text": "Machine Learning",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#technologies-content-2": {
+        "props": {
+            "text": "Crie usando serviços e plataformas potentes, assim como o mais amplo suporte a estruturas de trabalho de machine learning em qualquer lugar.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#technologies-more-2": {},
+    "link#technologies-3": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECNOLOGIA 1
+        "children": [
+            "flex-layout.col#container-technologies-text-3"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-technologies-text-3": { //  TERCEIRA COLUNA DA LINHA DE TECHNOLOGIES
+        "children": [
+            "image#technologies-img-3",
+            "rich-text#technologies-title-3",
+            "rich-text#technologies-content-3",
+            "link#technologies-more-3"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#technologies-img-3": { // IMAGEM DO CONTAINER TECHNOLOGIES 3
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/556/thumb/t3.png?1630154364",
+            "maxHeight": "60px",
+            "title": "60-Serverless",
+            "alt": "60-Serverless"
+        }
+    },
+    "rich-text#technologies-title-3": {
+        "props": {
+            "text": "Computação sem servidor",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#technologies-content-3": {
+        "props": {
+            "text": "Crie e execute aplicações e serviços sem se preocupar com servidores.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#technologies-more-3": {},
+    "link#technologies-4": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECNOLOGIA 1
+        "children": [
+            "flex-layout.col#container-technologies-text-4"
+        ],
+        "props": {
+            "href": "#" // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+        }
+    },
+    "flex-layout.col#container-technologies-text-4": { //  QUARTA COLUNA DA LINHA DE TECHNOLOGIES
+        "children": [
+            "image#technologies-img-4",
+            "rich-text#technologies-title-4",
+            "rich-text#technologies-content-4",
+            "link#technologies-more-4"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "solutions-columns"
+        }
+    },
+    "image#technologies-img-4": { // IMAGEM DO CONTAINER TECHNOLOGIES 4
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/403/560/thumb/t4.png?1630154691",
+            "maxHeight": "60px",
+            "title": "60-storage",
+            "alt": "60-storage"
+        }
+    },
+    "rich-text#technologies-title-4": {
+        "props": {
+            "text": "Armazenamento",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#technologies-content-4": {
+        "props": {
+            "text": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "link#technologies-more-4": {},
+    "link#container-all-solutions": {  //  TEXTO-LINK PARA REDIRECIONAMENTO DO ALL SOLUCTIONS (PARA EXIBIR TODAS AS SOLUÇÕES)
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Exibir todas as soluções >>"
+        }
+    },
+
+    // MOBILE //
+    "responsive-layout.mobile#container": {
+        "children": []
+    }
+}
