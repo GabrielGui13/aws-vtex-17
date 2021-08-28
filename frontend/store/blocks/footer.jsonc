@@ -73,7 +73,7 @@
 
   "link#footersm1":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "O que é a AWS?",
         "blockClass":"linkfooter"
       }
@@ -81,7 +81,7 @@
 
     "link#footersm2":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "O que é a computação em nuvem?",
         "blockClass":"linkfooter"
       }
@@ -89,14 +89,14 @@
 
     "link#footersm3":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "O que é o DevOps?",
         "blockClass":"linkfooter"
       }
     },
     "link#footersm4":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "O que é um contêiner?",
         "blockClass":"linkfooter"
       }
@@ -123,7 +123,7 @@
 
     "link#footerr1":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "Conceitos básicos",
           "blockClass":"linkfooter"
         }
@@ -131,7 +131,7 @@
 
       "link#footerr2":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "Treinamento e cetificações",
           "blockClass":"linkfooter"
         }
@@ -139,14 +139,14 @@
 
       "link#footerr3":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "Portfólio de soluções da AWS",
           "blockClass":"linkfooter"
         }
       },
       "link#footerr4":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "Centro de arquitetura",
           "blockClass":"linkfooter"
         }
@@ -171,7 +171,7 @@
 
     "link#footed1":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "Centro de desenvolvimento",
           "blockClass":"linkfooter"
         }
@@ -179,7 +179,7 @@
 
        "link#footed2":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "SDKs e Ferramentas",
           "blockClass":"linkfooter"
         }
@@ -187,7 +187,7 @@
 
       "link#footed3":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": ".Net na AWS",
           "blockClass":"linkfooter"
         }
@@ -195,7 +195,7 @@
 
       "link#footed4":{
         "props": {
-          "href": "#",
+          "href": "",
           "label": "Python na AWS",
           "blockClass":"linkfooter"
         }
@@ -221,7 +221,7 @@
 
       "link#footea1":{
           "props": {
-            "href": "#",
+            "href": "",
             "label": "Entre em contato conosco",
             "blockClass":"linkfooter"
           }
@@ -229,7 +229,7 @@
 
         "link#footea2":{
           "props": {
-            "href": "#",
+            "href": "",
             "label": "Carreiras da AWS",
             "blockClass":"linkfooter"
           }
@@ -237,7 +237,7 @@
 
         "link#footea3":{
           "props": {
-            "href": "#",
+            "href": "",
             "label": "Crie um tíquete de suporte",
             "blockClass":"linkfooter"
           }
@@ -245,7 +245,7 @@
 
         "link#footea4":{
           "props": {
-            "href": "#",
+            "href": "",
             "label": "Central de conhecimento",
             "blockClass":"linkfooter"
           }
@@ -346,7 +346,7 @@
     
     "link#deutsh":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "Deutsch",
         "blockClass":"linkfooter"
       }
@@ -359,7 +359,7 @@
   },
     "link#english":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "English",
         "blockClass":"linkfooter"
       }
@@ -372,7 +372,7 @@
   },
     "link#français":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "français",
         "blockClass":"linkfooter"
       }
@@ -387,7 +387,7 @@
 
     "link#portugues":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": "Portugues",
         "blockClass":"linkfooter"
       }
@@ -403,7 +403,7 @@
 
     "link#russo":{
       "props": {
-        "href": "#",
+        "href": "",
         "label": " Ρусский",
         "blockClass":"linkfooter"
       }

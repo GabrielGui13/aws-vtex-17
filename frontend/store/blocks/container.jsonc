@@ -12,7 +12,8 @@
     "children": [
       "stack-layout#container",
       "flex-layout.row#container",
-      "flex-layout.row#iconsComplete"
+      "flex-layout.row#containerIcons",
+      "search-result-layout.customQuery#container"
     ]
   },
   "stack-layout#container": { // Banner container com CTA button
@@ -93,25 +94,113 @@
     }
   },
   // parte dos icones de baixo do container
-  "flex-layout.row#iconsComplete": {
+  "flex-layout.row#containerIcons": {
     "children": [
-      "image#containerIcon1",
-      "rich-text#containerIconText1"
+      "flex-layout.col#icon1",
+      "flex-layout.col#icon2",
+      "flex-layout.col#icon3"
     ],
     "props": {
-      "width": "100%" 
+      "width": "90%",
+      "blockClass": "containerIcons"
+    }
+  },
+  "flex-layout.col#icon1": { //icon 1 services
+    "children": [
+      "image#containerIcon1",
+      "rich-text#containerIconTitle1",
+      "rich-text#containerIconDesc1"
+    ],
+    "props": {
+      "blockClass": "iconCol"
     }
   },
   "image#containerIcon1": {
     "props": {
-      "src": ""
+      "src": "https://uploaddeimagens.com.br/images/003/402/307/thumb/foto_de_services.png?1630078127",
+      "blockClass": "iconImg"
     }
   },
-  "rich-text#containerIconText1": {
+  "rich-text#containerIconTitle1": {
     "props": {
-      "text": "Teste"
+      "text": "###### **Visite a página de serviços**",
+      "blockClass": "iconColTitle"
     }
   },
+  "rich-text#containerIconDesc1": {
+    "props": {
+      "text": "Saiba mais como executar containers na AWS."
+    }
+  },
+  "flex-layout.col#icon2": { //icon 2 cadastro
+    "children": [
+      "image#containerIcon2",
+      "rich-text#containerIconTitle2",
+      "rich-text#containerIconDesc2"
+    ],
+    "props": {
+      "blockClass": "iconCol"
+    }
+  },
+  "image#containerIcon2": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/003/402/192/full/foto_de_cadastro.png?1630074978",
+      "blockClass": "iconImg"
+    }
+  },
+  "rich-text#containerIconTitle2": {
+    "props": {
+      "text": "###### **Cadastre-se para obter uma conta gratuita**",
+      "blockClass": "iconColTitle"
+    }
+  },
+  "rich-text#containerIconDesc2": {
+    "props": {
+      "text": "Obtenha acesso instantâneo ao nível gratuito da AWS."
+    }
+  },
+  "flex-layout.col#icon3": { //icon 3 ferramentas
+    "children": [
+      "image#containerIcon3",
+      "rich-text#containerIconTitle3",
+      "rich-text#containerIconDesc3"
+    ],
+    "props": {
+      "blockClass": "iconCol"
+    }
+  },
+  "image#containerIcon3": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/003/402/309/thumb/foto_de_ferramentas.png?1630078177",
+      "blockClass": "iconImg"
+    }
+  },
+  "rich-text#containerIconTitle3": {
+    "props": {
+      "text": "###### **Comece a criar com containers**",
+      "blockClass": "iconColTitle"
+    }
+  },
+  "rich-text#containerIconDesc3": {
+    "props": {
+      "text": "Saiba como começar a usar containers na AWS."
+    }
+  },
+  "search-result-layout.customQuery#container": {
+    "blocks": [
+      "search-result-layout.desktop"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByPriceASC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 1,
+        "queryField": "contai"
+      }
+    }
+  },
+
+
 
   // ******** MOBILE ******** //
 

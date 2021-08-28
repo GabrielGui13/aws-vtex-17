@@ -4,6 +4,7 @@ import { method, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { write } from './middlewares/write'
 import { read } from './middlewares/read'
+import { updateClient } from './middlewares/updateClient'
 
 const TIMEOUT_MS = 800
 
@@ -27,6 +28,9 @@ export default new Service({
     database: method({
       GET: [read],
       POST: [write],
+    }),
+    databaseParams: method({
+      PUT: [updateClient],
     }),
   },
 })
