@@ -29,15 +29,18 @@
       "fullWidth": true
     },
     "children": [
+      "flex-layout.col#spacer1",
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
+      "flex-layout.col#spacer2",
       "search-bar",
-      "locale-switcher",
+      "flex-layout.col#spacer3",
       "login",
-      "minicart.v2"
+      "flex-layout.col#spacer4",
+      "minicart.v2",
+      "flex-layout.col#spacer5"      
     ]
   },
-  "flex-layout.col#spacer": {
+  "flex-layout.col#spacer1": {
     "props": {
       "width": "grow"
     }
@@ -47,6 +50,26 @@
       "verticalAlign": "middle"
     },
     "children": ["logo"]
+  },
+  "flex-layout.col#spacer2": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#spacer3": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#spacer4": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#spacer5": {
+    "props": {
+      "width": "grow"
+    }
   },
   "logo": {
     "props": {
@@ -93,7 +116,9 @@
   },
   "flex-layout.row#desktop2": { // linha do menu dropdown
     "props": {
-      "blockClass": "menu-header-aws"
+      "blockClass": "menu-header-aws",
+      "fullWidth": true,
+      "horizontalAlign": "center"
     },
     "children": [
       "vtex.menu@2.x:menu#category-menu"

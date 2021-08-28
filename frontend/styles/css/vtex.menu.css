@@ -9,8 +9,10 @@
     color: #f8991d;
 }
 
-.menuContainer--dropdown-menu {
+.menuContainer--dropdown-menu { /* Menu de categorias */
     background-color: #232f3e;
+    align-items: center;
+    justify-content: center;
 }
 
 .submenuWrapper {

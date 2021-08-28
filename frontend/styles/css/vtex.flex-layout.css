@@ -1,15 +1,12 @@
 /***** HEADER e MENU *****/
-.flexRowContent--header-aws {
+.flexRowContent--header-aws { /* menu superior */
     align-items: center;
     background-color: #232f3e;
 }
 
-.flexRow--menu-header-aws {
+.flexRow--menu-header-aws { /* menu de categorias */
     align-items: center;
     background-color: #232f3e;
-    width: 100%;
-    padding-left: 0;
-    margin-left: 0;
 }
 
 .flexRowContent--main-header-mobile {
