@@ -106,3 +106,19 @@
     font-weight: bold;
     font-size: 18px;
 }
+
+/* carrousel serviços*/
+.paragraph--containerCarrousel{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: unset;
+}
+.wrapper--containerCaroussel{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: unset;
+}

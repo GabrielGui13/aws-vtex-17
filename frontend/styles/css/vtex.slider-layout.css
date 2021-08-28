@@ -6,6 +6,7 @@
     opacity: 0;
 }
 .caretIcon{
-    color:rgba(34, 72, 143, 0.452);
+    color:rgba(34, 72, 143);
     max-width:25px;
+    margin-bottom: 20px;
 }

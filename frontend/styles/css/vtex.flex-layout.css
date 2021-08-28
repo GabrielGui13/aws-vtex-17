@@ -105,6 +105,17 @@
 
 /*** slider***/
 .flexRow--caroussel{
-    max-width:50vw;
+    max-width:70vw;
     margin:auto;
 }
+.flexRow--carousell{
+   background-color:rgb(255, 255, 255);
+   height:300px;
+   align-items: center;
+   display: flex;
+}
+.flexRow--caroussell{
+    background-color:rgb(255, 255, 255);
+    padding-top:20px;
+ }
+ 

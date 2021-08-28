@@ -1,7 +1,7 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#caroussel",
+      "responsive-layout.desktop#carousselserv",
       "responsive-layout.desktop#patro",
       "responsive-layout.mobile#patro1",
       "responsive-layout.desktop#regions",
