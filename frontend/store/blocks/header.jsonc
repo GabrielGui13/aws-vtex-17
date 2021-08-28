@@ -107,7 +107,15 @@
     "children": [ // CATEGORIAS
       "menu-item#produtos",
       "menu-item#quem-somos",
-      "menu-item#definicao-de-preco"
+      "menu-item#solucoes",
+      "menu-item#definicao-de-preco",
+      "menu-item#documentacao",
+      "menu-item#aprenda",
+      "menu-item#rede-de-parceiros",
+      "menu-item#aws-marketplace",
+      "menu-item#capacitacao-de-clientes",
+      "menu-item#eventos",
+      "menu-item#explore-mais"
     ]
   },
   "menu-item#produtos": { // MENU ITEM - PRODUTOS
@@ -191,21 +199,6 @@
         "noFollow": true,
         "tagTitle": "Migração Para a Nuvem AWS",
         "text": "Migração Para a Nuvem AWS"
-      }
-    }
-  },
-  "menu-item#quem-somos": { // MENU ITEM - QUEM SOMOS
-    "props": {
-      "id": "quem-somos",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "Quem Somos",
-        "text": "Quem Somos"
       }
     }
   },
@@ -359,9 +352,9 @@
       }
     }
   },
-  "menu-item#definicao-de-preco": { // MENU ITEM - DEFINIÇÃO DE PREÇO
-    "props": {
-      "id": "definicao-de-preco",
+  "menu-item#solucoes": { // MENU ITEM - SOLUÇÕES
+   "props": {
+      "id": "solucoes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -369,15 +362,89 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Definição de Preço",
-        "text": "Definição de Preço"
+        "tagTitle": "Soluções",
+        "text": "Soluções"
       }
     },
-    "blocks": [ "vtex.menu@2.x:submenu#definicao-de-preco" ] // DECLARAÇÃO SUBMENU - DEFINIÇÃO DE PREÇO
+    "blocks": [ "vtex.menu@2.x:submenu#solucoes" ] // DECLARAÇÃO SUBMENU - SOLUÇÕES
   },
-   "vtex.menu@2.x:submenu#definicao-de-preco": { // Criação do block menu para servir de submenu
-    "children": ["vtex.menu@2.x:menu#definicao-de-preco"]
+"vtex.menu@2.x:submenu#solucoes": { // Criação do block menu para servir de submenu
+  "children": ["vtex.menu@2.x:menu#solucoes"]
+},
+"vtex.menu@2.x:menu#solucoes": { // SUBMENU DA CATEGORIA SOLUÇÕES
+  "props": {
+    "orientation": "vertical"
   },
+  "children": [ // itens da categoria soluções
+    "menu-item#por-caso-de-uso",
+    "menu-item#por-setor",
+    "menu-item#por-tipo-de-organizacao"
+  ]
+},
+"menu-item#por-caso-de-uso": { // SUBITEM DO MENU SOLUÇÕES - POR CASO DE USO
+  "props": {
+    "id": "por-caso-de-uso",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Por Caso de Uso",
+      "text": "Por Caso de Uso"
+    }
+  }
+},
+"menu-item#por-setor": { // SUBITEM DO MENU SOLUÇÕES - POR SETOR
+  "props": {
+    "id": "por-setor",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Por Setor",
+      "text": "Por Setor"
+    }
+  }
+},
+"menu-item#por-tipo-de-organizacao": { // SUBITEM DO MENU SOLUÇÕES - POR TIPO DE ORGANIZAÇÃO
+  "props": {
+    "id": "por-tipo-de-organizacao",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Por Tipo de Organização",
+      "text": "Por Tipo de Organização"
+    }
+  }
+},
+"menu-item#definicao-de-preco": { // MENU ITEM - DEFINIÇÃO DE PREÇO
+  "props": {
+    "id": "definicao-de-preco",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Definição de Preço",
+      "text": "Definição de Preço"
+    }
+  },
+  "blocks": [ "vtex.menu@2.x:submenu#definicao-de-preco" ] // DECLARAÇÃO SUBMENU - DEFINIÇÃO DE PREÇO
+},
+ "vtex.menu@2.x:submenu#definicao-de-preco": { // Criação do block menu para servir de submenu
+  "children": ["vtex.menu@2.x:menu#definicao-de-preco"]
+},
    "vtex.menu@2.x:menu#definicao-de-preco": { // SUBMENU DA CATEGORIA DEFINIÇÃO DE PREÇO
     "props": {
       "orientation": "vertical"
@@ -399,7 +466,6 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "image": "",
         "tagTitle": "Saiba mais sobre a definação preço da AWS",
         "text": "Saiba mais sobre a definação preço da AWS"
       }
@@ -415,7 +481,6 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "image": "",
         "tagTitle": "Nível gratuito da AWS",
         "text": "Nível gratuito da AWS"
       }
@@ -431,7 +496,6 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "image": "",
         "tagTitle": "AWS Pricing Calculator",
         "text": "AWS Pricing Calculator"
       }
@@ -447,9 +511,128 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "image": "",
         "tagTitle": "Otimize Seus Custos",
         "text": "Otimize Seus Custos"
+      }
+    }
+  },
+  "menu-item#quem-somos": { // MENU ITEM - QUEM SOMOS
+    "props": {
+      "id": "quem-somos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      }
+    }
+  },
+  "menu-item#documentacao": { // MENU ITEM - DOCUMENTAÇÃO
+    "props": {
+      "id": "documentacao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Documentação",
+        "text": "Documentação"
+      }
+    }
+  },
+  "menu-item#aprenda": { // MENU ITEM - APRENDA
+    "props": {
+      "id": "aprenda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Aprenda",
+        "text": "Aprenda"
+      }
+    }
+  },
+  "menu-item#rede-de-parceiros": { // MENU ITEM - REDE DE PARCEIROS
+    "props": {
+      "id": "rede-de-parceiros",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Rede de Parceiros",
+        "text": "Rede de Parceiros"
+      }
+    }
+  },
+  "menu-item#aws-marketplace": { // MENU ITEM - AWS MARKETPLACE
+    "props": {
+      "id": "aws-marketplace",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "AWS Marketplace",
+        "text": "AWS Marketplace"
+      }
+    }
+  },
+  "menu-item#capacitacao-de-clientes": { // MENU ITEM - CAPACITAÇÃO DE CLIENTES
+    "props": {
+      "id": "capacitacao-de-clientes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Capacitação de Clientes",
+        "text": "Capacitação de Clientes"
+      }
+    }
+  },
+  "menu-item#eventos": { // MENU ITEM - EVENTOS
+    "props": {
+      "id": "eventos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Eventos",
+        "text": "Eventos"
+      }
+    }
+  },
+  "menu-item#explore-mais": { // MENU ITEM - EXPLORE MAIS
+    "props": {
+      "id": "explore-mais",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Explore Mais",
+        "text": "Explore Mais"
       }
     }
   }
