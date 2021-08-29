@@ -91,6 +91,7 @@
      "image#logo":{
        "props":{
          "blockClass":"imageCadastro",
+         "heigth":800,
          "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
        }
      }

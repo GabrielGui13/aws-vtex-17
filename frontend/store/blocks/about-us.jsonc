@@ -1,7 +1,8 @@
 {
     "store.custom#aboutus":{
        "blocks": [
-           "flex-layout.row#deskaboutus1"
+           "flex-layout.row#deskaboutus1",
+           "flex-layout.row#mapaabout"
          ]
         },
         //---definindo primeiro bloco----///
@@ -63,5 +64,73 @@
           "blockClass": "videoEl",
           "poster":"https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg"
         }
-      }
+      },
+
+
+
+//-------- bloco 2 regions gif---------///
+
+    // ******** DESKTOP ******** //
+    "flex-layout.row#mapaabout":{
+        "children":[
+            "flex-layout.col#mapaabout"
+        ],
+        "props":{
+            "blockClass":"maparow"    
+        }
+    },
+    "flex-layout.col#mapaabout": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#mapa1",
+            "flex-layout.row#mapa2",
+            "flex-layout.row#mapa3"
+        ],
+        "props":{
+            "blockClass":"maparow"    
+        }
+        
+    },
+    "flex-layout.row#mapa1": { // Linha do Título - Regions - Desktop
+        "children": [
+            "rich-text#mapaTitle"
+        ]
+    },
+    "rich-text#mapaTitle": { // Título - Regions - Desktop
+        "props": {
+            "blockClass": "mapaTitle",
+            "text": "Rede global de regiões da AWS",
+            "font": "t-heading-1",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#mapa2": { // Linha do Subtítulo - Regions - Desktop
+        "children": [
+            "rich-text#mapaSubTitle"
+        ]
+    },
+    "rich-text#mapaSubTitle": { // Subtítulo - Regions - Desktop
+        "props": {
+            "blockClass": "mapaSubTitle",
+            "text": "A AWS tem a mais extensa infraestrutura de nuvem global. Nenhum outro provedor de nuvem oferece tantas regiões com múltiplas Zonas de Disponibilidade conectadas por redes altamente redundantes com baixa latência e alta taxa de transferência. A AWS tem 81 Zonas de Disponibilidade em 25 regiões geográficas em todo o mundo e anunciou planos para mais 21 Zonas de Disponibilidade e mais 7 regiões da AWS na Austrália, Emirados Árabes Unidos (EAU), Espanha, Índia, Indonésia, Israel, e Suíça. O modelo de região e Zona de Disponibilidade da AWS foi reconhecido pela Gartner como a abordagem recomendada para a execução de aplicações empresariais que exigem alta disponibilidade.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#mapa3": { // Linha da Imagem - Regions - Desktop
+        "children": [
+            "image#mapa"
+        ],
+        "props": {
+            "blockClass": "imageAboutRow"
+        }
+    },
+    "image#mapa": { // Imagem - Regions - Desktop
+        "props": {
+            "blockClass": "image-mapa",
+            "src": "https://s9.gifyu.com/images/mapagif.gif",
+            "width": "90%",
+            "height": "auto"
+        }
+    }
 }

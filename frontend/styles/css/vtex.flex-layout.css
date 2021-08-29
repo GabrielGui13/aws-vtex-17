@@ -126,7 +126,8 @@
  /*** about us ***/
  
  .flexRow--about1{
-    background-image:url("https://uploaddeimagens.com.br/images/003/404/390/original/background.png?1630249843");
+    background-image:url("https://uploaddeimagens.com.br/images/003/404/710/original/background.png?1630269372");
+    background-color:#1d252f;
     background-repeat:no-repeat;
     background-size:cover;
     max-width: 100vw;
@@ -146,4 +147,12 @@
  }
  .flexColChild--about-video{
     padding-top:50px;
+ }
+ .flexRow--maparow{
+     background-color:#1d252f;
+     height: 100vh;
+ }
+ .flexRowContent--imageAboutRow{
+    display:flex;
+    margin:auto
  }

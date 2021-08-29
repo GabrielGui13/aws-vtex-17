@@ -41,3 +41,7 @@
 .imageElement--imagePatro:hover{
     filter: grayscale(0%);
 }
+/******* about us*********/
+.imageElement--image-mapa{
+   margin-left: 80px; 
+}
