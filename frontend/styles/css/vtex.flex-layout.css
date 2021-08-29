@@ -122,3 +122,28 @@
  .flexColChild--solutions-columns{
      background-color:white;
  }
+
+ /*** about us ***/
+ 
+ .flexRow--about1{
+    background-image:url("https://uploaddeimagens.com.br/images/003/404/390/original/background.png?1630249843");
+    background-repeat:no-repeat;
+    background-size:cover;
+    max-width: 100vw;
+    height:100vh;
+    align-items: center;
+ }
+ .flexRow--about11{
+    max-width: 1200px;
+    max-height:700px;
+    margin-top: 150px;
+    padding: 50px;
+    box-shadow:inset 0px 0px 10px rgba(255, 0, 212);
+ }
+
+ .flexColChild--aboutcontaineir1{
+     padding-right:40px;
+ }
+ .flexColChild--about-video{
+    padding-top:50px;
+ }

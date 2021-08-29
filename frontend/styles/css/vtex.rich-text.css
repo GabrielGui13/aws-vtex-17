@@ -134,3 +134,22 @@
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     text-decoration: unset;
 }
+
+/***** aboutus ******/
+.paragraph--about-Title{
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: unset;
+}
+.paragraph--about-subTitle{
+    color:white;
+    font-size: 15px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: unset;
+
+}
+.wrapper--about-Title{
+    height: 140px;
+}

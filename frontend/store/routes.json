@@ -10,5 +10,8 @@
   },
   "store.custom#cadastro": {
     "path": "/lead"
+  },
+  "store.custom#aboutus":{
+    "path":"about-us"
   }
 }
