@@ -1,8 +1,8 @@
-/***** CONTAINER DESKTOP *****/
+/***** PRODUCT PAGE DESKTOP *****/
 .link{
     text-decoration: unset;
 }
-.buttonLink--button-container { /* BOTÃO CTA CONTAINER DESKTOP */
+.buttonLink--button-productpage { /* BOTÃO CTA CONTAINER DESKTOP */
     background-color: #f7dfa5;
     color: #333333;
     font: 14px "Helvetica Neue", arial, sans-serif;
@@ -17,15 +17,15 @@
     margin-left: 190px;
 }
 
-.buttonLink--button-container:hover {
+.buttonLink--button-productpage:hover {
     background-color: #f3d078;
     color: #333333;
 }
 
 
-/***** CONTAINER MOBILE *****/
+/***** PRODUCT PAGE MOBILE *****/
 
-.buttonLink--button-containerMobile { /* BOTÃO CTA CONTAINER - MOBILE */
+.buttonLink--button-productpageMobile { /* BOTÃO CTA CONTAINER - MOBILE */
     background-color: #f7dfa5;
     color: #333333;
     font: 14px "Helvetica Neue", arial, sans-serif;

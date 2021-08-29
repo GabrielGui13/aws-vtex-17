@@ -162,28 +162,27 @@
       "orientation": "vertical"
     },
     "children": [ // itens da categoria produtos
-      "menu-item#container",
-      "menu-item#blockchain",
-      "menu-item#migracao-nuvem",
-      "menu-item#servicos-em-destaque",
-      "menu-item#analises",
-      "menu-item#integracao-de-aplicacoes",
-      "menu-item#gerenciamento-de-custos",
-      "menu-item#aplicacoes-empresariais",
-      "menu-item#computacao",
-      "menu-item#relacionamento",
+      "menu-item#conteineres",
+      "menu-item#ec2",
+      "menu-item#s3",
+      "menu-item#aurora",
+      "menu-item#dynamodb",
+      "menu-item#rds",
+      "menu-item#lambda",
+      "menu-item#vpc",
+      "menu-item#lightsail",
+      "menu-item#sagemaker",
       "menu-item#banco-de-dados",
       "menu-item#ferramentas-de-desenvolvedor",
+      "menu-item#game-tech",
       "menu-item#internet-das-coisas",
-      // inclusão 28/08 as 21:33 h
-      "menu-item#internet-das-coisas-acerto",
       "menu-item#machine-learning",
       "menu-item#gerenciamento-governanca",
       "menu-item#servico-midia",
       "menu-item#migracao-transferencia"
     ]
   },
-  "menu-item#container": { // SUBITEM DO MENU PRODUTOS - CONTAINER
+  "menu-item#conteineres": { // SUBITEM DO MENU PRODUTOS - CONTAINER
     "props": {
       "id": "container",
       "type": "custom",
@@ -193,44 +192,44 @@
         "type": "internal",
         "href": "/container",
         "noFollow": true,
-        "tagTitle": "Container",
+        "tagTitle": "Contêineres",
         "text": "Contêineres" 
       }
     }
   },
-  "menu-item#blockchain": { // SUBITEM DO MENU PRODUTOS - BLOCKCHAIN alterado p/ Amazon EC2
+  "menu-item#ec2": { // SUBITEM DO MENU PRODUTOS - EC2
     "props": {
-      "id": "blockchain",
+      "id": "ec2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/blockchain",
+        "href": "/ec2",
         "noFollow": true,
         "tagTitle": "Amazon EC2",
         "text": "Amazon EC2"
       }
     }
   },
-  "menu-item#migracao-nuvem": { // SUBITEM DO MENU PRODUTOS - MIGRAÇÃO PARA A NUVEM AWS alterado para Amazon Simple Storage Service (S3)
+  "menu-item#s3": { // SUBITEM DO MENU PRODUTOS - Amazon Simple Storage Service (S3)
     "props": {
-      "id": "migracao-nuvem",
+      "id": "s3",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cloud-migration",
+        "href": "/s3",
         "noFollow": true,
         "tagTitle": "Amazon Simple Storage Service (S3)",
         "text": "Amazon Simple Storage Service (S3)"
       }
     }
   },
-  "menu-item#servicos-em-destaque": { // SUBITEM DO MENU PRODUTOS - SERVIÇOS EM DESTAQUE alterado p/ Amazon Aurora
+  "menu-item#aurora": { // SUBITEM DO MENU PRODUTOS - Amazon Aurora
     "props": {
-      "id": "servicos-em-destaque",
+      "id": "aurora",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -243,9 +242,9 @@
       }
     }
   },
-  "menu-item#analises": { // SUBITEM DO MENU PRODUTOS - ANÁLISES alterado p/ Amazon DynamoDB
+  "menu-item#dynamodb": { // SUBITEM DO MENU PRODUTOS - Amazon DynamoDB
     "props": {
-      "id": "analises",
+      "id": "dynamodb",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -258,9 +257,9 @@
       }
     }
   },
-  "menu-item#integracao-de-aplicacoes": { // SUBITEM DO MENU PRODUTOS - INTEGRAÇÃO DE APLICAÇÕES para Amazon RDS
+  "menu-item#rds": { // SUBITEM DO MENU PRODUTOS - Amazon RDS
     "props": {
-      "id": "integracao-de-aplicacoes",
+      "id": "rde",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -273,9 +272,9 @@
       }
     }
   },
-  "menu-item#gerenciamento-de-custos": { // SUBITEM DO MENU PRODUTOS - GERENCIAMENTO DE CUSTOS alterado p/ Amazon Lambda
+  "menu-item#lambda": { // SUBITEM DO MENU PRODUTOS - Amazon Lambda
     "props": {
-      "id": "gerenciamento-de-custos",
+      "id": "lambda",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -288,9 +287,9 @@
       }
     }
   },
-  "menu-item#aplicacoes-empresariais": { // SUBITEM DO MENU PRODUTOS - APLICAÇÕES EMPRESARIAIS alterado p/ Amazon VPC
+  "menu-item#vpc": { // SUBITEM DO MENU PRODUTOS - Amazon VPC
     "props": {
-      "id": "aplicacoes-empresariais",
+      "id": "vpc",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -303,9 +302,9 @@
       }
     }
   },
-  "menu-item#computacao": { // SUBITEM DO MENU PRODUTOS - COMPUTAÇÃO alterado para Amazon Lightsail
+  "menu-item#lightsail": { // SUBITEM DO MENU PRODUTOS - Amazon Lightsail
     "props": {
-      "id": "computacao",
+      "id": "lightsail",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -318,9 +317,9 @@
       }
     }
   },
-  "menu-item#relacionamento": { // SUBITEM DO MENU PRODUTOS - RELACIONAMENTO para Amazon SageMaker
+  "menu-item#sagemaker": { // SUBITEM DO MENU PRODUTOS - Amazon SageMaker
     "props": {
-      "id": "relacionamento",
+      "id": "sagemaker",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -344,7 +343,7 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Banco de Dados",
-        "text": "Computação de usuário final"
+        "text": "Banco de Dados"
       }
     }
   },
@@ -359,13 +358,13 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Ferramentas de Desenvolvedor",
-        "text": "Web e plataforma móvel front-end"
+        "text": "Ferramentas de Desenvolvedor"
       }
     }
   },
-  "menu-item#internet-das-coisas": { // SUBITEM DO MENU PRODUTOS - INTERNET DAS COISAS
+  "menu-item#game-tech": { // SUBITEM DO MENU PRODUTOS - GAME TECH
     "props": {
-      "id": "internet-das-coisas",
+      "id": "game-tech",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -373,13 +372,13 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Internet das Coisas",
+        "tagTitle": "Game Tech",
         "text": "Game Tech"
       }
     }
   },
   // inclusão 28-08 as 21:33 Rubens
-  "menu-item#internet-das-coisas-acerto": { // SUBITEM DO MENU PRODUTOS - ACERTO INTERNET DAS COISAS
+  "menu-item#internet-das-coisas": { // SUBITEM DO MENU PRODUTOS - INTERNET DAS COISAS
     "props": {
       "id": "internet-das-coisas",
       "type": "custom",
@@ -396,7 +395,7 @@
   },
   "menu-item#machine-learning": { // SUBITEM DO MENU PRODUTOS - MACHINE LEARNING
     "props": {
-      "id": "internet-das-coisas",
+      "id": "machine-learning",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -411,7 +410,7 @@
   },
   "menu-item#gerenciamento-governanca": { // SUBITEM DO MENU PRODUTOS - GERENCIAMENTO E GOVERNANÇA
     "props": {
-      "id": "internet-das-coisas",
+      "id": "gerenciamento-governanca",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -419,14 +418,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Gerenciamento e Governanca",
-        "text": "Gerenciamento e governança"
+        "tagTitle": "Gerenciamento e Governança",
+        "text": "Gerenciamento e Governança"
       }
     }
   },
-  "menu-item#servico-midia": { // SUBITEM DO MENU PRODUTOS - SERVIÇO E MIDIA
+  "menu-item#servico-midia": { // SUBITEM DO MENU PRODUTOS - SERVIÇO DE MIDIA
     "props": {
-      "id": "internet-das-coisas",
+      "id": "servico-midia",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -434,14 +433,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Servico de Midia",
+        "tagTitle": "Servico de Mídia",
         "text": "Serviço de Mídia"
       }
     }
   },
   "menu-item#migracao-transferencia": { // SUBITEM DO MENU PRODUTOS - migracao-transferencia
     "props": {
-      "id": "internet-das-coisas",
+      "id": "migracao-transferencia",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -449,8 +448,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "migracao e transferencia",
-        "text": "migração e transferência"
+        "tagTitle": "Migração e transferência",
+        "text": "Migração e transferência"
       }
     }
   },
@@ -466,7 +465,7 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Soluções",
-        "text": "Internet das Coisas"
+        "text": "Soluções"
       }
     },
     "blocks": [
