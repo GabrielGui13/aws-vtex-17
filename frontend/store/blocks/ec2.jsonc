@@ -52,7 +52,7 @@
       "label": "Comece a usar o Amazon EC2"
     }
   },
-  "flex-layout.row#ec2": { // Colunas esquerda (texto) e direita (imagem) da descrição do EC2
+  "flex-layout.row#ec2": { // Colunas esquerda (imagem) e direita (texto) da descrição do EC2
     "children": [
       "flex-layout.col#ec2Left",
       "flex-layout.col#ec2Right"
@@ -61,7 +61,7 @@
       "blockClass": "row-ec2-description"
     }
   },
-  "flex-layout.col#ec2Right": { // Coluna da esquerda - texto da descrição
+  "flex-layout.col#ec2Right": { // Coluna da direita - texto da descrição
     "children": [
       "rich-text#ec2Description"
     ],
@@ -77,7 +77,7 @@
       "text": "O Amazon Elastic Compute Cloud (Amazon EC2) é um serviço Web que disponibiliza capacidade computacional segura e redimensionável na nuvem. Ele foi projetado para facilitar a computação em nuvem na escala da web para os desenvolvedores. A interface de serviço Web simples do Amazon EC2 permite que você obtenha e configure a capacidade sem muito esforço. Oferece um controle completo de seus recursos computacionais e permite que você trabalhe no ambiente computacional comprovado da Amazon. O Amazon EC2 oferece a maior e mais abrangente plataforma de computação com a possibilidade de escolha de processador, armazenamento, rede, sistema operacional e modelo de compra. Oferecemos os processadores mais rápidos na nuvem e somos a única nuvem com rede Ethernet de 400 Gbps. Temos as instâncias de GPU mais potentes para treinamento de machine learning e cargas de trabalho gráficas, bem como as instâncias de menor custo por inferência na nuvem. Mais cargas de trabalho SAP, HPC, machine learning e Windows são executadas na AWS do que em qualquer outra nuvem. Clique aqui para conhecer as Novidades do Amazon EC2."
     }
   },
-  "flex-layout.col#ec2Left": { // Coluna direita - imagem da descrição
+  "flex-layout.col#ec2Left": { // Coluna esquerda - imagem da descrição
     "children": [
       "image#ec2Left"
     ],
@@ -262,7 +262,7 @@
       "label": "Comece a usar o Amazon EC2"
     }
   },
-  "flex-layout.row#ec2Mobile": { // Colunas esquerda (texto) e direita (imagem) da descrição do ec2 (Mobile)
+  "flex-layout.row#ec2Mobile": { // Colunas esquerda (imagem) e direita (texto) da descrição do ec2 (Mobile)
     "children": [
       "flex-layout.col#ec2LeftMobile",
       "flex-layout.col#ec2RightMobile"
@@ -271,7 +271,7 @@
       "blockClass": "row-ec2-description"
     }
   },
-  "flex-layout.col#ec2RightMobile": { // Coluna da esquerda - texto da descrição (Mobile)
+  "flex-layout.col#ec2RightMobile": { // Coluna da direita - texto da descrição (Mobile)
     "children": [
       "rich-text#ec2DescriptionMobile"
     ],
@@ -289,7 +289,7 @@
       "textAlignment": "CENTER"
     }
   },
-  "flex-layout.col#ec2LeftMobile": { // Coluna direita - imagem da descrição (Mobile)
+  "flex-layout.col#ec2LeftMobile": { // Coluna esquerda - imagem da descrição (Mobile)
     "children": [
       "image#ec2LeftMobile"
     ],

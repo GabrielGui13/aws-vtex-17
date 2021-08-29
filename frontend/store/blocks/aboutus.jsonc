@@ -36,7 +36,8 @@
     "rich-text#tituloabout1":{
         "props":{
         "blockClass": "about-Title",
-        "text": "Computação em nuvem com a AWS"}
+        "text": "Computação em nuvem com a AWS"
+        }
     },
     "rich-text#subtituloabout1":{
         "props":{
@@ -54,6 +55,7 @@
     //--- video do youtube ----//
     "video#background": {
         "props": {
+          "name": "aws about us",
           "width": "100%",
           "height": "300px",
           "loop": false,
