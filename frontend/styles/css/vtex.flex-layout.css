@@ -122,3 +122,16 @@
  .flexColChild--solutions-columns{
      background-color:white;
  }
+
+
+
+
+/* mission 6 */
+.flexColChild{
+     margin-left: auto;
+     margin-right: auto;
+     }
+ .flexRowContent--aws-characteristics{
+    background: #23303f;
+    
+  }

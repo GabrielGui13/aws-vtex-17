@@ -136,3 +136,22 @@
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     text-decoration: unset;
 }
+
+
+
+
+/* mission 6 */
+.container--main-title {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.container--characteristics-title {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.container--characteristics-description {
+    font-size: 16px;
+    color: #ffffff;
+}
