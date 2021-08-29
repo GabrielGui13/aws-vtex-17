@@ -42,6 +42,9 @@
     filter: grayscale(0%);
 }
 /******* about us*********/
-.imageElement--image-mapa{
-   margin-left: 80px; 
+.imageElement--Slider{
+    max-width: 1800px;
+    margin: auto;  
+    align-self: center;
+    margin-left: 100%;
 }

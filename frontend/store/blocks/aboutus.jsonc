@@ -47,14 +47,14 @@
     },
     "flex-layout.col#elementabout12":{
         "children":[
-            "video#background"
+            "video#background2"
         ],
         "props":{
             "blockClass": "about-video"}
     },
 
     //--- video do youtube ----//
-    "video#background": {
+    "video#background2": {
         "props": {
           "name": "aws about us",
           "width": "100%",
@@ -131,7 +131,7 @@
         "props": {
             "blockClass": "image-mapa",
             "src": "https://s9.gifyu.com/images/mapagif.gif",
-            "width": "90%",
+            "width": "1200px",
             "height": "auto"
         }
     }

@@ -5,42 +5,29 @@
             "fullWidth": true
         },
         "children": [
-            "slider-layout#home"
+            "slider-layout#home1"
         ]
     },
-    "slider-layout#home": {
+    "slider-layout#home1": {
         "children": [
             "image#featured-products1",
-            "image#featured-products2",
-            "image#featured-products3",
-            "image#featured-products4"
+            "image#featured-products2"
         ],
         "props": {
-            "itemsPerPage": {
-                "desktop": 1,
-                "tablet": 1,
-                "phone": 1
-            }
+            "itemsPerPage":1,
+            "adaptToScreen":true
         }
     },
     "image#featured-products1": {
         "props": {
-            "src": "https://uploaddeimagens.com.br/images/003/399/902/original/produtos-nuvem.png?1629978265"
+            "src": "https://uploaddeimagens.com.br/images/003/399/903/original/saiba-mais.png?1629978278",
+            "blockClass":"Slider"
         }
     },
     "image#featured-products2": {
         "props": {
-            "src": "https://uploaddeimagens.com.br/images/003/399/899/original/conceitosbasicos.png?1629978223"
-        }
-    },
-    "image#featured-products3": {
-        "props": {
-            "src": "https://uploaddeimagens.com.br/images/003/399/903/original/saiba-mais.png?1629978278"
-        }
-    },
-    "image#featured-products4": {
-        "props": {
-            "src": "https://uploaddeimagens.com.br/images/003/399/901/original/niver-gratuito-aws.png?1629978250"
+            "src": "https://uploaddeimagens.com.br/images/003/399/902/original/produtos-nuvem.png?1629978265",
+            "blockClass":"Slider"
         }
     }
 }
