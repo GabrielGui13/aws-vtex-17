@@ -11,7 +11,12 @@
   "store.custom#cadastro": {
     "path": "/lead"
   },
+<<<<<<< HEAD
+  "store.custom#aboutus":{
+    "path":"about-us"
+=======
   "store.custom#ec2": {
     "path": "/ec2"
+>>>>>>> d3c12f024c61b4c709b5312ec4e4b76ca5bef94c
   }
 }

@@ -1,0 +1,67 @@
+{
+    "store.custom#aboutus":{
+       "blocks": [
+           "flex-layout.row#deskaboutus1"
+         ]
+        },
+        //---definindo primeiro bloco----///
+         "flex-layout.row#deskaboutus1":{
+             "props":{
+                 "blockClass":"about1"
+             },
+             "children":[
+                 "flex-layout.row#about11"
+             ]
+         },
+         "flex-layout.row#about11":{
+            "children": [
+                "flex-layout.col#elementabout11",
+                "flex-layout.col#elementabout12"
+            ],
+            "props":{
+                "blockClass":"about11"
+            }
+         },
+    ///----definindo elesmentos do bloco1---///
+    "flex-layout.col#elementabout11":{
+        "children":[
+            "rich-text#tituloabout1",
+            "rich-text#subtituloabout1",
+            "link#containerFooter"
+        ],
+        "props":{
+            "blockClass":"aboutcontaineir1"
+        }
+    },
+    "rich-text#tituloabout1":{
+        "props":{
+        "blockClass": "about-Title",
+        "text": "Computação em nuvem com a AWS"}
+    },
+    "rich-text#subtituloabout1":{
+        "props":{
+        "blockClass": "about-subTitle",
+        "text": "A Amazon Web Services (AWS) é a plataforma de nuvem mais adotada e mais abrangente do mundo, oferecendo mais de 200 serviços completos de datacenters em todo o mundo. Milhões de clientes, incluindo as startups de crescimento mais rápido, grandes empresas e os maiores órgãos governamentais, estão usando a AWS para reduzirem seus custos, ficarem mais ágeis e inovarem mais rapidamente."}
+    },
+    "flex-layout.col#elementabout12":{
+        "children":[
+            "video#background"
+        ],
+        "props":{
+            "blockClass": "about-video"}
+    },
+
+    //--- video do youtube ----//
+    "video#background": {
+        "props": {
+          "width": "100%",
+          "height": "300px",
+          "loop": false,
+          "autoPlay": false,
+          "muted": false,
+          "src": "https://www.youtube.com/watch?v=a9__D53WsUs",
+          "blockClass": "videoEl",
+          "poster":"https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg"
+        }
+      }
+}
