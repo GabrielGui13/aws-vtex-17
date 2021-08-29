@@ -74,21 +74,26 @@
             "alt": "AWS-Category-Icon_Digital-Marketing_60_Left-Aligned"
         }
     },
-    "rich-text#sectors-title-1": {
+    "rich-text#sectors-title-1": {  //  TÍTULO DO CONTAINER SECTORS TEXT 1
          "props": {
             "text": "Publicidade e marketing",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#sectors-content-1": {
+    "rich-text#sectors-content-1": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 1
         "props": {
             "text": "Obtenha economia para análises em escala de petabyte e cargas de trabalho de latência de um dígito em milissegundos.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#sectors-more-1": {},
+    "link#sectors-more-1": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DO SECTORS PUBLICIDADE E MARKETING
+          "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#sectors-2": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 2
         "children": [
             "flex-layout.col#container-sectors-text-2"
@@ -117,21 +122,26 @@
             "alt": "60-analytics"
         }
     },
-    "rich-text#sectors-title-2": {
+    "rich-text#sectors-title-2": {  //  TÍTULO DO CONTAINER SECTORS TEXT 2
         "props": {
             "text": "Serviços financeiros",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#sectors-content-2": {
+    "rich-text#sectors-content-2": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 2
         "props": {
             "text": "Baixo custo. Alta resiliência. Explore as soluções da AWS em serviços bancários, pagamentos, mercados de capital e seguros.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#sectors-more-2": {},
+    "link#sectors-more-2": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DO SECTORS SERVIÇOS FINANCEIROS
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#sectors-3": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 3
         "children": [
             "flex-layout.col#container-sectors-text-3"
@@ -160,21 +170,26 @@
             "alt": "AWS-Category-Icon_Gaming_60_Left-Aligned"
         }
     },
-    "rich-text#sectors-title-3": {
+    "rich-text#sectors-title-3": {  //  TÍTULO DO CONTAINER SECTORS TEXT 3
         "props": {
             "text": "Tecnologia de jogos",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#sectors-content-3": {
+    "rich-text#sectors-content-3": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 3
         "props": {
             "text": "Crie jogos computacionalmente simples em todos os gêneros e plataformas.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#sectors-more-3": {},
+    "link#sectors-more-3": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DO SECTORS TECNOLOGIA DE JOGOS
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#sectors-4": {  //  LINK PARA O CONTEÚDO DA COLUNA DE SECTORS 4
         "children": [
             "flex-layout.col#container-sectors-text-4"
@@ -203,21 +218,26 @@
             "alt": "AWS-Category-Icon_Media-&-Entertainment_60_Left-Aligned"
         }
     },
-    "rich-text#sectors-title-4": {
+    "rich-text#sectors-title-4": {  //  TÍTULO DO CONTAINER SECTORS TEXT 4
         "props": {
             "text": "Mídia e entretenimento",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#sectors-content-4": {
+    "rich-text#sectors-content-4": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 4
         "props": {
             "text": "Da criação à distribuição de conteúdo, soluções de mídia criadas especificamente para que sua empresa mude com mais inteligência e eficiência.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#sectors-more-4": {},
+    "link#sectors-more-4": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DO SECTORS MÍDIA E ENTRETENIMENTO
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#container-all-sectors": { //  TEXTO-LINK PARA REDIRECIONAMENTO DO ALL SECTORS (PARA EXIBIR TODOS OS SETORES)
         "props": {
             "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
@@ -272,21 +292,26 @@
             "alt": "60-analytics"
         }
     },
-    "rich-text#technologies-title-1": {
+    "rich-text#technologies-title-1": {  //  TÍTULO DO CONTAINER TECHNOLOGIES TEXT 1
         "props": {
             "text": "Análises e data lakes",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#technologies-content-1": {
+    "rich-text#technologies-content-1": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 1
         "props": {
             "text": "Armazene, categorize e analise todos os dados com segurança, em um único repositório centralizado.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#technologies-more-1": {},
+    "link#technologies-more-1": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DE TECHNOLOGIES ANÁLISES E DATA LAKES
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#technologies-2": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECNOLOGIA 2
         "children": [
             "flex-layout.col#container-technologies-text-2"
@@ -315,21 +340,26 @@
             "alt": "60-machine-learning"
         }
     },
-    "rich-text#technologies-title-2": {
+    "rich-text#technologies-title-2": {  //  TÍTULO DO CONTAINER TECHNOLOGIES TEXT 2
         "props": {
             "text": "Machine Learning",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#technologies-content-2": {
+    "rich-text#technologies-content-2": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 2
         "props": {
             "text": "Crie usando serviços e plataformas potentes, assim como o mais amplo suporte a estruturas de trabalho de machine learning em qualquer lugar.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#technologies-more-2": {},
+    "link#technologies-more-2": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DE TECHNOLOGIES MACHINE LEARNING
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#technologies-3": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECNOLOGIA 1
         "children": [
             "flex-layout.col#container-technologies-text-3"
@@ -358,21 +388,26 @@
             "alt": "60-Serverless"
         }
     },
-    "rich-text#technologies-title-3": {
+    "rich-text#technologies-title-3": {  //  TÍTULO DO CONTAINER TECHNOLOGIES TEXT 3
         "props": {
             "text": "Computação sem servidor",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#technologies-content-3": {
+    "rich-text#technologies-content-3": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 3
         "props": {
             "text": "Crie e execute aplicações e serviços sem se preocupar com servidores.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#technologies-more-3": {},
+    "link#technologies-more-3": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DE TECHNOLOGIES COMPUTAÇÃO SEM SERVIDOR
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#technologies-4": {  //  LINK PARA O CONTEÚDO DA COLUNA DE TECNOLOGIA 1
         "children": [
             "flex-layout.col#container-technologies-text-4"
@@ -401,21 +436,26 @@
             "alt": "60-storage"
         }
     },
-    "rich-text#technologies-title-4": {
+    "rich-text#technologies-title-4": {  //  TÍTULO DO CONTAINER TECHNOLOGIES TEXT 4
         "props": {
             "text": "Armazenamento",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "rich-text#technologies-content-4": {
+    "rich-text#technologies-content-4": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 4
         "props": {
             "text": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes.",
             "textAlignment": "LEFT",
             "textPosition": "LEFT"
         }
     },
-    "link#technologies-more-4": {},
+    "link#technologies-more-4": {  //  LINK DE REDIRECIONAMENTO DO SAIBA MAIS DE TECHNOLOGIES ARMAZENAMENTO
+        "props": {
+            "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
+            "label": "Saiba mais"
+        }
+    },
     "link#container-all-solutions": {  //  TEXTO-LINK PARA REDIRECIONAMENTO DO ALL SOLUCTIONS (PARA EXIBIR TODAS AS SOLUÇÕES)
         "props": {
             "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
