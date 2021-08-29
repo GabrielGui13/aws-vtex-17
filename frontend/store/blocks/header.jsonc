@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": { // Desktop
     "children": [
@@ -37,7 +43,7 @@
       "login",
       "flex-layout.col#spacer4",
       "minicart.v2",
-      "flex-layout.col#spacer5"      
+      "flex-layout.col#spacer5"
     ]
   },
   "flex-layout.col#spacer1": {
@@ -49,7 +55,9 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
   "flex-layout.col#spacer2": {
     "props": {
@@ -81,7 +89,9 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
     "children": [
@@ -144,7 +154,7 @@
     ]
   },
   "menu-item#produtos": { // MENU ITEM - PRODUTOS
-   "props": {
+    "props": {
       "id": "produtos",
       "type": "custom",
       "iconId": null,
@@ -157,10 +167,14 @@
         "text": "Produtos"
       }
     },
-    "blocks": [ "vtex.menu@2.x:submenu#produtos" ] // DECLARAÇÃO SUBMENU - PRODUTOS
+    "blocks": [
+      "vtex.menu@2.x:submenu#produtos"
+    ] // DECLARAÇÃO SUBMENU - PRODUTOS
   },
   "vtex.menu@2.x:submenu#produtos": { // Criação do block menu para servir de submenu
-    "children": ["vtex.menu@2.x:menu#produtos"]
+    "children": [
+      "vtex.menu@2.x:menu#produtos"
+    ]
   },
   "vtex.menu@2.x:menu#produtos": { // SUBMENU DA CATEGORIA PRODUTOS
     "props": {
@@ -179,7 +193,13 @@
       "menu-item#relacionamento",
       "menu-item#banco-de-dados",
       "menu-item#ferramentas-de-desenvolvedor",
-      "menu-item#internet-das-coisas"
+      "menu-item#internet-das-coisas",
+      // inclusão 28/08 as 21:33 h
+      "menu-item#internet-das-coisas-acerto",
+      "menu-item#machine-learning",
+      "menu-item#gerenciamento-governanca",
+      "menu-item#servico-midia",
+      "menu-item#migracao-transferencia"
     ]
   },
   "menu-item#container": { // SUBITEM DO MENU PRODUTOS - CONTAINER
@@ -193,11 +213,11 @@
         "href": "/container",
         "noFollow": true,
         "tagTitle": "Container",
-        "text": "Container"
+        "text": "Contêineres" 
       }
     }
   },
-  "menu-item#blockchain": { // SUBITEM DO MENU PRODUTOS - BLOCKCHAIN
+  "menu-item#blockchain": { // SUBITEM DO MENU PRODUTOS - BLOCKCHAIN alterado p/ Amazon EC2
     "props": {
       "id": "blockchain",
       "type": "custom",
@@ -207,12 +227,12 @@
         "type": "internal",
         "href": "/blockchain",
         "noFollow": true,
-        "tagTitle": "Blockchain",
-        "text": "Blockchain"
+        "tagTitle": "Amazon EC2",
+        "text": "Amazon EC2"
       }
     }
   },
-  "menu-item#migracao-nuvem": { // SUBITEM DO MENU PRODUTOS - MIGRAÇÃO PARA A NUVEM AWS
+  "menu-item#migracao-nuvem": { // SUBITEM DO MENU PRODUTOS - MIGRAÇÃO PARA A NUVEM AWS alterado para Amazon Simple Storage Service (S3)
     "props": {
       "id": "migracao-nuvem",
       "type": "custom",
@@ -222,12 +242,12 @@
         "type": "internal",
         "href": "/cloud-migration",
         "noFollow": true,
-        "tagTitle": "Migração Para a Nuvem AWS",
-        "text": "Migração Para a Nuvem AWS"
+        "tagTitle": "Amazon Simple Storage Service (S3)",
+        "text": "Amazon Simple Storage Service (S3)"
       }
     }
   },
-  "menu-item#servicos-em-destaque": { // SUBITEM DO MENU PRODUTOS - SERVIÇOS EM DESTAQUE
+  "menu-item#servicos-em-destaque": { // SUBITEM DO MENU PRODUTOS - SERVIÇOS EM DESTAQUE alterado p/ Amazon Aurora
     "props": {
       "id": "servicos-em-destaque",
       "type": "custom",
@@ -237,12 +257,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Servicos em Destaque",
-        "text": "Servicos em Destaque"
+        "tagTitle": "Amazon Aurora",
+        "text": "Amazon Aurora"
       }
     }
   },
-  "menu-item#analises": { // SUBITEM DO MENU PRODUTOS - ANÁLISES
+  "menu-item#analises": { // SUBITEM DO MENU PRODUTOS - ANÁLISES alterado p/ Amazon DynamoDB
     "props": {
       "id": "analises",
       "type": "custom",
@@ -252,12 +272,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Analises",
-        "text": "Analises"
+        "tagTitle": "Amazon DynamoDB",
+        "text": "Amazon DynamoDB"
       }
     }
   },
-  "menu-item#integracao-de-aplicacoes": { // SSUBITEM DO MENU PRODUTOS - INTEGRAÇÃO DE APLICAÇÕES
+  "menu-item#integracao-de-aplicacoes": { // SUBITEM DO MENU PRODUTOS - INTEGRAÇÃO DE APLICAÇÕES para Amazon RDS
     "props": {
       "id": "integracao-de-aplicacoes",
       "type": "custom",
@@ -267,12 +287,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Integração de Aplicações",
-        "text": "Integração de Aplicações"
+        "tagTitle": "Amazon RDS",
+        "text": "Amazon RDS"
       }
     }
   },
-  "menu-item#gerenciamento-de-custos": { // SUBITEM DO MENU PRODUTOS - GERENCIAMENTO DE CUSTOS
+  "menu-item#gerenciamento-de-custos": { // SUBITEM DO MENU PRODUTOS - GERENCIAMENTO DE CUSTOS alterado p/ Amazon Lambda
     "props": {
       "id": "gerenciamento-de-custos",
       "type": "custom",
@@ -282,12 +302,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Gerenciamento de Custos",
-        "text": "Gerenciamento de Custos"
+        "tagTitle": "Amazon Lambda",
+        "text": "Amazon Lambda"
       }
     }
   },
-  "menu-item#aplicacoes-empresariais": { // SUBITEM DO MENU PRODUTOS - APLICAÇÕES EMPRESARIAIS
+  "menu-item#aplicacoes-empresariais": { // SUBITEM DO MENU PRODUTOS - APLICAÇÕES EMPRESARIAIS alterado p/ Amazon VPC
     "props": {
       "id": "aplicacoes-empresariais",
       "type": "custom",
@@ -297,12 +317,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Aplicacoes Empresariais",
-        "text": "Aplicacoes Empresariais"
+        "tagTitle": "Amazon VPC",
+        "text": "Amazon VPC"
       }
     }
   },
-  "menu-item#computacao": { // SUBITEM DO MENU PRODUTOS - COMPUTAÇÃO
+  "menu-item#computacao": { // SUBITEM DO MENU PRODUTOS - COMPUTAÇÃO alterado para Amazon Lightsail
     "props": {
       "id": "computacao",
       "type": "custom",
@@ -312,12 +332,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Computação",
-        "text": "Computação"
+        "tagTitle": "Amazon Lightsail",
+        "text": "Amazon Lightsail"
       }
     }
   },
-  "menu-item#relacionamento": { // SUBITEM DO MENU PRODUTOS - RELACIONAMENTO
+  "menu-item#relacionamento": { // SUBITEM DO MENU PRODUTOS - RELACIONAMENTO para Amazon SageMaker
     "props": {
       "id": "relacionamento",
       "type": "custom",
@@ -327,8 +347,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Relacionamento",
-        "text": "Relacionamento"
+        "tagTitle": "Amazon SageMaker",
+        "text": "Amazon SageMaker"
       }
     }
   },
@@ -343,7 +363,7 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Banco de Dados",
-        "text": "Banco de Dados"
+        "text": "Computação de usuário final"
       }
     }
   },
@@ -358,7 +378,7 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Ferramentas de Desenvolvedor",
-        "text": "Ferramentas de Desenvolvedor"
+        "text": "Web e plataforma móvel front-end"
       }
     }
   },
@@ -373,12 +393,89 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Internet das Coisas",
+        "text": "Game Tech"
+      }
+    }
+  },
+  // inclusão 28-08 as 21:33 Rubens
+  "menu-item#internet-das-coisas-acerto": { // SUBITEM DO MENU PRODUTOS - ACERTO INTERNET DAS COISAS
+    "props": {
+      "id": "internet-das-coisas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Internet das Coisas",
         "text": "Internet das Coisas"
       }
     }
   },
+  "menu-item#machine-learning": { // SUBITEM DO MENU PRODUTOS - MACHINE LEARNING
+    "props": {
+      "id": "internet-das-coisas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Machine Learning",
+        "text": "Machine learning"
+      }
+    }
+  },
+  "menu-item#gerenciamento-governanca": { // SUBITEM DO MENU PRODUTOS - GERENCIAMENTO E GOVERNANÇA
+    "props": {
+      "id": "internet-das-coisas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Gerenciamento e Governanca",
+        "text": "Gerenciamento e governança"
+      }
+    }
+  },
+  "menu-item#servico-midia": { // SUBITEM DO MENU PRODUTOS - SERVIÇO E MIDIA
+    "props": {
+      "id": "internet-das-coisas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Servico de Midia",
+        "text": "Serviço de Mídia"
+      }
+    }
+  },
+  "menu-item#migracao-transferencia": { // SUBITEM DO MENU PRODUTOS - migracao-transferencia
+    "props": {
+      "id": "internet-das-coisas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "migracao e transferencia",
+        "text": "migração e transferência"
+      }
+    }
+  },
+  // Fim inclusão 28-08 as 21:33 Rubens
   "menu-item#solucoes": { // MENU ITEM - SOLUÇÕES
-   "props": {
+    "props": {
       "id": "solucoes",
       "type": "custom",
       "iconId": null,
@@ -388,89 +485,97 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "Soluções",
-        "text": "Soluções"
+        "text": "Internet das Coisas"
       }
     },
-    "blocks": [ "vtex.menu@2.x:submenu#solucoes" ] // DECLARAÇÃO SUBMENU - SOLUÇÕES
+    "blocks": [
+      "vtex.menu@2.x:submenu#solucoes"
+    ] // DECLARAÇÃO SUBMENU - SOLUÇÕES
   },
-"vtex.menu@2.x:submenu#solucoes": { // Criação do block menu para servir de submenu
-  "children": ["vtex.menu@2.x:menu#solucoes"]
-},
-"vtex.menu@2.x:menu#solucoes": { // SUBMENU DA CATEGORIA SOLUÇÕES
-  "props": {
-    "orientation": "vertical"
+  "vtex.menu@2.x:submenu#solucoes": { // Criação do block menu para servir de submenu
+    "children": [
+      "vtex.menu@2.x:menu#solucoes"
+    ]
   },
-  "children": [ // itens da categoria soluções
-    "menu-item#por-caso-de-uso",
-    "menu-item#por-setor",
-    "menu-item#por-tipo-de-organizacao"
-  ]
-},
-"menu-item#por-caso-de-uso": { // SUBITEM DO MENU SOLUÇÕES - POR CASO DE USO
-  "props": {
-    "id": "por-caso-de-uso",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "#",
-      "noFollow": true,
-      "tagTitle": "Por Caso de Uso",
-      "text": "Por Caso de Uso"
-    }
-  }
-},
-"menu-item#por-setor": { // SUBITEM DO MENU SOLUÇÕES - POR SETOR
-  "props": {
-    "id": "por-setor",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "#",
-      "noFollow": true,
-      "tagTitle": "Por Setor",
-      "text": "Por Setor"
-    }
-  }
-},
-"menu-item#por-tipo-de-organizacao": { // SUBITEM DO MENU SOLUÇÕES - POR TIPO DE ORGANIZAÇÃO
-  "props": {
-    "id": "por-tipo-de-organizacao",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "#",
-      "noFollow": true,
-      "tagTitle": "Por Tipo de Organização",
-      "text": "Por Tipo de Organização"
-    }
-  }
-},
-"menu-item#definicao-de-preco": { // MENU ITEM - DEFINIÇÃO DE PREÇO
-  "props": {
-    "id": "definicao-de-preco",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "#",
-      "noFollow": true,
-      "tagTitle": "Definição de Preço",
-      "text": "Definição de Preço"
+  "vtex.menu@2.x:menu#solucoes": { // SUBMENU DA CATEGORIA SOLUÇÕES
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [ // itens da categoria soluções
+      "menu-item#por-caso-de-uso",
+      "menu-item#por-setor",
+      "menu-item#por-tipo-de-organizacao"
+    ]
+  },
+  "menu-item#por-caso-de-uso": { // SUBITEM DO MENU SOLUÇÕES - POR CASO DE USO
+    "props": {
+      "id": "por-caso-de-uso",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Por Caso de Uso",
+        "text": "Por Caso de Uso"
+      }
     }
   },
-  "blocks": [ "vtex.menu@2.x:submenu#definicao-de-preco" ] // DECLARAÇÃO SUBMENU - DEFINIÇÃO DE PREÇO
-},
- "vtex.menu@2.x:submenu#definicao-de-preco": { // Criação do block menu para servir de submenu
-  "children": ["vtex.menu@2.x:menu#definicao-de-preco"]
-},
-   "vtex.menu@2.x:menu#definicao-de-preco": { // SUBMENU DA CATEGORIA DEFINIÇÃO DE PREÇO
+  "menu-item#por-setor": { // SUBITEM DO MENU SOLUÇÕES - POR SETOR
+    "props": {
+      "id": "por-setor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Por Setor",
+        "text": "Por Setor"
+      }
+    }
+  },
+  "menu-item#por-tipo-de-organizacao": { // SUBITEM DO MENU SOLUÇÕES - POR TIPO DE ORGANIZAÇÃO
+    "props": {
+      "id": "por-tipo-de-organizacao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Por Tipo de Organização",
+        "text": "Por Tipo de Organização"
+      }
+    }
+  },
+  "menu-item#definicao-de-preco": { // MENU ITEM - DEFINIÇÃO DE PREÇO
+    "props": {
+      "id": "definicao-de-preco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Definição de Preço",
+        "text": "Definição de Preço"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#definicao-de-preco"
+    ] // DECLARAÇÃO SUBMENU - DEFINIÇÃO DE PREÇO
+  },
+  "vtex.menu@2.x:submenu#definicao-de-preco": { // Criação do block menu para servir de submenu
+    "children": [
+      "vtex.menu@2.x:menu#definicao-de-preco"
+    ]
+  },
+  "vtex.menu@2.x:menu#definicao-de-preco": { // SUBMENU DA CATEGORIA DEFINIÇÃO DE PREÇO
     "props": {
       "orientation": "vertical"
     },

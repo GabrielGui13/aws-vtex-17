@@ -37,6 +37,18 @@
     font-size: 32px;
     font-weight: bold;
 }
+.paragraph--regionTitle{
+    font-size: 32px;
+    font-weight: bold;
+}
+.paragraph--regionSubTitle{
+    color: #232f3e;
+    font-weight: 400;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    width: 1000px;
+    margin-bottom: 30px;
+}
 
 .wrapper--regionsSubTitle { /* Subtítulo - Regions - Dektop */
     color: #232f3e;
