@@ -1,11 +1,13 @@
 {
   "store.home": { 
     "blocks": [
+      "responsive-layout.desktop#mission4",
       "responsive-layout.desktop#carousselserv",
       "responsive-layout.desktop#patro",
       "responsive-layout.mobile#patro1",
       "responsive-layout.desktop#regions",
-      "responsive-layout.mobile#regions"
+      "responsive-layout.mobile#regions",
+      "responsive-layout.desktop#mission1"
     ]
   }
 }

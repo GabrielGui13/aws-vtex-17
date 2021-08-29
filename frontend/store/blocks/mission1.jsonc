@@ -1,12 +1,12 @@
 { //arrumar customizacao aqui -props das documentações- e criar os css//
     "store.custom#mission1": {
         "blocks": [
-            "responsive-layout.desktop#container",
-            "responsive-layout.mobile#container"
+            "responsive-layout.desktop#mission1",
+            "responsive-layout.mobile#mission1"
         ]
     },
     // DESKTOP //
-    "responsive-layout.desktop#container": {   
+    "responsive-layout.desktop#mission1": {   
         "children": [
             "rich-text#container-start-using",
             "flex-layout.row#init-line",
@@ -140,7 +140,7 @@
         }
     },
     // MOBILE //
-    "responsive-layout.mobile#container": {
+    "responsive-layout.mobile#mission1": {
         
     }
 }

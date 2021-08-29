@@ -117,3 +117,8 @@
     padding-top:20px;
  }
  
+ /**** soluçoes aws cards***/
+
+ .flexColChild--solutions-columns{
+     background-color:white;
+ }

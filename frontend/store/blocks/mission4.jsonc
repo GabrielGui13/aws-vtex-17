@@ -1,12 +1,12 @@
 {
     "store.custom#mission4": {
         "blocks": [
-            "responsive-layout.desktop#container",
-            "responsive-layout.mobile#container"
+            "responsive-layout.desktop#mission4",
+            "responsive-layout.mobile#mission4"
         ]
     },
     // DESKTOP //
-    "responsive-layout.desktop#container": {
+    "responsive-layout.desktop#mission4": {
         "children": [
             "rich-text#container-solutions",
             "rich-text#container-sectors",
@@ -464,7 +464,7 @@
     },
 
     // MOBILE //
-    "responsive-layout.mobile#container": {
+    "responsive-layout.mobile#mission4": {
         "children": []
     }
 }
