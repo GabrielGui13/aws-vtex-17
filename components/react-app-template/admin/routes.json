@@ -1,6 +1,0 @@
-{
-    "admin.app.clients": {
-      "component": "Clients",
-      "path": "/admin/app/clients"
-    }
-}
