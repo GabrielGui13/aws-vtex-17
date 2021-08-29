@@ -137,6 +137,26 @@
     text-decoration: unset;
 }
 
+<<<<<<< HEAD
+
+
+
+/* mission 6 */
+.container--main-title {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.container--characteristics-title {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.container--characteristics-description {
+    font-size: 16px;
+    color: #ffffff;
+}
+=======
 /***** aboutus ******/
 .paragraph--about-Title{
     color:white;
@@ -155,3 +175,4 @@
 .wrapper--about-Title{
     height: 140px;
 }
+>>>>>>> a5e71c3db6fbaafb44fdf5fb59ca0ab32e67cbce

@@ -123,6 +123,20 @@
      background-color:white;
  }
 
+<<<<<<< HEAD
+
+
+
+/* mission 6 */
+.flexColChild{
+     margin-left: auto;
+     margin-right: auto;
+     }
+ .flexRowContent--aws-characteristics{
+    background: #23303f;
+    
+  }
+=======
  /*** about us ***/
  
  .flexRow--about1{
@@ -147,3 +161,4 @@
  .flexColChild--about-video{
     padding-top:50px;
  }
+>>>>>>> a5e71c3db6fbaafb44fdf5fb59ca0ab32e67cbce
