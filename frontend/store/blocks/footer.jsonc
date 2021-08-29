@@ -96,7 +96,7 @@
     "link#footersm4":{
       "props": {
         "href": "",
-        "label": "O que é um contêiner?",
+        "label": "O que é um container?",
         "blockClass":"linkfooter"
       }
     },
@@ -131,7 +131,7 @@
       "link#footerr2":{
         "props": {
           "href": "",
-          "label": "Treinamento e cetificações",
+          "label": "Treinamento e certificações",
           "blockClass":"linkfooter"
         }
       },
@@ -263,7 +263,7 @@
         "blockClass": "button-footer",
         "displayMode": "button",
         "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
-        "label": "CADRASTRE=SE"
+        "label": "CADASTRE-SE"
     }
   },
     "flex-layout.row#iconss":{
