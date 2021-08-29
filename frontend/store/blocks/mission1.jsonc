@@ -133,7 +133,7 @@
     },
     "link#container-account": { // BOTÃO-LINK QUE REDIRECIONARÁ PARA A PÁGINA DE CRIAÇÃO DE CONTA
         "props": {
-            "blockClass": "button-container",
+            "blockClass": "button-productpage",
             "displayMode": "button",
             "href": "/", // **** LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR  ****
             "label": "Crie uma conta gratuita"

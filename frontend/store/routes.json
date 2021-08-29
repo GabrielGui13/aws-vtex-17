@@ -10,5 +10,8 @@
   },
   "store.custom#cadastro": {
     "path": "/lead"
+  },
+  "store.custom#ec2": {
+    "path": "/ec2"
   }
 }

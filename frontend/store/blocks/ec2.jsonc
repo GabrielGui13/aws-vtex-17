@@ -1,0 +1,308 @@
+{
+  "store.custom#ec2": { 
+    "blocks": [
+      "responsive-layout.desktop#ec2",
+      "responsive-layout.mobile#ec2"
+    ]
+  },
+    
+  // ******** DESKTOP ******** //
+
+  "responsive-layout.desktop#ec2": {
+    "children": [
+      "stack-layout#ec2",
+      "flex-layout.row#ec2",
+      "flex-layout.row#ec2Icons",
+      "search-result-layout.customQuery#ec2"
+    ]
+  },
+  "stack-layout#ec2": { // Banner EC2 com CTA button
+    "children": [
+      "image#ec2",
+      "rich-text#ec2Title",
+      "rich-text#ec2SubTitle",
+      "link#ec2"
+    ]
+  },
+  "image#ec2": { // Imagem do EC2
+    "props": {
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 230,
+      "src": "https://uploaddeimagens.com.br/images/003/404/530/original/ec2-transp.png?1630258378"
+    }
+  },
+  "rich-text#ec2Title": {  // Título do EC2
+    "props": { 
+      "blockClass": "productpage-title",
+      "text": "Amazon EC2"
+    }
+  },
+  "rich-text#ec2SubTitle": { // Subtítulo do EC2
+    "props": { 
+      "blockClass": "productpage-subTitle",
+      "text": "Capacidade de computação segura e redimensionável para oferecer suporte a praticamente qualquer carga de trabalho"
+    }
+  },
+  "link#ec2": { // Botão CTA EC2
+    "props": {
+      "blockClass": "button-productpage",
+      "displayMode": "button",
+      "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+      "label": "Comece a usar o Amazon EC2"
+    }
+  },
+  "flex-layout.row#ec2": { // Colunas esquerda (texto) e direita (imagem) da descrição do EC2
+    "children": [
+      "flex-layout.col#ec2Left",
+      "flex-layout.col#ec2Right"
+    ],
+    "props": {
+      "blockClass": "row-ec2-description"
+    }
+  },
+  "flex-layout.col#ec2Right": { // Coluna da esquerda - texto da descrição
+    "children": [
+      "rich-text#ec2Description"
+    ],
+    "props": {
+      "blockClass": "ec2-right-col",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#ec2Description": { // Texto da descrição do ec2
+    "props": {
+      "blockClass": "productpage-description",
+      "text": "O Amazon Elastic Compute Cloud (Amazon EC2) é um serviço Web que disponibiliza capacidade computacional segura e redimensionável na nuvem. Ele foi projetado para facilitar a computação em nuvem na escala da web para os desenvolvedores. A interface de serviço Web simples do Amazon EC2 permite que você obtenha e configure a capacidade sem muito esforço. Oferece um controle completo de seus recursos computacionais e permite que você trabalhe no ambiente computacional comprovado da Amazon. O Amazon EC2 oferece a maior e mais abrangente plataforma de computação com a possibilidade de escolha de processador, armazenamento, rede, sistema operacional e modelo de compra. Oferecemos os processadores mais rápidos na nuvem e somos a única nuvem com rede Ethernet de 400 Gbps. Temos as instâncias de GPU mais potentes para treinamento de machine learning e cargas de trabalho gráficas, bem como as instâncias de menor custo por inferência na nuvem. Mais cargas de trabalho SAP, HPC, machine learning e Windows são executadas na AWS do que em qualquer outra nuvem. Clique aqui para conhecer as Novidades do Amazon EC2."
+    }
+  },
+  "flex-layout.col#ec2Left": { // Coluna direita - imagem da descrição
+    "children": [
+      "image#ec2Left"
+    ],
+    "props": {
+      "blockClass": "ec2-left-col",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#ec2Left": { // Imagem da descrição do ec2
+    "props": {
+      "blockClass": "image-ec2",
+      "src": "https://uploaddeimagens.com.br/images/003/404/511/original/awsec2-removebg-preview.png?1630256367"
+    }
+  },
+  // parte dos icones de baixo do ec2
+  "flex-layout.row#ec2Icons": {
+    "children": [
+      "flex-layout.col#icon1",
+      "flex-layout.col#icon2",
+      "flex-layout.col#icon3"
+    ],
+    "props": {
+      "width": "90%",
+      "blockClass": "productpageIcons"
+    }
+  },
+  "flex-layout.col#icon1": { //icon 1 services
+    "children": [
+      "image#ec2Icon1",
+      "rich-text#ec2IconTitle1",
+      "rich-text#ec2IconDesc1"
+    ],
+    "props": {
+      "blockClass": "iconCol"
+    }
+  },
+  "image#ec2Icon1": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/003/402/192/full/foto_de_cadastro.png?1630074978",
+      "blockClass": "iconImg"
+    }
+  },
+  "rich-text#ec2IconTitle1": {
+    "props": {
+      "text": "###### **Confira os recursos do EC2**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "iconColTitle"
+    }
+  },
+  "rich-text#ec2IconDesc1": {
+    "props": {
+      "text": "Saiba mais sobre recursos destinados à segurança de instâncias, armazenamento, redes, escalabilidade automática e outros aspectos.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.col#icon2": { //icon 2 cadastro
+    "children": [
+      "image#ec2Icon2",
+      "rich-text#ec2IconTitle2",
+      "rich-text#ec2IconDesc2"
+    ],
+    "props": {
+      "blockClass": "iconCol"
+    }
+  },
+  "image#ec2Icon2": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/003/402/307/thumb/foto_de_services.png?1630078127",
+      "blockClass": "iconImg"
+    }
+  },
+  "rich-text#ec2IconTitle2": {
+    "props": {
+      "text": "###### **Comece a usar o EC2**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "iconColTitle"
+    }
+  },
+  "rich-text#ec2IconDesc2": {
+    "props": {
+      "text": "Siga estas etapas para começar a usar o Amazon EC2.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.col#icon3": { //icon 3 ferramentas
+    "children": [
+      "image#ec2Icon3",
+      "rich-text#ec2IconTitle3",
+      "rich-text#ec2IconDesc3"
+    ],
+    "props": {
+      "blockClass": "iconCol"
+    }
+  },
+  "image#ec2Icon3": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/003/402/309/thumb/foto_de_ferramentas.png?1630078177",
+      "blockClass": "iconImg"
+    }
+  },
+  "rich-text#ec2IconTitle3": {
+    "props": {
+      "text": "###### **Conheça os recursos e as ferramentas do EC2**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "iconColTitle"
+    }
+  },
+  "rich-text#ec2IconDesc3": {
+    "props": {
+      "text": "Aprenda dicas e técnicas para aproveitar ao máximo a sua experiência com o Amazon EC2.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "search-result-layout.customQuery#ec2": {
+    "blocks": [
+      "search-result-layout.desktop"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByPriceASC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 1,
+        "queryField": "ec2"
+      }
+    }
+  },
+
+
+
+  // ******** MOBILE ******** //
+
+  "responsive-layout.mobile#ec2": {
+    "children": [
+      "stack-layout#ec2Mobile",
+      "flex-layout.row#ec2Mobile"
+    ]
+  },
+  "stack-layout#ec2Mobile": { // Banner ec2 com CTA button (Mobile)
+    "children": [
+      "image#ec2Mobile",
+      "rich-text#ec2TitleMobile",
+      "rich-text#ec2SubTitleMobile",
+      "link#ec2Mobile"
+    ],
+    "props": {
+      "blockClass": "productpageMobile"
+    }
+  },
+  "image#ec2Mobile": { // Imagem do banner ec2 (Mobile)
+    "props": {
+      "blockClass": "coverMobile",
+      "width": "100%",
+      "height": 200,
+      "src": "https://uploaddeimagens.com.br/images/003/404/530/original/ec2-transp.png?1630258378"
+    }
+  },
+  "rich-text#ec2TitleMobile": {  // Título do ec2 (Mobile)
+    "props": { 
+      "blockClass": "productpage-titleMobile",
+      "text": "Amazon EC2"
+    }
+  },
+  "rich-text#ec2SubTitleMobile": { // Subtítulo do ec2 (Mobile)
+    "props": { 
+      "blockClass": "productpage-subTitleMobile",
+      "text": "Empacote seu código e execute-o em qualquer local",
+      "text-position": "center"
+    }
+  },
+  "link#ec2Mobile": { // Botão CTA ec2 (Mobile)
+    "props": {
+      "blockClass": "button-productpageMobile",
+      "displayMode": "button",
+      "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+      "label": "Comece a usar o Amazon EC2"
+    }
+  },
+  "flex-layout.row#ec2Mobile": { // Colunas esquerda (texto) e direita (imagem) da descrição do ec2 (Mobile)
+    "children": [
+      "flex-layout.col#ec2LeftMobile",
+      "flex-layout.col#ec2RightMobile"
+    ],
+    "props": {
+      "blockClass": "row-ec2-description"
+    }
+  },
+  "flex-layout.col#ec2RightMobile": { // Coluna da esquerda - texto da descrição (Mobile)
+    "children": [
+      "rich-text#ec2DescriptionMobile"
+    ],
+    "props": {
+      "blockClass": "ec2-right-colMobile",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#ec2DescriptionMobile": { // Texto da descrição do ec2 (Mobile)
+    "props": {
+      "blockClass": "productpage-descriptionMobile",
+      "text": "O Amazon Elastic Compute Cloud (Amazon EC2) é um serviço Web que disponibiliza capacidade computacional segura e redimensionável na nuvem. Ele foi projetado para facilitar a computação em nuvem na escala da web para os desenvolvedores. A interface de serviço Web simples do Amazon EC2 permite que você obtenha e configure a capacidade sem muito esforço. Oferece um controle completo de seus recursos computacionais e permite que você trabalhe no ambiente computacional comprovado da Amazon. O Amazon EC2 oferece a maior e mais abrangente plataforma de computação com a possibilidade de escolha de processador, armazenamento, rede, sistema operacional e modelo de compra. Oferecemos os processadores mais rápidos na nuvem e somos a única nuvem com rede Ethernet de 400 Gbps. Temos as instâncias de GPU mais potentes para treinamento de machine learning e cargas de trabalho gráficas, bem como as instâncias de menor custo por inferência na nuvem. Mais cargas de trabalho SAP, HPC, machine learning e Windows são executadas na AWS do que em qualquer outra nuvem. Clique aqui para conhecer as Novidades do Amazon EC2.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.col#ec2LeftMobile": { // Coluna direita - imagem da descrição (Mobile)
+    "children": [
+      "image#ec2LeftMobile"
+    ],
+    "props": {
+      "blockClass": "ec2-left-colMobile",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#ec2LeftMobile": { // Imagem da descrição do ec2 (Mobile)
+    "props": {
+      "blockClass": "image-Mobile",
+      "src": "https://uploaddeimagens.com.br/images/003/404/511/original/awsec2-removebg-preview.png?1630256367"
+    }
+  }
+}

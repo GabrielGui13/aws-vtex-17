@@ -34,19 +34,19 @@
   },
   "rich-text#containerTitle": {  // Título do container
     "props": { 
-      "blockClass": "container-title",
+      "blockClass": "productpage-title",
       "text": "O que é um container?"
     }
   },
   "rich-text#containerSubTitle": { // Subtítulo do container
     "props": { 
-      "blockClass": "container-subTitle",
+      "blockClass": "productpage-subTitle",
       "text": "Empacote seu código e execute-o em qualquer local"
     }
   },
   "link#container": { // Botão CTA container
     "props": {
-      "blockClass": "button-container",
+      "blockClass": "button-productpage",
       "displayMode": "button",
       "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
       "label": "Comece a usar containers"
@@ -73,7 +73,7 @@
   },
   "rich-text#containerDescription": { // Texto da descrição do container
     "props": {
-      "blockClass": "container-description",
+      "blockClass": "productpage-description",
       "text": "Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. A Nuvem AWS oferece recursos de infraestrutura otimizados para a execução de containers, além de um conjunto de serviços de orquestração que facilitam a criação e execução de aplicativos conteinerizados em produção. A AWS oferece suporte a containers compatíveis com OCI, inclusive containers de docker."
     }
   },
@@ -102,7 +102,7 @@
     ],
     "props": {
       "width": "90%",
-      "blockClass": "containerIcons"
+      "blockClass": "productpageIcons"
     }
   },
   "flex-layout.col#icon1": { //icon 1 services

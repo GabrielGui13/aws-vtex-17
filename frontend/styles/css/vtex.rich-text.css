@@ -1,7 +1,7 @@
 /************************ DESKTOP **************************/
 
-/*****  CONTAINER *****/
-.wrapper--container-title { /* Título do stack layout - Contaianer - Dektop */
+/*****  PRODUCT PAGE *****/
+.wrapper--productpage-title { /* Título do stack layout - productpage - Dektop */
     color: #ffffff;
     font-weight: 800;
     margin-left: 190px;
@@ -9,7 +9,7 @@
     font-size: 36px;
 }
 
-.wrapper--container-subTitle { /* Subtítulo do stack layout - Contaianer - Dektop */
+.wrapper--productpage-subTitle { /* Subtítulo do stack layout - productpage - Dektop */
     color: #ffffff;
     font-weight: 400;
     margin-top: 65px;
@@ -18,10 +18,10 @@
     font-size: 22px;
 }
 
-.paragraph--container-description { /* Descrição do container - Contaianer - Dektop */
+.paragraph--productpage-description { /* Descrição do productpage - Dektop */
     color: #232f3e;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -37,6 +37,7 @@
     font-size: 32px;
     font-weight: bold;
 }
+
 .paragraph--regionTitle{
     font-size: 32px;
     font-weight: bold;
@@ -61,16 +62,16 @@
 
 /************************* MOBILE ********************************/
 
-/*****  CONTAINER *****/
+/*****  PRODUCT PAGE *****/
 
-.wrapper--container-titleMobile { /* Título do stack layout - Contaianer - Mobile */
+.wrapper--productpage-titleMobile { /* Título do stack layout - productpage - Mobile */
     color: #ffffff;
     font-size: 28px;
     font-weight: bold;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.wrapper--container-subTitleMobile { /* Subtítulo do stack layout - Contaianer - Mobile */
+.wrapper--productpage-subTitleMobile { /* Subtítulo do stack layout - productpage - Mobile */
     color: #ffffff;
     font-size: 18px;
     justify-content: center;
@@ -78,7 +79,7 @@
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.paragraph--container-descriptionMobile { /* Descrição do container - Contaianer - Mobile */
+.paragraph--productpage-descriptionMobile { /* Descrição do container - productpage - Mobile */
     color: #232f3e;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -101,12 +102,13 @@
     width: 100%;
 }
 
-/* CONTAINER ICON RICH TEXT */
+/* PRODUCT PAGE ICON RICH TEXT */
 
-.wrapper--iconColTitle {
+.wrapper--productpageColTitle {
     height: 55px;
     margin-top: -20px;
 }
+
 /* FOOTER*/
 .paragraph--linkfooter{
     color:white;
