@@ -12,7 +12,6 @@
     "path": "/lead"
   },
   "store.custom#aboutus":{
-<<<<<<< HEAD
     "path": "/aboutus"
   },
   "store.custom#ec2": {
@@ -20,8 +19,5 @@
   },
   "store.custom#s3": {
     "path": "/s3"
-=======
-    "path":"about-us"
->>>>>>> e33f4e4bb0e91f6703f34921ea1123f206ad329a
   }
 }
