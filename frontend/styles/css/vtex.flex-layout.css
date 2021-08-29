@@ -67,6 +67,9 @@
 
 .flexRow--imageLogo {
     margin-top: 100px;
+    background: white;
+    width:99vw;
+    height:80vh;
 }
 
 .flexRow--cadastro{
@@ -74,6 +77,7 @@
     height:80vh;
     align-items: center;
     background-image: url("https://uploaddeimagens.com.br/images/003/401/082/original/backgroundaws.png?1630008498");
+    background-color: white;
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
