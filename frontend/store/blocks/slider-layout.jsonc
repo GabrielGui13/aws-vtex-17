@@ -1,0 +1,33 @@
+{
+    "flex-layout.row#slider": {
+        "props": {
+            "blockClass":"Slider",
+            "fullWidth": true
+        },
+        "children": [
+            "slider-layout#home1"
+        ]
+    },
+    "slider-layout#home1": {
+        "children": [
+            "image#featured-products1",
+            "image#featured-products2"
+        ],
+        "props": {
+            "itemsPerPage":1,
+            "adaptToScreen":true
+        }
+    },
+    "image#featured-products1": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/399/903/original/saiba-mais.png?1629978278",
+            "blockClass":"Slider"
+        }
+    },
+    "image#featured-products2": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/399/902/original/produtos-nuvem.png?1629978265",
+            "blockClass":"Slider"
+        }
+    }
+}

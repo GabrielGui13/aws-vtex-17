@@ -3,9 +3,9 @@
     "path": "/"
   },
   "store.custom#container": {
-      "path": "/container"
+    "path": "/container"
   },
-    "store.custom#mission5": {
+  "store.custom#mission5": {
     "path": "/mission5"
   },
   "store.custom#mission4": {
@@ -18,9 +18,12 @@
     "path": "/lead"
   },
   "store.custom#aboutus":{
-    "path":"about-us"
-    },
+    "path": "/aboutus"
+  },
   "store.custom#ec2": {
     "path": "/ec2"
+  },
+  "store.custom#s3": {
+    "path": "/s3"
   }
 }

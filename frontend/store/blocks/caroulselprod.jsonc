@@ -245,66 +245,6 @@
 
     }
     },
-
-
-                    /// ----- definindo quarto botão --------///
-    "tab-layout#header4":{
-
-        "children":[
-        "tab-list#caroussel4"
-        ],
-        "props":{
-            "blockClass":"caroussel"
-    }
-},
-        //---- criando o terceiro botão------//
-    "tab-list#caroussel4":{
-        "children": [
-            "tab-list.item.children#home4"
-        ],
-        "props":{
-        "defaultActiveTab":0
-        }
-
-    },
-
-    "tab-list.item.children#home4":{
-        "props":{
-            "defaultActiveTab":0,
-            "blockClass":"caroussel"
-        },
-        "children": ["flex-layout.col#buttoncaroussel4"]    
-    },
-    "flex-layout.col#buttoncaroussel4":{
-        "children": [ "link#containercaroussel4"]
-    },
-
-    "link#containercaroussel4":{   /// imagem e texto dentro do botão
-        "children": [ 
-            "image#containerCaroussel4",
-            "rich-text#containerCarrouse4"
-            ],
-        "props":{
-            "blockClass":"caroussel"
-        }
-    },
-
-    "image#containerCaroussel4": { // Imagem do banner container
-    "props": {
-    "blockClass": "caroussel",
-    "width": 55,
-    "height":55,
-    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Compute_48.2ecdc5540aeb95096108ad3ecfc9c09eba2a0b7d.png"
-    }
-    },
-    "rich-text#containerCarrouse4":{
-    "props": { 
-        "blockClass": "containerCaroussel",
-        "text": "Poder de Computação"
-
-    }
-    },
-
     
                     /// ----- definindo quarto botão --------///
     "tab-layout#header4":{

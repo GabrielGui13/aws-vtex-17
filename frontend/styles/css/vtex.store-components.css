@@ -40,3 +40,10 @@
 .imageElement--imagePatro:hover{
     filter: grayscale(0%);
 }
+/******* about us*********/
+.imageElement--Slider{
+    max-width: 1800px;
+    margin: auto;  
+    align-self: center;
+    margin-left: 100%;
+}

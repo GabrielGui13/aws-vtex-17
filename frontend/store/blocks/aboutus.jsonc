@@ -1,0 +1,138 @@
+{
+    "store.custom#aboutus":{
+       "blocks": [
+           "flex-layout.row#deskaboutus1",
+           "flex-layout.row#mapaabout"
+         ]
+        },
+        //---definindo primeiro bloco----///
+         "flex-layout.row#deskaboutus1":{
+             "props":{
+                 "blockClass":"about1"
+             },
+             "children":[
+                 "flex-layout.row#about11"
+             ]
+         },
+         "flex-layout.row#about11":{
+            "children": [
+                "flex-layout.col#elementabout11",
+                "flex-layout.col#elementabout12"
+            ],
+            "props":{
+                "blockClass":"about11"
+            }
+         },
+    ///----definindo elesmentos do bloco1---///
+    "flex-layout.col#elementabout11":{
+        "children":[
+            "rich-text#tituloabout1",
+            "rich-text#subtituloabout1",
+            "link#containerFooter"
+        ],
+        "props":{
+            "blockClass":"aboutcontaineir1"
+        }
+    },
+    "rich-text#tituloabout1":{
+        "props":{
+        "blockClass": "about-Title",
+        "text": "Computação em nuvem com a AWS"
+        }
+    },
+    "rich-text#subtituloabout1":{
+        "props":{
+        "blockClass": "about-subTitle",
+        "text": "A Amazon Web Services (AWS) é a plataforma de nuvem mais adotada e mais abrangente do mundo, oferecendo mais de 200 serviços completos de datacenters em todo o mundo. Milhões de clientes, incluindo as startups de crescimento mais rápido, grandes empresas e os maiores órgãos governamentais, estão usando a AWS para reduzirem seus custos, ficarem mais ágeis e inovarem mais rapidamente."}
+    },
+    "flex-layout.col#elementabout12":{
+        "children":[
+            "video#background2"
+        ],
+        "props":{
+            "blockClass": "about-video"}
+    },
+
+    //--- video do youtube ----//
+    "video#background2": {
+        "props": {
+          "name": "aws about us",
+          "width": "100%",
+          "height": "300px",
+          "loop": false,
+          "autoPlay": false,
+          "muted": false,
+          "src": "https://www.youtube.com/watch?v=a9__D53WsUs",
+          "blockClass": "videoEl",
+          "poster":"https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg"
+        }
+      },
+
+
+
+//-------- bloco 2 regions gif---------///
+
+    // ******** DESKTOP ******** //
+    "flex-layout.row#mapaabout":{
+        "children":[
+            "flex-layout.col#mapaabout"
+        ],
+        "props":{
+            "blockClass":"maparow"    
+        }
+    },
+    "flex-layout.col#mapaabout": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#mapa1",
+            "flex-layout.row#mapa2",
+            "flex-layout.row#mapa3"
+        ],
+        "props":{
+            "blockClass":"maparow"    
+        }
+        
+    },
+    "flex-layout.row#mapa1": { // Linha do Título - Regions - Desktop
+        "children": [
+            "rich-text#mapaTitle"
+        ]
+    },
+    "rich-text#mapaTitle": { // Título - Regions - Desktop
+        "props": {
+            "blockClass": "mapaTitle",
+            "text": "Rede global de regiões da AWS",
+            "font": "t-heading-1",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#mapa2": { // Linha do Subtítulo - Regions - Desktop
+        "children": [
+            "rich-text#mapaSubTitle"
+        ]
+    },
+    "rich-text#mapaSubTitle": { // Subtítulo - Regions - Desktop
+        "props": {
+            "blockClass": "mapaSubTitle",
+            "text": "A AWS tem a mais extensa infraestrutura de nuvem global. Nenhum outro provedor de nuvem oferece tantas regiões com múltiplas Zonas de Disponibilidade conectadas por redes altamente redundantes com baixa latência e alta taxa de transferência. A AWS tem 81 Zonas de Disponibilidade em 25 regiões geográficas em todo o mundo e anunciou planos para mais 21 Zonas de Disponibilidade e mais 7 regiões da AWS na Austrália, Emirados Árabes Unidos (EAU), Espanha, Índia, Indonésia, Israel, e Suíça. O modelo de região e Zona de Disponibilidade da AWS foi reconhecido pela Gartner como a abordagem recomendada para a execução de aplicações empresariais que exigem alta disponibilidade.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#mapa3": { // Linha da Imagem - Regions - Desktop
+        "children": [
+            "image#mapa"
+        ],
+        "props": {
+            "blockClass": "imageAboutRow"
+        }
+    },
+    "image#mapa": { // Imagem - Regions - Desktop
+        "props": {
+            "blockClass": "image-mapa",
+            "src": "https://s9.gifyu.com/images/mapagif.gif",
+            "width": "1200px",
+            "height": "auto"
+        }
+    }
+}
