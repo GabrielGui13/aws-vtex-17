@@ -51,7 +51,8 @@
     "vtex.product-price": "1.x",
     "vtex.overlay-layout": "0.x",
     "vtex.aws17deb": "0.x",
-    "vtex.store-image": "0.x"
+    "vtex.store-image": "0.x",
+    "vtex.store-video": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

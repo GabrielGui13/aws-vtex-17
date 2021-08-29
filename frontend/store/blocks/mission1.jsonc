@@ -1,0 +1,146 @@
+{ //arrumar customizacao aqui -props das documentações- e criar os css//
+    "store.custom#mission1": {
+        "blocks": [
+            "responsive-layout.desktop#container",
+            "responsive-layout.mobile#container"
+        ]
+    },
+    // DESKTOP //
+    "responsive-layout.desktop#container": {   
+        "children": [
+            "rich-text#container-start-using",
+            "flex-layout.row#init-line",
+            "link#container-account"
+        ]
+    },
+    "rich-text#container-start-using": {  //  TEXTO-TÍTULO PRINCIPAL DO START USING
+        "props": {
+            "text": "### Comece a usar",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "#232f3e",
+            "font": "arial, sans serif"
+        }
+    },
+    "flex-layout.row#init-line": {  //  LINHA DO START USING COM SUAS RESPECTIVAS COLUNAS 
+        "children": [
+            "flex-layout.col#container-text-1",
+            "flex-layout.col#container-text-2",
+            "flex-layout.col#container-text-3"
+        ],
+        "props": {
+            "blockClass": "init-line"
+        }
+    },
+    "flex-layout.col#container-text-1": {  //  PRIMEIRA COLUNA DA LINHA INIT LINE
+        "children": [
+            "image#1",
+            "rich-text#title",
+            "rich-text#content"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "containers-init-line"
+        }
+    },
+    "image#1": {  //  IMAGEM DO CONTAINER TEXT 1
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/401/312/thumb/image1.png?1630017442",
+            "maxHeight": "600px",
+            "title": "WEB_FreeTier_SignUp_Icon_100x100",
+            "alt": "WEB_FreeTier_SignUp_Icon_100x100"
+        }
+    },
+    "rich-text#title": {  // TÍTULO DO CONTAINER TEXT 1
+        "props": {
+            "text": "#### **Cadastre-se para obter uma conta da AWS**",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#content": {  //  CONTEÚDO DO CONTAINER TEXT 1
+        "props": {
+            "text": " A criação de uma conta da AWS é gratuita e permite acessar imediatamente o nível gratuito da AWS ",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.col#container-text-2": {  //  SEGUNDA COLUNA DA LINHA INIT LINE
+        "children": [
+            "image#2",
+            "rich-text#title-2",
+            "rich-text#content-2"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "containers-init-line"
+        }
+    },
+    "image#2": {  //  IMAGEM DO CONTAINER TEXT 2
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/401/318/thumb/image2.png?1630017706",
+            "maxHeight": "600px",
+            "title": "WEB_FreeTier_Tutorials_Icon_100x100",
+            "alt": "WEB_FreeTier_Tutorials_Icon_100x100"
+        }
+    },
+    "rich-text#title-2": {  // TÍTULO DO CONTAINER TEXT 2
+        "props": {
+            "text": "#### **Tutoriais de 10 minutos**",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#content-2": {  //  CONTEÚDO DO CONTAINER TEXT 2
+        "props": {
+            "text": " Explore e aprenda com tutoriais fáceis para diversos casos de uso ",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.col#container-text-3": {  //  TERCEIRA COLUNA DA LINHA INIT LINE
+        "children": [
+            "image#3",
+            "rich-text#title-3",
+            "rich-text#content-3"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "containers-init-line"
+        }
+    },
+    "image#3": {  //  IMAGEM DO CONTAINER TEXT 3
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/401/321/thumb/image3.png?1630017803",
+            "maxHeight": "600px",
+            "title": "WEB_FreeTier_StartBuilding_Icon_100x100",
+            "alt": "WEB_FreeTier_StartBuilding_Icon_100x100"
+        }
+    },
+    "rich-text#title-3": {  // TÍTULO DO CONTAINER TEXT 3
+        "props": {
+            "text": "#### **Comece a criar no console**",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#content-3": {  //  CONTEÚDO DO CONTAINER TEXT 3
+        "props": {
+            "text": " Quando tiver a postos, crie uma solução de produção com rapidez e facilidade ",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "link#container-account": { // BOTÃO-LINK QUE REDIRECIONARÁ PARA A PÁGINA DE CRIAÇÃO DE CONTA
+        "props": {
+            "blockClass": "button-container",
+            "displayMode": "button",
+            "href": "/", // **** LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR  ****
+            "label": "Crie uma conta gratuita"
+        }
+    },
+    // MOBILE //
+    "responsive-layout.mobile#container": {
+        
+    }
+}

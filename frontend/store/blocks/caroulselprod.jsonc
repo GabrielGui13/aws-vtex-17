@@ -8,245 +8,590 @@
         "blockClass":"caroussel"
       }
     },
-    "responsive-layout.desktop#carousselserv":{
-        "children": [
+"responsive-layout.desktop#carousselserv":{
+    "children": [
+    "flex-layout.row#servcarou",
+    "flex-layout.row#paicaroussel"]
+},
+
+"responsive-layout.mobile#carousselserv":{
+    "children": [
         "flex-layout.row#servcarou",
-        "flex-layout.row#paicaroussel"]
-    },
-  
-    "responsive-layout.mobile#carousselserv":{
-        "children": [
-            "flex-layout.row#servcarou",
-            "flex-layout.row#paicaroussel"
-        ]
-    },
-    "flex-layout.row#paicaroussel":{
-        "children": [
-        "flex-layout.row#caroussel"],
-        "props": {
-            "blockClass":"carousell"
-        }
-    },
+        "flex-layout.row#paicaroussel"
+    ]
+},
+"flex-layout.row#paicaroussel":{
+    "children": [
+    "flex-layout.row#caroussel"],
+    "props": {
+        "blockClass":"carousell"
+    }
+},
     //--------chamando o titulo-------------///
-    "flex-layout.row#servcarou":{
-        "children": [
-            "rich-text#caroulssel"
-        ],
-        "props": {
-            "blockClass":"caroussell"
-        }
-    },
-    "rich-text#caroulssel": { // Título -caroulsel - Desktop
-        "props": {
-            "blockClass": "regionsTitle",
-            "text": "Venha conhecer alguns de nossos serviços",
-            "font": "t-heading-1",
-            "textPosition": "CENTER",
-            "textAlignment": "CENTER"
-        }
-    },
+"flex-layout.row#servcarou":{
+    "children": [
+        "rich-text#caroulssel"
+    ],
+    "props": {
+        "blockClass":"caroussell"
+    }
+},
+"rich-text#caroulssel": { // Título -caroulsel - Desktop
+    "props": {
+        "blockClass": "regionsTitle",
+        "text": "Venha conhecer alguns de nossos serviços",
+        "font": "t-heading-1",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+    }
+},
    //---- chamando o slider----///
-    "flex-layout.row#caroussel": {
-          "children": [
-           "slider-layout#home"
-          ],
-          "props":{
-            "blockClass":"caroussel",
-            "defaultActiveTabById":"home1"
-          }
-        },
+"flex-layout.row#caroussel": {
+        "children": [
+        "slider-layout#home"
+        ],
+        "props":{
+        "blockClass":"caroussel",
+        "defaultActiveTabById":"home1"
+        }
+    },
    //---- listagem da quantidade de botões que teremos----///
-        "slider-layout#home":{
-            "children":[  
-                "tab-layout#header1",
-                "tab-layout#header2",
-                "tab-layout#header3",
-                "tab-layout#header1",
-                "tab-layout#header1",
-                "tab-layout#header1",
-                "tab-layout#header1",
-                "tab-layout#header1"
-            ],
-            "props":{
-                "blockClass":"caroussel"
-        }
-        },
+"slider-layout#home":{
+    "children":[  
+        "tab-layout#header1",
+        "tab-layout#header2",
+        "tab-layout#header3",
+        "tab-layout#header4",
+        "tab-layout#header5",
+        "tab-layout#header6",
+        "tab-layout#header7",
+        "tab-layout#header8"
+    ],
+    "props":{
+        "blockClass":"caroussel",
+        "adaptToScreen":true,
+        "itemsPerPage": 7
+}
+},
   /// ----- definindo primeiro botão --------///
-        "tab-layout#header1":{
-    
-            "children":[
-            "tab-list#caroussel1"
-            ],
-            "props":{
-                "blockClass":"caroussel"
-        }
-    },
+    "tab-layout#header1":{
+
+        "children":[
+        "tab-list#caroussel1"
+        ],
+        "props":{
+            "blockClass":"caroussel"
+    }
+},
     ////---- criando conteudo do primeio botão-----------////
-    "tab-list#caroussel1":{
-            "children": [
-                "tab-list.item.children#home1"
-            ],
-            "props":{
-            "defaultActiveTab":0
-            }
-    
-        },
-
-        "tab-list.item.children#home1":{
-            "props":{
-                "defaultActiveTab":0,
-                "blockClass":"caroussel"
-            },
-              "children": ["flex-layout.col#buttoncaroussel"]    
-        },
-        "flex-layout.col#buttoncaroussel":{
-            "children": [ "link#containercaroussel"]
-        },
-
-        "link#containercaroussel":{   /// imagem e texto dentro do botão
-            "children": [ 
-                "image#containerCaroussel1",
-                "rich-text#containerCarrousel"
-                ],
-            "props":{
-                "blockClass":"caroussel"
-            }
-        },
-        
-      "image#containerCaroussel1": { // Imagem do banner container
-        "props": {
-          "blockClass": "caroussel",
-          "width": 55,
-          "height":55,
-          "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Business-Application_48.07da8d44cd6f680510a452ad25fbe72534d670c7.png"
+"tab-list#caroussel1":{
+        "children": [
+            "tab-list.item.children#home1"
+        ],
+        "props":{
+        "defaultActiveTab":0
         }
-      },
-      "rich-text#containerCarrousel":{
-        "props": { 
-            "blockClass": "containerCaroussel",
-            "text": "Serviços em destaque"
 
-          }
-      },
+    },
 
-        /// ----- definindo segundo botão --------///
-        "tab-layout#header2":{
-    
-            "children":[
-            "tab-list#caroussel2"
+    "tab-list.item.children#home1":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+            "children": ["flex-layout.col#buttoncaroussel"]    
+    },
+    "flex-layout.col#buttoncaroussel":{
+        "children": [ "link#containercaroussel"]
+    },
+
+    "link#containercaroussel":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel1",
+            "rich-text#containerCarrousel"
             ],
-            "props":{
-                "blockClass":"caroussel"
+        "props":{
+            "blockClass":"caroussel"
         }
     },
-//---- criando o segundo botão------//
-        "tab-list#caroussel2":{
-            "children": [
-                "tab-list.item.children#home2"
-            ],
-            "props":{
-            "defaultActiveTab":0
-            }
-
-        },
-
-        "tab-list.item.children#home2":{
-            "props":{
-                "defaultActiveTab":0,
-                "blockClass":"caroussel"
-            },
-            "children": ["flex-layout.col#buttoncaroussel2"]    
-        },
-        "flex-layout.col#buttoncaroussel2":{
-            "children": [ "link#containercaroussel2"]
-        },
-
-        "link#containercaroussel2":{   /// imagem e texto dentro do botão
-            "children": [ 
-                "image#containerCaroussel2",
-                "rich-text#containerCarrouse2"
-                ],
-            "props":{
-                "blockClass":"caroussel"
-            }
-        },
-
-        "image#containerCaroussel2": { // Imagem do banner container
-        "props": {
+    
+    "image#containerCaroussel1": { // Imagem do banner container
+    "props": {
         "blockClass": "caroussel",
         "width": 55,
         "height":55,
-        "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Analytics_48_Beta-Test.a17050b6302d5cbbb261392059eae7bd5f71d221.png"
-        }
-        },
-        "rich-text#containerCarrouse2":{
-        "props": { 
-            "blockClass": "containerCaroussel",
-            "text": "Estruturas de Análises"
+        "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Business-Application_48.07da8d44cd6f680510a452ad25fbe72534d670c7.png"
+    }
+    },
+    "rich-text#containerCarrousel":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Serviços em destaque"
 
         }
+    },
+
+    /// ----- definindo segundo botão --------///
+    "tab-layout#header2":{
+
+        "children":[
+        "tab-list#caroussel2"
+        ],
+        "props":{
+            "blockClass":"caroussel"
+    }
+},
+//---- criando o segundo botão------//
+    "tab-list#caroussel2":{
+        "children": [
+            "tab-list.item.children#home2"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home2":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
         },
-                /// ----- definindo terceiro botão --------///
-                "tab-layout#header3":{
+        "children": ["flex-layout.col#buttoncaroussel2"]    
+    },
+    "flex-layout.col#buttoncaroussel2":{
+        "children": [ "link#containercaroussel2"]
+    },
+
+    "link#containercaroussel2":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel2",
+            "rich-text#containerCarrouse2"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel2": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Analytics_48_Beta-Test.a17050b6302d5cbbb261392059eae7bd5f71d221.png"
+    }
+    },
+    "rich-text#containerCarrouse2":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Estruturas de Análises"
+
+    }
+    },
+ /// ----- definindo terceiro botão --------///
+    "tab-layout#header3":{
+
+        "children":[
+        "tab-list#caroussel3"
+        ],
+        "props":{
+            "blockClass":"caroussel"
+    }
+},
+//---- criando o terceiro botão------//
+    "tab-list#caroussel3":{
+        "children": [
+            "tab-list.item.children#home3"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home3":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel3"]    
+    },
+    "flex-layout.col#buttoncaroussel3":{
+        "children": [ "link#containercaroussel3"]
+    },
+
+    "link#containercaroussel3":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel3",
+            "rich-text#containerCarrouse3"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel3": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Cost-Management_48.c5cf85dc4e0be655bd039f97c39f2f2467146762.png"
+    }
+    },
+    "rich-text#containerCarrouse3":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Gerenciamento financeiro"
+
+    }
+    },
+
+
+                    /// ----- definindo quarto botão --------///
+    "tab-layout#header4":{
+
+        "children":[
+        "tab-list#caroussel4"
+        ],
+        "props":{
+            "blockClass":"caroussel"
+    }
+},
+        //---- criando o terceiro botão------//
+    "tab-list#caroussel4":{
+        "children": [
+            "tab-list.item.children#home4"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home4":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel4"]    
+    },
+    "flex-layout.col#buttoncaroussel4":{
+        "children": [ "link#containercaroussel4"]
+    },
+
+    "link#containercaroussel4":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel4",
+            "rich-text#containerCarrouse4"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel4": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Compute_48.2ecdc5540aeb95096108ad3ecfc9c09eba2a0b7d.png"
+    }
+    },
+    "rich-text#containerCarrouse4":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Poder de Computação"
+
+    }
+    },
+
     
-                    "children":[
-                    "tab-list#caroussel3"
-                    ],
-                    "props":{
-                        "blockClass":"caroussel"
-                }
-            },
-        //---- criando o segundo botão------//
-                "tab-list#caroussel3":{
-                    "children": [
-                        "tab-list.item.children#home3"
-                    ],
-                    "props":{
-                    "defaultActiveTab":0
-                    }
-        
-                },
-        
-                "tab-list.item.children#home3":{
-                    "props":{
-                        "defaultActiveTab":0,
-                        "blockClass":"caroussel"
-                    },
-                    "children": ["flex-layout.col#buttoncaroussel3"]    
-                },
-                "flex-layout.col#buttoncaroussel3":{
-                    "children": [ "link#containercaroussel3"]
-                },
-        
-                "link#containercaroussel3":{   /// imagem e texto dentro do botão
-                    "children": [ 
-                        "image#containerCaroussel3",
-                        "rich-text#containerCarrouse3"
-                        ],
-                    "props":{
-                        "blockClass":"caroussel"
-                    }
-                },
-        
-                "image#containerCaroussel3": { // Imagem do banner container
-                "props": {
-                "blockClass": "caroussel",
-                "width": 55,
-                "height":55,
-                "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Cost-Management_48.c5cf85dc4e0be655bd039f97c39f2f2467146762.png"
-                }
-                },
-                "rich-text#containerCarrouse3":{
-                "props": { 
-                    "blockClass": "containerCaroussel",
-                    "text": "Gerenciamento financeiro"
-        
-                }
-                }
-        
+                    /// ----- definindo quarto botão --------///
+    "tab-layout#header4":{
 
+        "children":[
+        "tab-list#caroussel4"
+        ],
+        "props":{
+            "blockClass":"caroussel"
+    }
+},
+        //---- criando o  quarto botão------//
+    "tab-list#caroussel4":{
+        "children": [
+            "tab-list.item.children#home4"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
 
-      
+    },
+
+    "tab-list.item.children#home4":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel4"]    
+    },
+    "flex-layout.col#buttoncaroussel4":{
+        "children": [ "link#containercaroussel4"]
+    },
+
+    "link#containercaroussel4":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel4",
+            "rich-text#containerCarrouse4"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel4": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Compute_48.2ecdc5540aeb95096108ad3ecfc9c09eba2a0b7d.png"
+    }
+    },
+    "rich-text#containerCarrouse4":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Poder de Computação"
+
+    }
+    },
+     /// ----- definindo quinto botão --------///
+        "tab-layout#header5":{
+
+            "children":[
+            "tab-list#caroussel5"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+    },
+//---- criando o  quinto botão------//
+    "tab-list#caroussel5":{
+        "children": [
+            "tab-list.item.children#home5"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home5":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel5"]    
+    },
+    "flex-layout.col#buttoncaroussel5":{
+        "children": [ "link#containercaroussel5"]
+    },
+
+    "link#containercaroussel5":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel5",
+            "rich-text#containerCarrouse5"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel5": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Containers_48.e46eb6c25cab3a19b5dc16ea984af093bf889dc8.png"
+    }
+    },
+    "rich-text#containerCarrouse5":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Contêiners acessiveis"
+
+    }
+    },
+
+         /// ----- definindo sexto botão --------///
+         "tab-layout#header6":{
+
+            "children":[
+            "tab-list#caroussel6"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+    },
+//---- criando o  sexto botão------//
+    "tab-list#caroussel6":{
+        "children": [
+            "tab-list.item.children#home6"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home6":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel6"]    
+    },
+    "flex-layout.col#buttoncaroussel6":{
+        "children": [ "link#containercaroussel6"]
+    },
+
+    "link#containercaroussel6":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel6",
+            "rich-text#containerCarrouse6"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel6": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Database_48.1b7bf6bddf0aaafd588df5337987f1778ed68b69.png"
+    }
+    },
+    "rich-text#containerCarrouse6":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Explore com Banco de Dados"
+
+    }
+    },
+         /// ----- definindo setimo botão --------///
+         "tab-layout#header7":{
+
+            "children":[
+            "tab-list#caroussel7"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+    },
+//---- criando o setimo botão------//
+    "tab-list#caroussel7":{
+        "children": [
+            "tab-list.item.children#home7"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home7":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel7"]    
+    },
+    "flex-layout.col#buttoncaroussel7":{
+        "children": [ "link#containercaroussel7"]
+    },
+
+    "link#containercaroussel7":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel7",
+            "rich-text#containerCarrouse7"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel7": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Mobile_48.bb4fbdc097ee434260781fa610a73fa07fb29427.png"
+    }
+    },
+    "rich-text#containerCarrouse7":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Web e plataforma front"
+
+    }
+    },
+         /// ----- definindo oitavo botão --------///
+         "tab-layout#header8":{
+
+            "children":[
+            "tab-list#caroussel8"
+            ],
+            "props":{
+                "blockClass":"caroussel"
+        }
+    },
+//---- criando o  oitavo botão------//
+    "tab-list#caroussel8":{
+        "children": [
+            "tab-list.item.children#home8"
+        ],
+        "props":{
+        "defaultActiveTab":0
+        }
+
+    },
+
+    "tab-list.item.children#home8":{
+        "props":{
+            "defaultActiveTab":0,
+            "blockClass":"caroussel"
+        },
+        "children": ["flex-layout.col#buttoncaroussel8"]    
+    },
+    "flex-layout.col#buttoncaroussel8":{
+        "children": [ "link#containercaroussel8"]
+    },
+
+    "link#containercaroussel8":{   /// imagem e texto dentro do botão
+        "children": [ 
+            "image#containerCaroussel8",
+            "rich-text#containerCarrouse8"
+            ],
+        "props":{
+            "blockClass":"caroussel"
+        }
+    },
+
+    "image#containerCaroussel8": { // Imagem do banner container
+    "props": {
+    "blockClass": "caroussel",
+    "width": 55,
+    "height":55,
+    "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/IoT_48.1c3307948472dd8fadc9dd81da81fd75d16da7d3.png"
+    }
+    },
+    "rich-text#containerCarrouse8":{
+    "props": { 
+        "blockClass": "containerCaroussel",
+        "text": "Internet das coisas"
+
+    }
+    }
       }
 
 

@@ -34,10 +34,10 @@
 
 /*** patrocinadores***/
 
-.imageElement--imageCadastro{
+.imageElement--imagePatro{
     filter: grayscale(100%);
 }
 
-.imageElement--imageCadastro:hover{
+.imageElement--imagePatro:hover{
     filter: grayscale(0%);
 }
