@@ -1,0 +1,147 @@
+{
+    "flex-layout.row#main-title": {
+        "props": {
+            "blockClass": "aws-characteristics",
+            "fullWidth": true
+        },
+        "children": [
+            "rich-text#main-title"
+        ]
+    },
+    "flex-layout.row#characteristics": {
+        "props": {
+            "blockClass": "aws-characteristics",
+            "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#security",
+            "flex-layout.col#conformity",
+            "flex-layout.col#hybrid-model",
+            "flex-layout.col#scalability"
+        ]
+    },
+    "rich-text#main-title": {
+        "props": {
+            "blockClass": "main-title",
+            "text": "**Nuvem projetada para os requisitos mais rigorosos**",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.col#security": {
+        "children": [
+            "image#security",
+            "rich-text#security-title",
+            "rich-text#security-description"
+        ]
+    },
+    "image#security": {
+        "props": {
+            "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Icon-Lock100.971813fcb891772faf5f35eb39fc8053d20e4501.png",
+            "maxHeight": 100
+        }
+    },
+    "rich-text#security-title": {
+        "props": {
+            "blockClass": "characteristics-title",
+            "text": "**Segurança**",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "rich-text#security-description": {
+        "props": {
+            "blockClass": "characteristics-description",
+            "text": "Recursos abrangentes de segurança para cumprir os requisitos mais rigorosos.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.col#conformity": {
+        "children": [
+            "image#conformity",
+            "rich-text#conformity-title",
+            "rich-text#conformity-description"
+        ]
+    },
+    "image#conformity": {
+        "props": {
+            "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Icon-Check100.4e05732baf0904406676de8d7661e66294743261.png",
+            "maxHeight": 100
+        }
+    },
+    "rich-text#conformity-title": {
+        "props": {
+            "blockClass": "characteristics-title",
+            "text": "**Conformidade**",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "rich-text#conformity-description": {
+        "props": {
+            "blockClass": "characteristics-description",
+            "text": "Controles sofisticados, auditoria e credenciamentos de segurança abrangentes.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.col#hybrid-model": {
+        "children": [
+            "image#hybrid-model",
+            "rich-text#hybrid-model-title",
+            "rich-text#hybrid-model-description"
+        ]
+    },
+    "image#hybrid-model": {
+        "props": {
+            "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Icon-Layers100.94b03792d26711379a1405e76084980bd2115456.png",
+            "maxHeight": 100
+        }
+    },
+    "rich-text#hybrid-model-title": {
+        "props": {
+            "blockClass": "characteristics-title",
+            "text": "**Modelo Híbrido**",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "rich-text#hybrid-model-description": {
+        "props": {
+            "blockClass": "characteristics-description",
+            "text": "Crie arquiteturas híbridas que estendem a infraestrutura on-premises para a nuvem.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.col#scalability": {
+        "children": [
+            "image#scalability",
+            "rich-text#scalability-title",
+            "rich-text#scalability-description"
+        ]
+    },
+    "image#scalability": {
+        "props": {
+            "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/Icon-Arrows100.b0f00de32875c9a082f98f860786c38ad9168a94.png",
+            "maxHeight": 100
+        }
+    },
+    "rich-text#scalability-title": {
+        "props": {
+            "blockClass": "characteristics-title",
+            "text": "**Modelo Híbrido**",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "rich-text#scalability-description": {
+        "props": {
+            "blockClass": "characteristics-description",
+            "text": "Crie arquiteturas híbridas que estendem a infraestrutura on-premises para a nuvem.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    }
+}

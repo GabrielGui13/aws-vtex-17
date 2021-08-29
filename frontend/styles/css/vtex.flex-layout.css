@@ -123,7 +123,18 @@
      background-color:white;
  }
 
- /*** about us ***/
+
+
+
+/* mission 6 */
+.flexColChild{
+     margin-left: auto;
+     margin-right: auto;
+     }
+ .flexRowContent--aws-characteristics{
+    background: #23303f;
+ }
+/*** about us ***/
  
  .flexRow--about1{
     background-image:url("https://uploaddeimagens.com.br/images/003/404/710/original/background.png?1630269372");
