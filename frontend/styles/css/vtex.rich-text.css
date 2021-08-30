@@ -63,14 +63,16 @@
 
 .headingLevel3--main-title-solutions {
     font-size: 36px;
-    padding-top: 15px;
+}
+
+.container--main-title-solutions {
+    width: 100%;
+    height: 75px;
 }
 
 .container--container-title-text {
-    margin-top: -30px;
-    margin-bottom: -20px;
-    margin-left: 90px;
     width:100%;
+    height: 50px;
 }
 
 .strong--containers-titles {
@@ -85,9 +87,7 @@
 /***** START USING *****/
 
 .container--container-start-using-main-title {
-    margin-left: 80px;
-    margin-top: 30px;
-    width: 1200px;
+    width: 100%;
 }
 
 .headingLevel3--container-start-using-main-title {
