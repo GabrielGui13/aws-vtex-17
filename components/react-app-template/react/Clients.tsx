@@ -88,9 +88,7 @@ const Clients = () => {
             onClick: async ({ rowData }: any) => {
 
                 async function deleteClient() {
-                    await axios.delete(`https://gabrielvtex--hiringcoders202117.myvtex.com/leads`, {
-                            params: rowData.email
-                        }).then(() => {
+                    await axios.delete(`https://gabrielvtex--hiringcoders202117.myvtex.com/leads/${rowData.email}`).then(() => {
                             Swal.fire({
                                 title: `Deletado!`,
                                 text: `O ${rowData.tipo.toLowerCase()} ${rowData.nome} foi excluido com sucesso!`,
@@ -102,7 +100,7 @@ const Clients = () => {
 
                 Swal.fire({
                     title: `Deletar ${rowData.nome}?`,
-                    text: `Você está prestes a deleter o ${rowData.tipo.toLowerCase()} ${rowData.nome}`,
+                    text: `Você está prestes a deletar o ${rowData.tipo.toLowerCase()} ${rowData.nome}`,
                     icon: 'warning',
                     showCancelButton: true,
                     cancelButtonColor: '#d33',
@@ -111,12 +109,14 @@ const Clients = () => {
                     backdrop: `rgba(0,0,0,0.05)`
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        /* deleteClient() */
-                        console.log(rowData.email);
+                        deleteClient()
                     }
                 })
             }
         },
+        {
+            label: ({ rowData }: any) => `Atualizar ${rowData.tipo.toLowerCase()} ${rowData.nome} `,
+        }
       ]
 
     return (
