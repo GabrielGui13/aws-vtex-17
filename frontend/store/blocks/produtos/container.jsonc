@@ -114,14 +114,16 @@
     ],
     "props": {
       "width": "90%",
-      "blockClass": "productpageIcons"
+      "blockClass": "productpageIcons",
+      "rowGap": 1
     }
   },
   "flex-layout.col#icon1Container": { //icon 1 services
     "children": [
       "image#containerIcon1",
       "rich-text#containerIconTitle1",
-      "rich-text#containerIconDesc1"
+      "rich-text#containerIconDesc1",
+      "link#containerIcon1"
     ],
     "props": {
       "blockClass": "iconCol"
@@ -142,6 +144,13 @@
   "rich-text#containerIconDesc1": {
     "props": {
       "text": "Saiba mais como executar containers na AWS."
+    }
+  },
+  "link#containerIcon1": { 
+    "props": {
+      "href": "/",     // LINK DO SAIBA MAIS VISITE A PÁGINA DE SERVIÇOS AQUI //
+      "label": "Saiba mais >>",
+      "blockClass": "container-containers-icons"
     }
   },
   "flex-layout.col#icon2Container": { //icon 2 cadastro
@@ -175,14 +184,16 @@
   "link#containerIcon2": { // Botão CTA container icon 2
     "props": {
       "href": "/lead",
-      "label": ">> Cadastrar-se"
+      "label": "Cadastrar-se >>",
+      "blockClass": "container-containers-icons"
     }
   },
   "flex-layout.col#icon3Container": { //icon 3 ferramentas
     "children": [
       "image#containerIcon3",
       "rich-text#containerIconTitle3",
-      "rich-text#containerIconDesc3"
+      "rich-text#containerIconDesc3",
+      "link#containerIcon3"
     ],
     "props": {
       "blockClass": "iconCol"
@@ -203,6 +214,13 @@
   "rich-text#containerIconDesc3": {
     "props": {
       "text": "Saiba como começar a usar containers na AWS."
+    }
+  },
+  "link#containerIcon3": { 
+    "props": {
+      "href": "/",     // LINK DO SAIBA MAIS COMECE A CRIAR COM CONTAINERS AQUI //
+      "label": "Saiba mais >>",
+      "blockClass": "container-containers-icons"
     }
   },
   "search-result-layout.customQuery#container": {
