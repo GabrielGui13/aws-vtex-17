@@ -11,6 +11,7 @@
       "flex-layout.row#characteristics",
       "responsive-layout.desktop#regions",
       "responsive-layout.mobile#regions",
+      "responsive-layout.desktop#treinamento",
       "responsive-layout.desktop#mission1"
     ]
   }

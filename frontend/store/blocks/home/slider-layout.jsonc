@@ -11,7 +11,9 @@
     "slider-layout#home1": {
         "children": [
             "image#featured-products1",
-            "image#featured-products2"
+            "image#featured-products2",
+            "image#featured-products3",
+            "image#featured-products4"
         ],
         "props": {
             "itemsPerPage":1,
@@ -20,13 +22,25 @@
     },
     "image#featured-products1": {
         "props": {
-            "src": "https://uploaddeimagens.com.br/images/003/399/903/original/saiba-mais.png?1629978278",
+            "src": "https://uploaddeimagens.com.br/images/003/405/044/original/banner1.png?1630299194",
             "blockClass":"Slider"
         }
     },
     "image#featured-products2": {
         "props": {
-            "src": "https://uploaddeimagens.com.br/images/003/399/902/original/produtos-nuvem.png?1629978265",
+            "src": "https://uploaddeimagens.com.br/images/003/405/050/original/banner2.png?1630299665",
+            "blockClass":"Slider"
+        }
+    },
+    "image#featured-products3": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/405/051/original/banner3.png?1630300103",
+            "blockClass":"Slider"
+        }
+    },
+    "image#featured-products4": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/405/052/original/banner4.png?1630300130",
             "blockClass":"Slider"
         }
     }

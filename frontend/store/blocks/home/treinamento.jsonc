@@ -1,0 +1,217 @@
+{
+    "store.custom#treinamento": {
+        "blocks": [
+            "responsive-layout.desktop#treinamento",
+            "responsive-layout.mobile#treinamento"
+        ]
+    },
+    
+    // ******** DESKTOP ******** //
+  
+    "responsive-layout.desktop#treinamento": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#treinamentotela"
+        ],
+        "props":{
+            "blockClass":"treinamentobloco"
+        }
+    },
+
+    "flex-layout.row#treinamentotela":{
+    "children": [
+        "flex-layout.col#treinamento1"
+    ],
+    "props":{
+        "blockClass":"treinamentobloco"
+    }
+},
+
+"flex-layout.col#treinamento1":{
+    "children": [
+        "flex-layout.row#treinamento1",
+        "flex-layout.row#treinamento2",
+        "flex-layout.row#treinamento3",
+        "flex-layout.row#treinamento4"
+    ],
+    "props":{
+        "blockClass":"treinamentobloco"
+    }
+},
+
+    "flex-layout.row#treinamento1": { // Linha do Título - Regions - Desktop
+        "children": [
+            "rich-text#treinoTitle"
+        ]
+    },
+    "rich-text#treinoTitle": { // Título - Regions - Desktop
+        "props": {
+            "blockClass": "treinoTitle",
+            "text": "Treinamento e Certificação",
+            "font": "t-heading-1",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#treinamento2": { // Linha do Subtítulo - Regions - Desktop
+        "children": [
+            "rich-text#treinoSubTitle"
+        ]
+    },
+    "rich-text#treinoSubTitle": { // Subtítulo - Regions - Desktop
+        "props": {
+            "blockClass": "treinoSubTitle",
+            "text": "Para criadores. Para os responsáveis pela tomada de decisões",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+
+  
+    "flex-layout.row#treinamento3": { // Linha do Subtítulo - treinamento- Desktop
+        "children": [
+            "rich-text#treinoSubTitle2"
+        ]
+    },
+    "rich-text#treinoSubTitle2": { // Subtítulo - treinamento - Desktop
+        "props": {
+            "blockClass": "treinoSubTitle2",
+            "text": "Para desenvolvedores, cientistas de dados, arquitetos de soluções ou qualquer pessoa interessada em aprender a construir na AWS hoje",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+
+
+    "flex-layout.row#treinamento4": { // Linha de Imagens - treinamento - Desktop
+        "children": [
+            "flex-layout.col#treino1",
+            "flex-layout.col#treino2",
+            "flex-layout.col#treino3"
+        ],
+        "props": {
+            "blockClass": "trreinoRow"
+        }
+    },
+
+    /// primeiro item da imagem //////
+
+
+    "flex-layout.col#treino1":{
+        "children":[
+            "image#treino1",
+            "rich-text#textoimgtreino11",
+            "rich-text#textoimgtreino12"
+        ],
+        "props": {
+            "blockClass":"divtreino"
+        }
+    },
+    "image#treino1": { // Imagem -treinamento - Desktop
+        "props": {
+            "blockClass": "image-treino",
+            "width": 500,
+            "src": "https://uploaddeimagens.com.br/images/003/405/018/original/image1.png?1630294518"
+        }
+    },
+    "rich-text#textoimgtreino11": { // Subtítulo - treinamento - Desktop
+        "props": {
+            "blockClass": "treinoTitle2",
+            "text": "Treinamento online gratuito",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "rich-text#textoimgtreino12": { // Subtítulo - treinamento - Desktop
+        "props": {
+            "blockClass": "treinoSubTitle2",
+            "text": "Passe do aprendizado para a prática com mais de 500 cursos de treinamento digital gratuitos desenvolvidos por especialistas da AWS",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+//------ segunda imagem bloco---------/
+
+"flex-layout.col#treino2":{
+    "children":[
+        "image#treino2",
+        "rich-text#textoimgtreino21",
+        "rich-text#textoimgtreino22"
+    ],
+    "props": {
+        "blockClass":"divtreino"
+    }
+},
+"image#treino2": { // Imagem -treinamento - Desktop
+    "props": {
+        "blockClass": "image-treino",
+        "width": 500,
+        "src": "https://uploaddeimagens.com.br/images/003/405/025/original/image2.png?1630296026"
+    }
+},
+
+"rich-text#textoimgtreino21": { // Subtítulo - treinamento - Desktop
+    "props": {
+        "blockClass": "treinoTitle2",
+        "text": "Recomendação de aprendizado da AWS",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+    }
+},
+"rich-text#textoimgtreino22": { // Subtítulo - treinamento - Desktop
+    "props": {
+        "blockClass": "treinoSubTitle2",
+        "text": "Comece a construir hoje com guias de reforço com recursos selecionados para aumentar seu conhecimento sobre a AWS",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+    }
+},
+//------ terceiro bloco de imagem -----------//
+"flex-layout.col#treino3":{
+    "children":[
+        "image#treino3",
+        "rich-text#textoimgtreino31",
+        "rich-text#textoimgtreino32"
+    ],
+    "props": {
+        "blockClass":"divtreino"
+    }
+},
+"image#treino3": { // Imagem -treinamento - Desktop
+    "props": {
+        "blockClass": "image-treino",
+        "width": 500,
+        "src": "https://uploaddeimagens.com.br/images/003/405/026/original/image3.png?1630296104"
+    }
+},
+
+"rich-text#textoimgtreino31": { // Subtítulo - treinamento - Desktop
+    "props": {
+        "blockClass": "treinoTitle2",
+        "text": "AWS Certification",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+    }
+},
+"rich-text#textoimgtreino32": { // Subtítulo - treinamento - Desktop
+    "props": {
+        "blockClass": "treinoSubTitle2",
+        "text": "Expanda sua carreira e negócios com credenciais reconhecidas pelo setor validando suas habilidades com a nuvem",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+    }
+},
+
+
+    // ******** MOBILE ******** //
+
+    "responsive-layout.mobile#treinamento": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+        "children": [
+            "flex-layout.row#treinamento1Mobile",
+            "flex-layout.row#treinamento2Mobile",
+            "flex-layout.row#treinamento3Mobile"
+        ]
+    },
+    "flex-layout.row#treinamento1Mobile": {}, // Linha do Título - Regions - Mobile
+    "flex-layout.row#treinamento2Mobile": {},
+    "flex-layout.row#treinamento3Mobile": {}
+}

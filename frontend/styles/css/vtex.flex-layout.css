@@ -161,6 +161,7 @@
  .flexRowContent--aws-characteristics{
     background: #23303f;
     padding-bottom: 20px;
+    padding:60px
  }
  .flexColChild--requisitos{
      margin: auto;
@@ -201,3 +202,14 @@
     display:flex;
     margin:auto
  }
+
+/***** treinamento *******/
+.flexRow--treinamentobloco{
+    background-color:#1d2835;
+    padding-bottom:30px;
+    height: 900px;
+}
+.flexColChild--divTreino{
+    padding:20px;
+    margin: 20px;
+}

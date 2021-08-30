@@ -203,3 +203,37 @@
 .paragraph--mapaSubTitle{
     color:white
 }
+
+/***** bloco treinamento pokomen ***********/
+.paragraph--treinoTitle{
+    color:white;
+}
+.paragraph--treinoTitle2{
+    color:white;
+    font-weight: bold;
+    font-size:26px;
+}
+.paragraph--treinoTitle2:hover{
+    color:rgb(241, 132, 30);
+    font-weight: bold;
+    font-size:26px;
+}
+.paragraph--treinoSubTitle{
+    font-size: 25px;
+    color:white;
+}
+.paragraph--treinoSubTitle:hover{
+    font-size: 25px;
+    color:rgb(241, 132, 30);
+}
+.paragraph--treinoSubTitle2{
+    font-size: 22px;
+    color:white;
+    margin:10px;
+}
+
+/***** mission 1 *******/
+.container--container-title-text{
+    max-width:65vw;
+    margin:auto;
+}

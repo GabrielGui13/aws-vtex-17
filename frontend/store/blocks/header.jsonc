@@ -35,7 +35,6 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#spacer1",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer1",
       "flex-layout.col#spacer1",
@@ -43,8 +42,8 @@
       "flex-layout.col#spacer1",
       "flex-layout.col#spacer1",
       "login",
-      "minicart.v2",
-      "flex-layout.col#spacer1"
+      "minicart.v2"
+      
     ]
   },
   "flex-layout.col#spacer1": {
