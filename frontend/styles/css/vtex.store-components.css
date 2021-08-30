@@ -36,6 +36,7 @@
 
 .imageElement--imagePatro{
     filter: grayscale(100%);
+    max-width: 150px;
 }
 
 .imageElement--imagePatro:hover{
@@ -43,7 +44,7 @@
 }
 /******* about us*********/
 .imageElement--Slider{
-    max-width: 1800px;
+    max-width: 2000px;
     margin: auto;  
     align-self: center;
     margin-left: 100%;

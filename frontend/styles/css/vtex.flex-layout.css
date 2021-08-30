@@ -45,6 +45,7 @@
 .flexRowContent--logos{
     max-width: 900px;
     margin: auto;
+    margin-bottom: 50px;
 }
 .flexCol--linha{
     max-width:2px;
@@ -65,7 +66,9 @@
     width: 50vw;
 }
 
-
+.flexRow--titulo-logos{
+    margin-top: 50px;
+}
 .flexRow--cadastro{
     width:99vw;
     height:80vh;

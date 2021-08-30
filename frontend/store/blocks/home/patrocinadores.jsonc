@@ -18,7 +18,10 @@
     "flex-layout.row#patro1": { // Linha do Título - Regions - Desktop
         "children": [
             "rich-text#regionsTitle2"
-        ]
+        ],
+        "props":{
+            "blockClass":"titulo-logos"
+        }
     },
     "rich-text#regionsTitle2": { // Título - Regions - Desktop
         "props": {
@@ -63,7 +66,7 @@
 
         "image#logop1":{
             "props":{
-              "blockClass":"imageCadastro",
+              "blockClass":"imagePatro",
               "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
             }
           },
@@ -77,7 +80,7 @@
 
         "image#logop2":{
             "props":{
-              "blockClass":"imageCadastro",
+              "blockClass":"imagePatro",
               "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
             }
           },
@@ -92,7 +95,7 @@
 
         "image#logop3":{
             "props":{
-              "blockClass":"imageCadastro",
+              "blockClass":"imagePatro",
               "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
             }
           },
@@ -107,7 +110,7 @@
 
         "image#logop4":{
             "props":{
-              "blockClass":"imageCadastro",
+              "blockClass":"imagePatro",
               "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
             }
           },
@@ -122,7 +125,7 @@
 
         "image#logop5":{
             "props":{
-              "blockClass":"imageCadastro",
+              "blockClass":"imagePatro",
               "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
             }
           },
@@ -137,11 +140,11 @@
 
         "image#logop6":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/875/original/logo-wedigi.png?1630281673"
             }
           },
-
+""
 
         "flex-layout.col#logo7":{
             "children": ["image#logop7"],
@@ -152,8 +155,8 @@
 
         "image#logop7":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/879/original/logo-whirlpool.png?1630281804"
             }
           },
 
