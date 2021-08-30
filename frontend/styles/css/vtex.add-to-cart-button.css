@@ -1,3 +1,4 @@
 .buttonText{
-    text-decoration:unset;
+    text-decoration:unset !important;
+    
 }

@@ -1,6 +1,296 @@
 {
-    "store.custom#dynamo":{
-        
+    "store.custom#dynamo": { 
+      "blocks": [
+        "responsive-layout.desktop#dynamo",
+        "responsive-layout.mobile#dynamo"
+      ]
+    },
+      
+    // ******** DESKTOP ******** //
+  
+    "responsive-layout.desktop#dynamo": {
+      "children": [
+        "stack-layout#dynamo",
+        "flex-layout.row#dynamo",
+        "flex-layout.row#dyIcons",
+        "search-result-layout.customQuery#dynamo"
+      ]
+    },
+    "stack-layout#dynamo": { // Banner container com CTA button
+      "children": [
+        "image#dynamo",
+        "rich-text#dynamoTitle",
+        "rich-text#dynamoSubTitle",
+        "link#dynamo"
+      ]
+    },
+    "image#dynamo": { // Imagem do banner container
+      "props": {
+        "blockClass": "cover",
+        "width": "100%",
+        "height": 300,
+        "src": "https://uploaddeimagens.com.br/images/003/406/223/original/dynamonbackgroun.jpg?1630354520"
+      }
+    },
+    "rich-text#dynamoTitle": {  // Título do container
+      "props": { 
+        "blockClass": "productpage-title",
+        "text": "Amazon DynamoDB"
+      }
+    },
+    "rich-text#dynamoSubTitle": { // Subtítulo do container
+      "props": { 
+        "blockClass": "productpage-subTitle",
+        "text": "Serviço de banco de dados NoSQL rápido e flexível para qualquer escala"
+      }
+    },
+    "link#dynamo": { // Botão CTA container
+      "props": {
+        "blockClass": "button-productpage",
+        "displayMode": "button",
+        "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+        "label": "Conheça mais Amazon DynamoDB"
+      }
+    },
+    "flex-layout.row#dynamo": { // Colunas esquerda (texto) e direita (imagem) da descrição do container
+      "children": [
+        "flex-layout.col#dyLeft",
+        "flex-layout.col#dyRight"
+      ],
+      "props": {
+        "blockClass": "row-container-description"
+      }
+    },
+    "flex-layout.col#dyLeft": { // Coluna da esquerda - texto da descrição
+      "children": [
+        "rich-text#dyDescription"
+      ],
+      "props": {
+        "blockClass": "container-left-col",
+        "horizontalAlign": "left",
+        "verticalAlign": "middle"
+      }
+    },
+    "rich-text#dyDescription": { // Texto da descrição do container
+      "props": {
+        "blockClass": "productpage-description",
+        "text": "O Amazon DynamoDB é um banco de dados de valores-chave e documentos que oferece desempenho em milissegundos de um dígito em qualquer escala. É um banco de dados totalmente gerenciado, multirregional, multiativo e durável com segurança, backup e restauração integrados e armazenamento em cache na memória para aplicativos em escala de Internet. O DynamoDB pode processar mais de 10 trilhões de solicitações por dia e comportar picos de mais de 20 milhões de solicitações por segundo."
+      }
+    },
+    "flex-layout.col#dyRight": { // Coluna direita - imagem da descrição
+      "children": [
+        "image#dyRight"
+      ],
+      "props": {
+        "blockClass": "container-right-col",
+        "horizontalAlign": "center",
+        "verticalAlign": "middle"
+      }
+    },
+    "image#dyRight": { // Imagem da descrição do container
+      "props": {
+        "blockClass": "image-container",
+        "src": "https://uploaddeimagens.com.br/images/003/406/336/original/componente6.png?1630355986"
+      }
+    },
+    // parte dos icones de baixo do container
+    "flex-layout.row#dyIcons": {
+      "children": [
+        "flex-layout.col#dyicon1",
+        "flex-layout.col#dyicon2",
+        "flex-layout.col#dyicon3"
+      ],
+      "props": {
+        "width": "90%",
+        "blockClass": "productpageIcons"
+      }
+    },
+    "flex-layout.col#dyicon1": { //icon 1 services
+      "children": [
+        "image#dyIcon1",
+        "rich-text#dyIconTitle1",
+        "rich-text#dyIconDesc1"
+      ],
+      "props": {
+        "blockClass": "iconCol"
+      }
+    },
+    "image#dyIcon1": {
+      "props": {
+        "src": "https://uploaddeimagens.com.br/images/003/402/307/thumb/foto_de_services.png?1630078127",
+        "blockClass": "iconImg"
+      }
+    },
+    "rich-text#dyIconTitle1": {
+      "props": {
+        "text": "###### **Conheça mais sobre Dynamo**",
+        "blockClass": "iconColTitle"
+      }
+    },
+    "rich-text#dyIconDesc1": {
+      "props": {
+        "text": "O DynamoDB oferece suporte a alguns dos maiores aplicativos em escala do mundo ao fornecer tempos de resposta consistentes abaixo de 10 milissegundos, em qualquer escala."
+      }
+    },
+    "flex-layout.col#dyicon2": { //icon 2 cadastro
+      "children": [
+        "image#dyIcon2",
+        "rich-text#dyIconTitle2",
+        "rich-text#dyIconDesc2"
+      ],
+      "props": {
+        "blockClass": "iconCol"
+      }
+    },
+    "image#dyIcon2": {
+      "props": {
+        "src": "https://uploaddeimagens.com.br/images/003/406/066/original/componente4.png?1630350191",
+        "blockClass": "iconImg"
+      }
+    },
+    "rich-text#dyIconTitle2": {
+      "props": {
+        "text": "###### **Não há servidores para gerenciar**",
+        "blockClass": "iconColTitle"
+      }
+    },
+    "rich-text#dyIconDesc2": {
+      "props": {
+        "text":" O DynamoDB é sem servidor, não há servidores para provisionar, aplicar patches ou gerenciar nem softwares para instalar, manter ou operar. "
+      }
+    },
+    "flex-layout.col#dyicon3": { //icon 3 ferramentas
+      "children": [
+        "image#dyIcon3",
+        "rich-text#dyIconTitle3",
+        "rich-text#dyIconDesc3"
+      ],
+      "props": {
+        "blockClass": "iconCol"
+      }
+    },
+    "image#dyIcon3": {
+      "props": {
+        "src": "https://uploaddeimagens.com.br/images/003/402/309/thumb/foto_de_ferramentas.png?1630078177",
+        "blockClass": "iconImg"
+      }
+    },
+    "rich-text#dyIconTitle3": {
+      "props": {
+        "text": "###### **Comece a criar no Dynamo**",
+        "blockClass": "iconColTitle"
+      }
+    },
+    "rich-text#dyIconDesc3": {
+      "props": {
+        "text": "O DynamoDB tem um histórico comprovado de comportar casos de uso na escala da Internet e seus requisitos ao mesmo tempo que mantém uma latência consistente e inferior a 10 milissegundos."
+      }
+    },
+    "search-result-layout.customQuery#dynamo": {
+      "blocks": [
+        "search-result-layout.desktop"
+      ],
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByPriceASC",
+          "hideUnavailableItems": false,
+          "maxItemsPerPage": 1,
+          "queryField": "dynamo"
+        }
+      }
+    },
+  
+  
+  
+    // ******** MOBILE ******** //
+  
+    "responsive-layout.mobile#dynamo": {
+      "children": [
+        "stack-layout#dynamoMobile",
+        "flex-layout.row#dynamoMobile"
+      ]
+    },
+    "stack-layout#dynamoMobile": { // Banner container com CTA button (Mobile)
+      "children": [
+        "image#dynamoMobile",
+        "rich-text#dynamoTitleMobile",
+        "rich-text#dynamoSubTitleMobile",
+        "link#dynamoMobile"
+      ],
+      "props": {
+        "blockClass": "containerMobile"
+      }
+    },
+    "image#dynamoMobile": { // Imagem do banner container (Mobile)
+      "props": {
+        "blockClass": "coverMobile",
+        "width": "100%",
+        "height": 200,
+        "src": "https://uploaddeimagens.com.br/images/003/406/223/original/dynamonbackgroun.jpg?1630354520"
+      }
+    },
+    "rich-text#dynamoTitleMobile": {  // Título do container (Mobile)
+      "props": { 
+        "blockClass": "container-titleMobile",
+        "text": "Venha conhecer DynamoDB"
+      }
+    },
+    "rich-text#dynamoSubTitleMobile": { // Subtítulo do container (Mobile)
+      "props": { 
+        "blockClass": "container-subTitleMobile",
+        "text": "Migração de bancos de dados para o Amazon DynamoDB prática e agil",
+        "text-position": "center"
+      }
+    },
+    "link#dynamoMobile": { // Botão CTA container (Mobile)
+      "props": {
+        "blockClass": "button-containerMobile",
+        "displayMode": "button",
+        "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+        "label": "Comece a usar DynamoDB"
+      }
+    },
+    "flex-layout.row#dynamoMobile": { // Colunas esquerda (texto) e direita (imagem) da descrição do container (Mobile)
+      "children": [
+        "flex-layout.col#dynamoLeftMobile",
+        "flex-layout.col#dynamoRightMobile"
+      ],
+      "props": {
+        "blockClass": "row-container-description"
+      }
+    },
+    "flex-layout.col#dynamoLeftMobile": { // Coluna da esquerda - texto da descrição (Mobile)
+      "children": [
+        "rich-text#dyDescriptionMobile"
+      ],
+      "props": {
+        "blockClass": "container-left-colMobile",
+        "horizontalAlign": "center",
+        "verticalAlign": "middle"
+      }
+    },
+    "rich-text#dyDescriptionMobile": { // Texto da descrição do container (Mobile)
+      "props": {
+        "blockClass": "container-descriptionMobile",
+        "text": "O DynamoDB oferece suporte a alguns dos maiores aplicativos em escala do mundo ao fornecer tempos de resposta consistentes abaixo de 10 milissegundos, em qualquer escala. Você pode criar aplicativos com taxa de transferência e armazenamento praticamente ilimitados. As tabelas globais do DynamoDB replicam seus dados em várias regiões da AWS para oferecer a você acesso rápido e local a dados para seus aplicativos distribuídos globalmente. Para casos de uso que exigem acesso ainda mais rápido com latência de microssegundos, o DynamoDB Accelerator (DAX) oferece um cache de memória totalmente gerenciado.",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "flex-layout.col#dynamoRightMobile": { // Coluna direita - imagem da descrição (Mobile)
+      "children": [
+        "image#dyRightMobile"
+      ],
+      "props": {
+        "blockClass": "container-right-colMobile",
+        "horizontalAlign": "center",
+        "verticalAlign": "middle"
+      }
+    },
+    "image#dyRightMobile": { // Imagem da descrição do container (Mobile)
+      "props": {
+        "blockClass": "image-containerMobile",
+        "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
+      }
     }
-
-}
+  }
