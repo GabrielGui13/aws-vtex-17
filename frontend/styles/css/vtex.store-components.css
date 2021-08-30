@@ -35,7 +35,7 @@
 
 .imageElement--imagePatro{
     filter: grayscale(100%);
-    max-width: 150px;
+    mix-blend-mode:multiply;
 }
 
 .imageElement--imagePatro:hover{

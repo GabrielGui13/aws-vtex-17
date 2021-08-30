@@ -66,6 +66,17 @@
     width: 50vw;
 }
 
+.flexCol--logospatro{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow--logos{
+    margin-top: 50px;
+}
 .flexRow--titulo-logos{
     margin-top: 50px;
 }
@@ -143,14 +154,20 @@
      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%), 0 0 0 1px rgb(0 0 0 / 4%); 
  }
 
-
-
-
 /* mission 6 */
-
- .flexRowContent--aws-characteristics{
+.flexRowContent--aws-characteristics1{
     background: #23303f;
  }
+ .flexRowContent--aws-characteristics{
+    background: #23303f;
+    padding-bottom: 20px;
+ }
+ .flexColChild--requisitos{
+     margin: auto;
+     max-width:250px; 
+     padding-bottom: 10px;
+    }
+
 /*** about us ***/
  
  .flexRow--about1{
