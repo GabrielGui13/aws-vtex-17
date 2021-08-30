@@ -207,7 +207,9 @@
     "responsive-layout.mobile#aurora": {
       "children": [
         "stack-layout#auroraMobile",
-        "flex-layout.row#auroraMobile"
+        "flex-layout.row#auroraMobile",
+        "flex-layout.row#auroraIcons",
+        "search-result-layout.customQuery#aurora"
       ]
     },
     "stack-layout#auroraMobile": { // Banner container com CTA button (Mobile)
@@ -231,20 +233,20 @@
     },
     "rich-text#auroraTitleMobile": {  // Título do container (Mobile)
       "props": { 
-        "blockClass": "container-titleMobile",
+        "blockClass": "productpage-titleMobile",
         "text": "Venha conhecer Aurora"
       }
     },
     "rich-text#auroraSubTitleMobile": { // Subtítulo do container (Mobile)
       "props": { 
-        "blockClass": "container-subTitleMobile",
+        "blockClass": "productpage-subTitleMobile",
         "text": "Migração de bancos de dados para o Amazon Aurora prática e agil",
         "text-position": "center"
       }
     },
     "link#auroraMobile": { // Botão CTA container (Mobile)
       "props": {
-        "blockClass": "button-containerMobile",
+        "blockClass": "button-productpageMobile",
         "displayMode": "button",
         "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
         "label": "Comece a usar Aurora Amazon"
@@ -290,7 +292,7 @@
     "image#auroraRightMobile": { // Imagem da descrição do container (Mobile)
       "props": {
         "blockClass": "image-containerMobile",
-        "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
+        "src": "https://uploaddeimagens.com.br/images/003/406/057/original/componente5.png?1630350002"
       }
     }
   }

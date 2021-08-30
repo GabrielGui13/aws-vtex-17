@@ -237,7 +237,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/aurora",
         "noFollow": true,
         "tagTitle": "Amazon Aurora",
         "text": "Amazon Aurora"
@@ -252,7 +252,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/dynamodb",
         "noFollow": true,
         "tagTitle": "Amazon DynamoDB",
         "text": "Amazon DynamoDB"

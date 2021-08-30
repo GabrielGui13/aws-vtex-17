@@ -228,7 +228,8 @@
       "stack-layout#containerMobile",
       "flex-layout.row#containerMobile",
       "flex-layout.row#container-how-it-worksMobile",
-      "flex-layout.row#containerIcons"
+      "flex-layout.row#containerIcons",
+      "search-result-layout.customQuery#container"
     ]
   },
   "stack-layout#containerMobile": { // Banner container com CTA button (Mobile)

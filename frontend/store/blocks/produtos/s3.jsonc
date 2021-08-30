@@ -234,7 +234,8 @@
     "children": [
       "stack-layout#s3Mobile",
       "flex-layout.row#s3Mobile",
-      "flex-layout.row#s3Icons"
+      "flex-layout.row#s3Icons",
+      "search-result-layout.customQuery#s3"
     ]
   },
   "stack-layout#s3Mobile": { // Banner s3 com CTA button (Mobile)

@@ -30,6 +30,6 @@
     "path": "/aurora"
   },
   "store.custom#dynamo":{
-    "path": "/dynamoDB"
+    "path": "/dynamodb"
   }
 }

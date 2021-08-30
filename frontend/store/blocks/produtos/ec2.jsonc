@@ -220,7 +220,8 @@
     "children": [
       "stack-layout#ec2Mobile",
       "flex-layout.row#ec2Mobile",
-      "flex-layout.row#ec2Icons"
+      "flex-layout.row#ec2Icons",
+      "search-result-layout.customQuery#ec2"
     ]
   },
   "stack-layout#ec2Mobile": { // Banner ec2 com CTA button (Mobile)
