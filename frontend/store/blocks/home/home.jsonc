@@ -13,7 +13,8 @@
       "responsive-layout.desktop#regions",
       "responsive-layout.mobile#regions",
       "responsive-layout.desktop#treinamento",
-      "responsive-layout.desktop#mission1"
+      "responsive-layout.desktop#mission1",
+      "responsive-layout.mobile#mission1"
     ]
   }
 }

@@ -240,19 +240,15 @@
 }
 
 /***** start using *******/
-.flexRowContent--init-line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 80px;
-    width: 1200px;
-    height: 231px;
-    
-}
+
 .flexCol--containers-init-line {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 399.98px;
-    height: 231px;
+}
+
+.flexRow--final-row-home {
+    margin: 30px 0 15px 0;
+    height: auto;
+    width: 100%;
 }

@@ -5,7 +5,7 @@
     color: #ffffff;
     font-weight: 800;
     margin-left: 190px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     font-size: 36px;
 }
 
@@ -14,13 +14,13 @@
     font-weight: 400;
     margin-top: 65px;
     margin-left: 190px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     font-size: 22px;
 }
 
 .paragraph--productpage-description { /* Descrição do productpage - Dektop */
     color: #232f3e;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;
@@ -45,7 +45,7 @@
 .paragraph--regionSubTitle{
     color: #232f3e;
     font-weight: 400;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     font-size: 18px;
     width: 1000px;
     margin-bottom: 30px;
@@ -54,7 +54,7 @@
 .wrapper--regionsSubTitle { /* Subtítulo - Regions - Dektop */
     color: #232f3e;
     font-weight: 400;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     font-size: 20px;
     width: 1000px;
 }
@@ -63,14 +63,16 @@
 
 .headingLevel3--main-title-solutions {
     font-size: 36px;
-    padding-top: 15px;
+}
+
+.container--main-title-solutions {
+    width: 100%;
+    height: 75px;
 }
 
 .container--container-title-text {
-    margin-top: -30px;
-    margin-bottom: -20px;
-    margin-left: 90px;
     width:100%;
+    height: 50px;
 }
 
 .strong--containers-titles {
@@ -85,9 +87,7 @@
 /***** START USING *****/
 
 .container--container-start-using-main-title {
-    margin-left: 80px;
-    margin-top: 30px;
-    width: 1200px;
+    width: 100%;
 }
 
 .headingLevel3--container-start-using-main-title {
@@ -137,7 +137,7 @@
     color: #ffffff;
     font-size: 28px;
     font-weight: bold;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
 }
 
 .wrapper--productpage-subTitleMobile { /* Subtítulo do stack layout - productpage - Mobile */
@@ -145,12 +145,12 @@
     font-size: 16px;
     justify-content: center;
     margin-top: 52px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
 }
 
 .paragraph--productpage-descriptionMobile { /* Descrição do container - productpage - Mobile */
     color: #232f3e;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -195,14 +195,14 @@
     color:white;
     font-weight: bold;
     font-size: 18px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     text-decoration: unset;
 }
 .wrapper--containerCaroussel{
     color:white;
     font-weight: bold;
     font-size: 18px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     text-decoration: unset;
 }
 
@@ -229,13 +229,13 @@
     color:white;
     font-weight: bold;
     font-size: 40px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     text-decoration: unset;
 }
 .paragraph--about-subTitle{
     color:white;
     font-size: 15px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     text-decoration: unset;
 
 }
@@ -246,12 +246,13 @@
     color:white;
 }
 .paragraph--mapaSubTitle{
+    margin-bottom: 40px;
     color:white
 }
 .paragraph--abouSubTitle{
     color:white;
     font-size: 20px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     text-decoration: unset;
 }
 
@@ -259,7 +260,7 @@
     color:white;
     font-weight: bold;
     font-size: 30px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Amazon Ember', Arial, sans-serif;
     text-decoration: unset;
 }
 /***** bloco treinamento pokomen ***********/

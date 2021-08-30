@@ -409,9 +409,9 @@
     },
     "image#lider": { // Imagem - Regions - Desktop
         "props": {
-            "blockClass": "image-mapa",
+            "blockClass": "image-grafico",
             "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/G-MQ_2021.f8d428e0c92aeed021da825ab20894710ec7cf2f.jpg",
-            "width": "800px",
+            "width": "600px",
             "height": "auto"
         }
     }

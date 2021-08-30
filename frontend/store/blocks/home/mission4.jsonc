@@ -30,8 +30,8 @@
     "rich-text#container-sectors": { //  TEXTO-TÍTULO DA LINHA SECTORS
         "props": {
             "text": "##### **Por setor**",
-            "textAlignment": "LEFT",
-            "textPosition": "LEFT",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "textColor": "#333333",
             "blockClass": "container-title-text",
             "font": "Helvetica Neue, Helvetica, Arial, sans-serif;" 
@@ -276,8 +276,8 @@
     "rich-text#container-technologies": { //  TEXTO-TÍTULO DA LINHA TECHNOLOGIES
         "props": {
             "text": "##### **Por categoria de tecnologia**",
-            "textAlignment": "LEFT",
-            "textPosition": "LEFT",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "textColor": "#333333",
             "font": "Helvetica Neue, Helvetica, Arial, sans-serif;",
             "blockClass": "container-title-text"

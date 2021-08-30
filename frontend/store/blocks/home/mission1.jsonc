@@ -8,16 +8,25 @@
     // DESKTOP //
     "responsive-layout.desktop#mission1": {   
         "children": [
-            "rich-text#container-start-using",
+            "flex-layout.row#comece-usar",
             "flex-layout.row#init-line",
-            "link#container-account"
+            "flex-layout.row#final-line"
+        ]
+    },
+    "flex-layout.row#comece-usar": {
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "rich-text#container-start-using"
         ]
     },
     "rich-text#container-start-using": {  //  TEXTO-TÍTULO PRINCIPAL DO START USING
         "props": {
             "text": "### Comece a usar",
-            "textAlignment": "LEFT",
-            "textPosition": "LEFT",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "textColor": "#232f3e",
             "font": "Helvetica Neue, Helvetica, Arial, sans-serif;",
             "blockClass": "container-start-using-main-title"
@@ -158,17 +167,40 @@
             "blockClass": "containers-contents-start-using"
         }
     },
-    "link#container-account": { // BOTÃO-LINK QUE REDIRECIONARÁ PARA A PÁGINA DE CRIAÇÃO DE CONTA
+    "flex-layout.row#final-line": {
         "props": {
-            "blockClass": "button-new-account",
+            "blockClass": "final-row-home",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "flex-layout.col#final-line"
+        ]
+    },
+    "flex-layout.col#final-line": {
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "center"
+        },
+        "children": [
+            "link#container-account"
+        ]
+    },
+    "link#container-account": { // BOTÃO-LINK PARA A PÁGINA DE CRIAÇÃO DE CONTA
+        "props": {
+            "blockClass": "button-cadastrar",
             "displayMode": "button",
             "href": "/lead",
-            "label": "Crie uma conta gratuita",
-            "horizontalAlign": "center"
+            "label": "Crie uma conta gratuita"
         }
     },
+
+    
     // MOBILE //
     "responsive-layout.mobile#mission1": {
-        
+        "children": [
+            "rich-text#container-start-using",
+            "flex-layout.row#init-line",
+            "flex-layout.row#final-line"
+        ]
     }
 }
