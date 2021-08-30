@@ -49,3 +49,13 @@
     height:500px;
     max-width:15000px;
 }
+
+.imageElement--imageAbout3{
+    margin-left:90px;
+    max-width:600px;
+}
+.imageElement--imageAbout4{
+    margin-left:90px;
+    margin-top:50px;
+    max-width:600px;
+}

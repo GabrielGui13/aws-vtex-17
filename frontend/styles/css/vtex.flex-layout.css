@@ -172,12 +172,12 @@
 /*** about us ***/
  
  .flexRow--about1{
-    background-image:url("https://uploaddeimagens.com.br/images/003/404/710/original/background.png?1630269372");
+    background-image:url("https://uploaddeimagens.com.br/images/003/405/077/original/background.png?1630307862");
     background-color:#1d252f;
     background-repeat:no-repeat;
     background-size:cover;
     max-width: 100vw;
-    height:100vh;
+    height:80vh;
     align-items: center;
  }
  .flexRow--about11{
@@ -196,16 +196,40 @@
  }
  .flexRow--maparow{
      background-color:#1d252f;
-     height: 100vh;
+     height: 90vh;
  }
  .flexRowContent--imageAboutRow{
     display:flex;
     margin:auto
  }
+.flexRow--tela3about{
+    background-color:#1d252f;
+}
+.flexRow--molduraAbout{
+    height:700px;
+    background-image:url("https://uploaddeimagens.com.br/images/003/405/076/original/background2.png?1630306869");
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:flex;
+    align-items: center;
+    padding:80px;
+}
+.flexRow--about4{
+    background-color:#1d252f;
+    padding-left:300px;
+    height: 700x;
 
+}
+
+.flexRow--aboutlide{
+    background-color:#1d252f;
+    height: 90vh;
+    background-image:url("https://uploaddeimagens.com.br/images/003/405/083/original/background3.png?1630311641");
+    background-size:cover;
+}
 /***** treinamento *******/
 .flexRow--treinamentobloco{
-    background-color:#1d2835;
+    background-color:#1d252f;
     padding-bottom:30px;
     height: 900px;
 }

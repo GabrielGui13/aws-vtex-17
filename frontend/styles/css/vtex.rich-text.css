@@ -183,7 +183,7 @@
 .paragraph--about-Title{
     color:white;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     text-decoration: unset;
 }
@@ -203,7 +203,20 @@
 .paragraph--mapaSubTitle{
     color:white
 }
+.paragraph--abouSubTitle{
+    color:white;
+    font-size: 20px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: unset;
+}
 
+.paragraph--abouTitle{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: unset;
+}
 /***** bloco treinamento pokomen ***********/
 .paragraph--treinoTitle{
     color:white;
