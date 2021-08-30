@@ -262,7 +262,7 @@
       "props": {
         "blockClass": "button-footer",
         "displayMode": "button",
-        "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
+        "href": "/lead",
         "label": "CADASTRE-SE"
     }
   },

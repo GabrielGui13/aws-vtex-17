@@ -155,8 +155,6 @@
           },
 
 
-
-
     // ******** MOBILE ******** //
 
     "responsive-layout.mobile#patro1": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
@@ -179,6 +177,9 @@
         }
     },
     "flex-layout.row#patroMobile2": { // Linha do Subtítulo - Regions - Mobile
-        "children": []
-    }
+        "children": [
+            "flex-layout.row#logos1",
+            "flex-layout.row#logos2"
+        ]
+    }   
  }
