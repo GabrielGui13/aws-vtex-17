@@ -49,6 +49,18 @@
     bottom: 25px;
 }
 
+/***** CONTAINER *****/
+
+.label--container-containers-icons {
+    text-decoration: none;
+    color: #007eb9;
+    font-size: 14px;
+}
+
+.label--container-containers-icons:hover {
+    text-decoration: underline;
+    color: #e47911;
+}
 /***** START USING *****/
 
 .buttonLink--button-new-account {
