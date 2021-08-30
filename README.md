@@ -94,7 +94,7 @@ Kanban é um sistema de controle e gestão do fluxo de produção em empresas e 
 
 O Grupo definiou como meta o primeiro MVP (minimum value product). A partie desye ponto, foi possível desenvolver um produto e apresentar ao nosso Cliente.<br>
 
-Utilizamos a ferramenta Trello, para registrar todas as funcionalidades do MVP, transformando cada requisito a desenvolver, em tarefas enumeradas e listadas por colaborador. Cada Colabot=radorm recebeu sua meta e objetivos, cada um na medida que aoluia na codificação, realizada o controle e alterações naevolução do desenvolvimento do projeto.<br>
+Utilizamos a ferramenta Trello, para registrar todas as funcionalidades do MVP, transformando cada requisito a desenvolver, em tarefas enumeradas e listadas por colaborador. Cada Colaborador recebeu sua meta e objetivos, cada um na medida que aoluia na codificação, realizada o controle e alterações naevolução do desenvolvimento do projeto.<br>
 
 Diariamente, antes de cada mentoriam o grupo se reunia, debatia as dificuldades, explorava a Mentoria comnpartilhando as necessidades para destravar a tarefa. Os Mentores  ajudavam, sugerindo dicas e compartilhando experiências. COM as orientações dos Mentores, buscavamos aprimorar o desenvolvimento dos algorotimos, na medida que faziamos pesquisas e estudos, descobriamos mais técnicas e melhores práticas para solucionar as dificuldades do dia a dia.
 
@@ -108,7 +108,7 @@ O **Gather** é um espaço virtual feito para o encontro entre pessoas. Pode ser
 <br>
 
 <!-- ARQUITETURA -->
->## Arquitetura utilizada:
+>## Arquitetura:
 <br>
 
 ![arquitetura](frontend/assets/arquitetura.png)
