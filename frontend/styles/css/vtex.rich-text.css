@@ -69,7 +69,7 @@
 .container--container-title-text {
     margin-top: -30px;
     margin-bottom: -20px;
-    margin-left: 90px;
+    margin-left:20%;
     width:100%;
 }
 
@@ -246,6 +246,7 @@
     color:white;
 }
 .paragraph--mapaSubTitle{
+    margin-bottom: 40px;
     color:white
 }
 .paragraph--abouSubTitle{

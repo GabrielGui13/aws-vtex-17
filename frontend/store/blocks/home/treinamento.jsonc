@@ -109,7 +109,7 @@
     "image#treino1": { // Imagem -treinamento - Desktop
         "props": {
             "blockClass": "image-treino",
-            "width": 500,
+            "width": 400,
             "src": "https://uploaddeimagens.com.br/images/003/405/018/original/image1.png?1630294518"
         }
     },
@@ -144,7 +144,7 @@
 "image#treino2": { // Imagem -treinamento - Desktop
     "props": {
         "blockClass": "image-treino",
-        "width": 500,
+        "width": 400,
         "src": "https://uploaddeimagens.com.br/images/003/405/025/original/image2.png?1630296026"
     }
 },
@@ -179,7 +179,7 @@
 "image#treino3": { // Imagem -treinamento - Desktop
     "props": {
         "blockClass": "image-treino",
-        "width": 500,
+        "width": 400,
         "src": "https://uploaddeimagens.com.br/images/003/405/026/original/image3.png?1630296104"
     }
 },
