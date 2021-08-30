@@ -96,16 +96,16 @@
   // parte dos icones de baixo do ec2
   "flex-layout.row#ec2Icons": {
     "children": [
-      "flex-layout.col#icon1",
-      "flex-layout.col#icon2",
-      "flex-layout.col#icon3"
+      "flex-layout.col#icon1EC2",
+      "flex-layout.col#icon2EC2",
+      "flex-layout.col#icon3EC2"
     ],
     "props": {
       "width": "90%",
       "blockClass": "productpageIcons"
     }
   },
-  "flex-layout.col#icon1": { //icon 1 services
+  "flex-layout.col#icon1EC2": { //icon 1 services
     "children": [
       "image#ec2Icon1",
       "rich-text#ec2IconTitle1",
@@ -136,7 +136,7 @@
       "textAlignment": "CENTER"
     }
   },
-  "flex-layout.col#icon2": { //icon 2 cadastro
+  "flex-layout.col#icon2EC2": { //icon 2 cadastro
     "children": [
       "image#ec2Icon2",
       "rich-text#ec2IconTitle2",
@@ -167,7 +167,7 @@
       "textAlignment": "CENTER"
     }
   },
-  "flex-layout.col#icon3": { //icon 3 ferramentas
+  "flex-layout.col#icon3EC2": { //icon 3 ferramentas
     "children": [
       "image#ec2Icon3",
       "rich-text#ec2IconTitle3",
@@ -219,7 +219,8 @@
   "responsive-layout.mobile#ec2": {
     "children": [
       "stack-layout#ec2Mobile",
-      "flex-layout.row#ec2Mobile"
+      "flex-layout.row#ec2Mobile",
+      "flex-layout.row#ec2Icons"
     ]
   },
   "stack-layout#ec2Mobile": { // Banner ec2 com CTA button (Mobile)
