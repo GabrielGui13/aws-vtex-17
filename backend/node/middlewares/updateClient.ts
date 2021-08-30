@@ -19,7 +19,9 @@ export async function updateClient(ctx: Context, next: () => Promise<any>) {
   const res = database.updateProspectToClient(email as string, {...req})
 
   ctx.set('Cache-Control', 'no-cache no-store')
-  ctx.body = res
+  ctx.body = {
+    ...res.statusCode
+  }
 
   await next()
 }

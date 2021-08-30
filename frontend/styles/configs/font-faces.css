@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Amazon Ember';
+  src: url(assets/fonts/AmazonEmber_Rg.ttf), url(assets/fonts/AmazonEmber_Bd.ttf);
+  font-weight: bold;
+}

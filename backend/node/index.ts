@@ -8,7 +8,7 @@ import { updateClient } from './middlewares/updateClient'
 import { getClient } from './middlewares/getClient'
 import { deleteClient } from './middlewares/deleteClient'
 
-const TIMEOUT_MS = 2000
+const TIMEOUT_MS = 3000
 
 const clients: ClientsConfig<Clients> = {
   implementation: Clients,

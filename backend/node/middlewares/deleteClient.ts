@@ -14,10 +14,12 @@ export async function deleteClient(ctx: Context, next: () => Promise<any>) {
     throw new UserInputError('Empty values')
   }
 
-  const res = database.deleteClient(email as string)
+  const res = await database.deleteClient(email as string)
 
   ctx.set('Cache-Control', 'no-cache no-store')
-  ctx.body = res
+  ctx.body = {
+    ...res.status
+  }
 
   await next()
 }
