@@ -59,6 +59,16 @@
     width: 1000px;
 }
 
+/***** SOLUTIONS *****/
+
+.strong--container-title-text {
+    margin-left: 90px;
+}
+
+.paragraph--container-content-text {
+    font-size: 13px;
+}
+
 
 /************************* MOBILE ********************************/
 

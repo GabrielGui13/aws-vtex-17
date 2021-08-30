@@ -128,8 +128,19 @@
 }
  /**** soluçoes aws cards***/
 
- .flexColChild--solutions-columns{
+.flexRow--solutions-line{
+    align-items: center;
+    justify-content: center;
+    margin: 10px 90px 40px 90px;
+}
+
+ .flexCol--solutions-columns{
      background-color:white;
+     border-top: 6px solid #333;
+     padding: 15px;
+     height: 280px;
+     position: relative;
+     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%), 0 0 0 1px rgb(0 0 0 / 4%); 
  }
 
 

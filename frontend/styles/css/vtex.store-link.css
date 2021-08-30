@@ -22,6 +22,21 @@
     color: #333333;
 }
 
+/***** SOLUTIONS *****/
+
+.label--link-know-more {
+    position: absolute;
+    bottom: 10px;
+}
+
+.label--link-know-more :hover {
+    color: #e47911;
+}
+
+.link--link-columns {
+    text-decoration: none !important;
+}
+
 
 /***** PRODUCT PAGE MOBILE *****/
 

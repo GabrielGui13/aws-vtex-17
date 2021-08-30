@@ -8,6 +8,12 @@
   "store.custom#mission5": {
     "path": "/mission5"
   },
+  "store.custom#mission4": {
+    "path": "/mission4"
+  },
+  "store.custom#mission1": {
+    "path": "/mission1"
+  },
   "store.custom#cadastro": {
     "path": "/lead"
   },
