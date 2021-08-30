@@ -1,0 +1,6 @@
+{
+    "admin.app.example": {
+      "component": "awsMenuLead",
+      "path": "/admin/app/menuLeadTwo"
+    }
+  }

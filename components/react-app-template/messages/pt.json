@@ -1,4 +1,5 @@
 {
   "admin/test": "teste",
-  "store/test": "teste"
+  "store/test": "teste",
+  "admin-menu-Lead-two.navigation.label": "Menu Clientes x Prospecto 2"
 }
