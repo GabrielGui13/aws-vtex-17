@@ -1,8 +1,26 @@
-> # aws-vtex-17<br>
-Hiring Coders FASE#3- Desafio Final (Gama Academy, Vtex)<br>
+<br />
+
+> # Hiring Coders - Grupo 17 - AWS<br>
+Hiring Coders FASE#3- Desafio Final (Gama Academy, Vtex. AWS)<br>
 <br>
 <br>
 
+> # Índice
+<details open="open">
+  <ol>
+    <li><a href="#desafio">Desafio</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#equipe">Equipe do Projeto</a></li>
+    <li><a href="#planjemento">Planejamento</a></li>
+    <li><a href="#ferramentas">Ferramentas e Linguagens</a></li>
+    <li><a href="#arquitetura">Arquitetura</a></li>
+    <li><a href="#frontend">Front End</a></li>
+    <li><a href="#backend">Back End</a></li>
+    <li><a href="#referencias">Referências</a></li>
+  </ol>
+</details>
+
+<!-- DESAFIO -->
 > # Desafio:
 <br>
 
@@ -25,6 +43,7 @@ Tema modelo foi da Amazon Web Services<br>
 <br>
 <br>
 
+<!-- OBJETIVOS -->
 >## Objetivos:
 <br>
 
@@ -41,7 +60,7 @@ No modulo Admin Vtex, implementar Consultas, informando a evolução da convers�
 <br>
 <br>
 
-
+<!-- EQUIPE DO PROJETO -->
 >## Equipe do Projeto (GRUPO17):<br>
 <br>
 Composta por dez participantes:<br>
@@ -62,6 +81,7 @@ Composta por dez participantes:<br>
 <br>
 <br>
 
+<!-- PLANEJAMENTO -->
 ># Planejamento:
 <br>
 Iniciamos com a análise do desafio, entendemos as premissas, riscos, vulnerabilidades e prinvcipalmente as oportunidades, listamos todos os tópicos importantes para atender os requisitos do projeto, bem como a solicitação do nosso Cliente.
@@ -88,6 +108,15 @@ O **Gather** é um espaço virtual feito para o encontro entre pessoas. Pode ser
 <br>
 <br>
 
+<!-- ARQUITETURA -->
+>## Arquitetura utilizada:
+<br>
+
+![arquitetura](frontend/assets/arquitetura.png)
+<br>
+<br>
+
+<!-- FERRAMENTAS -->
 >## Ferramentas e linguagens:
 
 Utilizamos a plataforma de desenvolvimento **Vtex IO**, aplicamos o uso das linguagens de programação Java Sript, Python, mescamos o desenvolvimento de componentes de integração com react e Node.
@@ -109,6 +138,7 @@ O Amazon API Gateway é um serviço da AWS para criação, publicação, manuten
 O Amazon Simple Email Service (SES) é um serviço em nuvem de e-mail eficaz, flexível e dimensionável. Com ele, os desenvolvedores podem enviar e-mails de qualquer aplicação. É possível configurar rapidamente a compatibilidade do Amazon SES com vários casos de uso de e-mails, como comunicações transacionais, de marketing ou de e-mails em massa.<br>
 <br>
 
+<!-- FRONT END -->
 ># Implementação do Front End:<br>
 
 Utilizamos **VTEX IO** que é uma plataforma low-code development que possibilita um gerenciamento com foco na experiência do usuário para seu e-commerce. Em outras palavras, fornece as ferramentas para você se concentrar no que realmente importa para os seus negócios, sem precisar lidar com problemas e desafios de infraestrutura.<br>
@@ -151,82 +181,8 @@ Utilizamos o Tachyons, que é um framework para CSS funcional. Ele não apresent
 <br>
 <br>
 
+<!-- BACK END -->
 ># Implementação do Back End: 
-<br>
-<br>
-
->## Arquitetura utilizada:
-<br>
-
-![arquitetura](frontend/assets/arquitetura.png)
-<br>
-<br>
-
-# Estrutura do Projeto
-<br>
-
-**\AWS-VTEX-17**<br>
-├───.vscode<br>
-├───backend<br>
-│   ├───.github<br>
-│   ├───docs<br>
-│   └───node<br>
-│       ├───clients<br>
-│       ├───middlewares<br>
-├───components<br>
-│   └───react-app-template<br>
-│       ├───.github<br>
-│       │   ├───ISSUE_TEMPLATE<br>
-│       │   └───workflows<br>
-│       ├───.vscode<br>
-│       ├───.vtex<br>
-│       ├───docs<br>
-│       ├───messages<br>
-│       ├───react<br>
-│       ├───store<br>
-├───frontend<br>
-│   ├───assets<br>
-│   ├───docs<br>
-│   ├───node_modules<br>
-│   ├───store<br>
-│   │   └───blocks<br>
-│   │           aboutus.jsonc<br>
-│   │           cadastrolead.jsonc<br>
-│   │           caroulselprod.jsonc<br>
-│   │           container.jsonc<br>
-│   │           default.jsonc<br>
-│   │           ec2.jsonc<br>
-│   │           footer.jsonc<br>
-│   │           header.jsonc<br>
-│   │           home.jsonc<br>
-│   │           mission1.jsonc<br>
-│   │           mission4.jsonc<br>
-│   │           mission5.jsonc<br>
-│   │           mission6.jsonc<br>
-│   │           patrocinadores.jsonc<br>
-│   │           product.jsonc<br>
-│   │           s3.jsonc<br>
-│   │           search.jsonc<br>
-│    │           slider-layout.jsonc<br>
-└───styles<br>
-│    ├───configs<br>
-│    └───css<br>
-│          vtex.flex-layout.css<br>
-│          vtex.login.css<br>
-│          vtex.menu.css<br>
-│          vtex.minicart.css<br>
-│          vtex.rich-text.css<br>
-│          vtex.search-result.css<br>
-│          vtex.slider-layout.css<br>
-│          vtex.stack-layout.css<br>
-│          vtex.store-components.css<br>
-│          vtex.store-drawer.css<br>
-│          vtex.store-link.css<br>
-│          vtex.tab-layout.css<br>
-├───Lambda<br>
-├───node_modules<br>
-├───manifest.json<br>
-├───readme.md<br>
 <br>
 <br>
 
