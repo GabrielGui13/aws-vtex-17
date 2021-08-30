@@ -5,6 +5,7 @@
       "responsive-layout.desktop#mission4",
       "responsive-layout.desktop#carousselserv",
       "__fold__", // inicilamnete carrega a página só até aqui, sendo que o restante é carregado apenas quando o usuário dá scroll. Isso melhora a performance do site.
+      "responsive-layout.mobile#mission4",
       "responsive-layout.desktop#patro",
       "responsive-layout.mobile#patro1",
       "flex-layout.row#main-title",

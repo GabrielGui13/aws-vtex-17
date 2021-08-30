@@ -12,6 +12,7 @@
     "children": [
       "stack-layout#container",
       "flex-layout.row#container",
+      "flex-layout.row#container-how-it-works",
       "flex-layout.row#containerIcons",
       "search-result-layout.customQuery#container"
     ]
@@ -28,7 +29,7 @@
     "props": {
       "blockClass": "cover",
       "width": "100%",
-      "height": 300,
+      "height": 250,
       "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
     }
   },
@@ -83,7 +84,7 @@
     ],
     "props": {
       "blockClass": "container-right-col",
-      "horizontalAlign": "center",
+      "horizontalAlign": "right",
       "verticalAlign": "middle"
     }
   },
@@ -93,19 +94,30 @@
       "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
     }
   },
+  "flex-layout.row#container-how-it-works": {
+    "children": [
+      "image#container-how-it-works"
+    ]
+  },
+  "image#container-how-it-works": {  // imagem container how it works
+    "props": {
+      "blockClass": "image-container-how-it-works",
+      "src": "https://uploaddeimagens.com.br/images/003/405/570/original/container-como-funciona.png?1630338101"
+    }
+  },
   // parte dos icones de baixo do container
   "flex-layout.row#containerIcons": {
     "children": [
-      "flex-layout.col#icon1",
-      "flex-layout.col#icon2",
-      "flex-layout.col#icon3"
+      "flex-layout.col#icon1Container",
+      "flex-layout.col#icon2Container",
+      "flex-layout.col#icon3Container"
     ],
     "props": {
       "width": "90%",
       "blockClass": "productpageIcons"
     }
   },
-  "flex-layout.col#icon1": { //icon 1 services
+  "flex-layout.col#icon1Container": { //icon 1 services
     "children": [
       "image#containerIcon1",
       "rich-text#containerIconTitle1",
@@ -132,11 +144,12 @@
       "text": "Saiba mais como executar containers na AWS."
     }
   },
-  "flex-layout.col#icon2": { //icon 2 cadastro
+  "flex-layout.col#icon2Container": { //icon 2 cadastro
     "children": [
       "image#containerIcon2",
       "rich-text#containerIconTitle2",
-      "rich-text#containerIconDesc2"
+      "rich-text#containerIconDesc2",
+      "link#containerIcon2"
     ],
     "props": {
       "blockClass": "iconCol"
@@ -159,7 +172,13 @@
       "text": "Obtenha acesso instantâneo ao nível gratuito da AWS."
     }
   },
-  "flex-layout.col#icon3": { //icon 3 ferramentas
+  "link#containerIcon2": { // Botão CTA container icon 2
+    "props": {
+      "href": "/lead",
+      "label": ">> Cadastrar-se"
+    }
+  },
+  "flex-layout.col#icon3Container": { //icon 3 ferramentas
     "children": [
       "image#containerIcon3",
       "rich-text#containerIconTitle3",
@@ -207,14 +226,16 @@
   "responsive-layout.mobile#container": {
     "children": [
       "stack-layout#containerMobile",
-      "flex-layout.row#containerMobile"
+      "flex-layout.row#containerMobile",
+      "flex-layout.row#container-how-it-worksMobile",
+      "flex-layout.row#containerIcons"
     ]
   },
   "stack-layout#containerMobile": { // Banner container com CTA button (Mobile)
     "children": [
       "image#containerMobile",
-      "rich-text#containerTitleMobile",
-      "rich-text#containerSubTitleMobile",
+      "rich-text#container-TitleMobile",
+      "rich-text#container-SubTitleMobile",
       "link#containerMobile"
     ],
     "props": {
@@ -229,22 +250,22 @@
       "src": "https://uploaddeimagens.com.br/images/003/399/130/original/container_background.png?1629922589"
     }
   },
-  "rich-text#containerTitleMobile": {  // Título do container (Mobile)
+  "rich-text#container-TitleMobile": {  // Título do container (Mobile)
     "props": { 
-      "blockClass": "container-titleMobile",
+      "blockClass": "productpage-titleMobile",
       "text": "O que é um container?"
     }
   },
-  "rich-text#containerSubTitleMobile": { // Subtítulo do container (Mobile)
+  "rich-text#container-SubTitleMobile": { // Subtítulo do container (Mobile)
     "props": { 
-      "blockClass": "container-subTitleMobile",
+      "blockClass": "productpage-subTitleMobile",
       "text": "Empacote seu código e execute-o em qualquer local",
       "text-position": "center"
     }
   },
   "link#containerMobile": { // Botão CTA container (Mobile)
     "props": {
-      "blockClass": "button-containerMobile",
+      "blockClass": "button-productpageMobile",
       "displayMode": "button",
       "href": "/", // ****TEMOS QUE COLOCAR O LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR****
       "label": "Comece a usar containers"
@@ -271,7 +292,7 @@
   },
   "rich-text#containerDescriptionMobile": { // Texto da descrição do container (Mobile)
     "props": {
-      "blockClass": "container-descriptionMobile",
+      "blockClass": "productpage-descriptionMobile",
       "text": "Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. A Nuvem AWS oferece recursos de infraestrutura otimizados para a execução de containers, além de um conjunto de serviços de orquestração que facilitam a criação e execução de aplicativos conteinerizados em produção. A AWS oferece suporte a containers compatíveis com OCI, inclusive containers de docker.",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
@@ -291,6 +312,19 @@
     "props": {
       "blockClass": "image-containerMobile",
       "src": "https://uploaddeimagens.com.br/images/003/399/134/original/containers_whats_in_a_container.png?1629922718"
+    }
+  },
+  "flex-layout.row#container-how-it-worksMobile": {
+    "children": [
+      "image#container-how-it-worksMobile"
+    ]
+  },
+  "image#container-how-it-worksMobile": { // imagem container how it works (Mobile)
+    "props": {
+      "blockClass": "image-container-how-it-works",
+      "width": "100%",
+      "height": "auto",
+      "src": "https://uploaddeimagens.com.br/images/003/405/570/original/container-como-funciona.png?1630338101"
     }
   }
 }

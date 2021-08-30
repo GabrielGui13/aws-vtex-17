@@ -37,13 +37,8 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer1",
-      "flex-layout.col#spacer1",
-      "flex-layout.col#spacer1",
-      "flex-layout.col#spacer1",
-      "flex-layout.col#spacer1",
-      "login",
+      "link#header",
       "minicart.v2"
-      
     ]
   },
   "flex-layout.col#spacer1": {
@@ -68,6 +63,14 @@
       "height": "100%"
     }
   },
+  "link#header": { // Botão ENTRAR
+    "props": {
+      "blockClass": "button-entrar-header",
+      "displayMode": "button",
+      "href": "/lead",
+      "label": "ENTRAR"
+    }
+  },
   "header-layout.mobile": {
     "children": [
       "sticky-layout#mobile"
@@ -82,7 +85,7 @@
     "children": [
       "drawer",
       "logo",
-      "login",
+      "link#header",
       "minicart.v2"
     ],
     "props": {
