@@ -16,8 +16,8 @@
     "rich-text#container-start-using": {  //  TEXTO-TÍTULO PRINCIPAL DO START USING
         "props": {
             "text": "### Comece a usar",
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
             "textColor": "#232f3e",
             "font": "Helvetica Neue, Helvetica, Arial, sans-serif;",
             "blockClass": "container-start-using-main-title"
