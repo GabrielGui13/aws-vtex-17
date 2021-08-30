@@ -144,8 +144,6 @@
               "src":"https://uploaddeimagens.com.br/images/003/404/875/original/logo-wedigi.png?1630281673"
             }
           },
-""
-
         "flex-layout.col#logo7":{
             "children": ["image#logop7"],
             "props":{
