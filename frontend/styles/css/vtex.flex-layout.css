@@ -98,6 +98,7 @@
     justify-content: space-around;
     height: 50vh;
 }
+
 /***footer*****/
 .flexRow--footer1{
     background-color:#232F3E ;
@@ -236,4 +237,22 @@
 .flexColChild--divTreino{
     padding:20px;
     margin: 20px;
+}
+
+/***** start using *******/
+.flexRowContent--init-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    width: 1200px;
+    height: 231px;
+    
+}
+.flexCol--containers-init-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 399.98px;
+    height: 231px;
 }

@@ -9,6 +9,11 @@
     height: 320px;
 }
 
+/* START USING */  
+.imageElement--containers-image-start-using {
+    border: 0;
+}
+
 /***** MOBILE *****/
 .coverMobile {
     width: 100%;
