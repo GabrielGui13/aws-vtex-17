@@ -3,3 +3,7 @@
     height: 25px;
     width: 25px;
 }
+
+.cartIcon:hover {
+    color: #f38910;
+}

@@ -1,8 +1,25 @@
-> # aws-vtex-17<br>
-Hiring Coders FASE#3- Desafio Final (Gama Academy, Vtex)<br>
+<br />
+
+> # Hiring Coders - Grupo 17 - AWS<br>
+Hiring Coders FASE#3- Desafio Final (Gama Academy, Vtex. AWS)<br>
 <br>
 <br>
 
+> # Índice
+<details open="open">
+  <ol>
+    <li><a href="#desafio">Desafio</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#equipe">Equipe do Projeto</a></li>
+    <li><a href="#planejamento">Planejamento</a></li>
+    <li><a href="#ferramentas">Ferramentas e Linguagens</a></li>
+    <li><a href="#arquitetura">Arquitetura</a></li>
+    <li><a href="#implementações">Implementações</a></li>
+    <li><a href="#referencias">Referências</a></li>
+  </ol>
+</details>
+
+<!-- DESAFIO -->
 > # Desafio:
 <br>
 
@@ -25,13 +42,14 @@ Tema modelo foi da Amazon Web Services<br>
 <br>
 <br>
 
+<!-- OBJETIVOS -->
 >## Objetivos:
 <br>
 
 Desenvolver um projeto com o uso de API para servir a integração de Leads, Clientes e os pedidos vendidos no e-commerce da Amazon, utilizando as API´s VTEX.
 API deverá gerenciar os clientes que se cadastrarem como lead, ou clientes que já compraram no e-commerce, permitindo o setor de Pós-venda promnover campanhas de marketing, envio de news letters, venda ativa, venda casada e realização de UPSELL.<br>
 Ao concluir uma compra, verificar se o usuário que finalizou o carrinho de compra é o mesmo usuário cadastrado na base de dados lead da API AWS, identigicar e marcar este usuário que era somente um prospect na Base de Dados agora como cliente.<br>
-Listar os produtos e serviçços oferecidos pela AWS.<br>
+Listar os produtos e serviços oferecidos pela AWS.<br>
 Listar cadastro de Leads e Clientes pelo Admin da Vtex.<br>
 No modulo Admin Vtex, implementar Consultas, informando a evolução da conversão de Lead e Cliente.<br>
 <br>
@@ -41,7 +59,7 @@ No modulo Admin Vtex, implementar Consultas, informando a evolução da convers�
 <br>
 <br>
 
-
+<!-- EQUIPE DO PROJETO -->
 >## Equipe do Projeto (GRUPO17):<br>
 <br>
 Composta por dez participantes:<br>
@@ -62,6 +80,7 @@ Composta por dez participantes:<br>
 <br>
 <br>
 
+<!-- PLANEJAMENTO -->
 ># Planejamento:
 <br>
 Iniciamos com a análise do desafio, entendemos as premissas, riscos, vulnerabilidades e prinvcipalmente as oportunidades, listamos todos os tópicos importantes para atender os requisitos do projeto, bem como a solicitação do nosso Cliente.
@@ -75,7 +94,7 @@ Kanban é um sistema de controle e gestão do fluxo de produção em empresas e 
 
 O Grupo definiou como meta o primeiro MVP (minimum value product). A partie desye ponto, foi possível desenvolver um produto e apresentar ao nosso Cliente.<br>
 
-Utilizamos a ferramenta Trello, para registrar todas as funcionalidades do MVP, transformando cada requisito a desenvolver, em tarefas enumeradas e listadas por colaborador. Cada Colabot=radorm recebeu sua meta e objetivos, cada um na medida que aoluia na codificação, realizada o controle e alterações naevolução do desenvolvimento do projeto.<br>
+Utilizamos a ferramenta Trello, para registrar todas as funcionalidades do MVP, transformando cada requisito a desenvolver, em tarefas enumeradas e listadas por colaborador. Cada Colaborador recebeu sua meta e objetivos, cada um na medida que aoluia na codificação, realizada o controle e alterações naevolução do desenvolvimento do projeto.<br>
 
 Diariamente, antes de cada mentoriam o grupo se reunia, debatia as dificuldades, explorava a Mentoria comnpartilhando as necessidades para destravar a tarefa. Os Mentores  ajudavam, sugerindo dicas e compartilhando experiências. COM as orientações dos Mentores, buscavamos aprimorar o desenvolvimento dos algorotimos, na medida que faziamos pesquisas e estudos, descobriamos mais técnicas e melhores práticas para solucionar as dificuldades do dia a dia.
 
@@ -88,9 +107,18 @@ O **Gather** é um espaço virtual feito para o encontro entre pessoas. Pode ser
 <br>
 <br>
 
+<!-- ARQUITETURA -->
+>## Arquitetura:
+<br>
+
+![arquitetura](frontend/assets/arquitetura.png)
+<br>
+<br>
+
+<!-- FERRAMENTAS -->
 >## Ferramentas e linguagens:
 
-Utilizamos a plataforma de desenvolvimento **Vtex IO**, aplicamos o uso das linguagens de programação Java Sript, Python, mescamos o desenvolvimento de componentes de integração com react e Node.
+Utilizamos a plataforma de desenvolvimento **Vtex IO**, aplicamos o uso das linguagens de programação Type Script, Python, mesclamos o desenvolvimento de componentes de integração com react e Node.
 
 Para estilizar e tornar a experência de usuário mais produtiva, ágil e dinâmica. Utilizou as melhores práticas com as **linguagens de tipação CSS, Tackyons e Markdown.** <br>
 
@@ -109,7 +137,8 @@ O Amazon API Gateway é um serviço da AWS para criação, publicação, manuten
 O Amazon Simple Email Service (SES) é um serviço em nuvem de e-mail eficaz, flexível e dimensionável. Com ele, os desenvolvedores podem enviar e-mails de qualquer aplicação. É possível configurar rapidamente a compatibilidade do Amazon SES com vários casos de uso de e-mails, como comunicações transacionais, de marketing ou de e-mails em massa.<br>
 <br>
 
-># Implementação do Front End:<br>
+<!-- IMPLEMENTAÇÕES -->
+># Implementações:<br>
 
 Utilizamos **VTEX IO** que é uma plataforma low-code development que possibilita um gerenciamento com foco na experiência do usuário para seu e-commerce. Em outras palavras, fornece as ferramentas para você se concentrar no que realmente importa para os seus negócios, sem precisar lidar com problemas e desafios de infraestrutura.<br>
 
@@ -131,127 +160,17 @@ Para customizar a Loja, foram utilizados os handles de CSS, que auxiliam na cust
 Definindo os nomes dos seus handles e adicionando aos seus respectivos elementos HTML, é possível entregar ao usuário do tema pontos de customização que permitam criar layouts flexíveis.<br>
 
 Utilizamos o Tachyons, que é um framework para CSS funcional. Ele não apresenta componentes UI "pré-buildados". Na verdade, seu objetivo é justamente separar as regras de CSS em partes pequenas e reutilizáveis.<br>
-
-**Utilizamos os blocos**: LIstamos alguns blocos utilizados no projeto<br>
-        flex-layout.row#slider<br>
-        responsive-layout.desktop#mission<br>
-        responsive-layout.desktop#carousselserv<br>
-        responsive-layout.desktop#patro<br>
-        responsive-layout.mobile#patro1<br>
-        flex-layout.row#main-title<br>
-        flex-layout.row#characteristics<br>
-        responsive-layout.desktop#regions<br>
-        responsive-layout.mobile#regions<br>
-        responsive-layout.desktop#mission1<br>
-        stack-layout#s3<br>
-        flex-layout.row#s3<br>
-        flex-layout.row#s3Icons<br>
-        search-result-layout.customQuery#s31<br>
-
-<br>
-<br>
-
-># Implementação do Back End: 
-<br>
-<br>
-
->## Arquitetura utilizada:
-<br>
-
-![arquitetura](frontend/assets/arquitetura.png)
-<br>
-<br>
-
-# Estrutura do Projeto
-<br>
-
-**\AWS-VTEX-17**<br>
-├───.vscode<br>
-├───backend<br>
-│   ├───.github<br>
-│   ├───docs<br>
-│   └───node<br>
-│       ├───clients<br>
-│       ├───middlewares<br>
-├───components<br>
-│   └───react-app-template<br>
-│       ├───.github<br>
-│       │   ├───ISSUE_TEMPLATE<br>
-│       │   └───workflows<br>
-│       ├───.vscode<br>
-│       ├───.vtex<br>
-│       ├───docs<br>
-│       ├───messages<br>
-│       ├───react<br>
-│       ├───store<br>
-├───frontend<br>
-│   ├───assets<br>
-│   ├───docs<br>
-│   ├───node_modules<br>
-│   ├───store<br>
-│   │   └───blocks<br>
-│   │           aboutus.jsonc<br>
-│   │           cadastrolead.jsonc<br>
-│   │           caroulselprod.jsonc<br>
-│   │           container.jsonc<br>
-│   │           default.jsonc<br>
-│   │           ec2.jsonc<br>
-│   │           footer.jsonc<br>
-│   │           header.jsonc<br>
-│   │           home.jsonc<br>
-│   │           mission1.jsonc<br>
-│   │           mission4.jsonc<br>
-│   │           mission5.jsonc<br>
-│   │           mission6.jsonc<br>
-│   │           patrocinadores.jsonc<br>
-│   │           product.jsonc<br>
-│   │           s3.jsonc<br>
-│   │           search.jsonc<br>
-│    │           slider-layout.jsonc<br>
-└───styles<br>
-│    ├───configs<br>
-│    └───css<br>
-│          vtex.flex-layout.css<br>
-│          vtex.login.css<br>
-│          vtex.menu.css<br>
-│          vtex.minicart.css<br>
-│          vtex.rich-text.css<br>
-│          vtex.search-result.css<br>
-│          vtex.slider-layout.css<br>
-│          vtex.stack-layout.css<br>
-│          vtex.store-components.css<br>
-│          vtex.store-drawer.css<br>
-│          vtex.store-link.css<br>
-│          vtex.tab-layout.css<br>
-├───Lambda<br>
-├───node_modules<br>
-├───manifest.json<br>
-├───readme.md<br>
-<br>
 <br>
 
 ># Referências:
 <br>
 
->## Treinamento Apps Vtex e Templates:
-<https://drive.google.com/drive/folders/1ENlJP6QgeVd1dACZgLlad0OstpOLHTLD><br>
-<br>
-<br>
-
->## PLataforma de desenvolvimento Vtex IO
-<https://learn.vtex.com><br>
-<https://developers.vtex.com>
-<br>
-<br>
-
->## exemplo de arquivo API Gateway para estudo:<br>
-<https://github.com/awslabs/aws-api-gateway-developer-portal/blob/master/cloudformation/template.yaml><br>
-<https://github.com/mattpodolak/email-api-lambda><br>
-<https://github.com/amazon-archives/realworld-serverless-application/blob/master/backend/sam/app/api.emplate.yaml><br>
-<br>
-<br>
-
->## Temática AWS
-<https://aws.amazon.com><br>
+* [Treinamento Apps VTEX e Templates - Gama Academy](https://drive.google.com/drive/folders/1ENlJP6QgeVd1dACZgLlad0OstpOLHTLD)
+* [Treinamento de Desenvolvimento VTEX IO](https://learn.vtex.com)
+* [Documentação de Desenvolvimento VTEX IO](https://developers.vtex.com)
+* [Documentação API Gateway - AWS](https://aws.amazon.com/pt/api-gateway/)
+* [Documentação Lambda - AWS](https://aws.amazon.com/pt/lambda/)
+* [Documentação DynamoDB - AWS](https://aws.amazon.com/pt/dynamodb/)
+* [Temática - AWS](https://aws.amazon.com)
 
 

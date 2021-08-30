@@ -16,8 +16,8 @@
     "rich-text#container-start-using": {  //  TEXTO-TÍTULO PRINCIPAL DO START USING
         "props": {
             "text": "### Comece a usar",
-            "textAlignment": "LEFT",
-            "textPosition": "LEFT",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "textColor": "#232f3e",
             "font": "Helvetica Neue, Helvetica, Arial, sans-serif;",
             "blockClass": "container-start-using-main-title"
@@ -162,8 +162,9 @@
         "props": {
             "blockClass": "button-new-account",
             "displayMode": "button",
-            "href": "/", // **** LINK DA PÁGINA QUE O BOTÃO IRÁ REDIRECIONAR  ****
-            "label": "Crie uma conta gratuita"
+            "href": "/lead",
+            "label": "Crie uma conta gratuita",
+            "horizontalAlign": "center"
         }
     },
     // MOBILE //

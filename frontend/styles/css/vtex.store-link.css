@@ -1,7 +1,8 @@
 /***** PRODUCT PAGE DESKTOP *****/
-.link{
+.link {
     text-decoration: unset;
 }
+
 .buttonLink--button-productpage { /* BOTÃO CTA CONTAINER DESKTOP */
     background-color: #f7dfa5;
     color: #333333;
@@ -29,7 +30,6 @@
     bottom: 10px;
     font-size: 14px;
     color: #007eb9;
-
 }
 
 .label--link-know-more:hover {
@@ -127,7 +127,7 @@
  .link--linkfooter:hover{
     font-size: 0.9rem;
     margin: 4px;
-    color: rgb(243, 137, 16);
+    color: #f38910;
     font-style: normal;
     text-decoration: unset;
     font: 18px "Helvetica Neue", arial, sans-serif;
@@ -143,3 +143,16 @@
  .label--linkfooter{
     font-size: 0.9rem;
  }
+
+ /***** HEADER *****/
+ .buttonLink--button-entrar-header { /* BOTÃO ENTRAR */
+    background-color: #f38910;
+    color: #ffffff;
+    font: 14px "Helvetica Neue", arial, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.95;
+    width: auto;
+    height: 35px;
+}

@@ -66,13 +66,10 @@
     padding-top: 15px;
 }
 
-.strong--container-title-text {
-    margin-left: 90px;
-}
-
 .container--container-title-text {
     margin-top: -30px;
     margin-bottom: -20px;
+    width:100%;
 }
 
 .strong--containers-titles {
@@ -290,10 +287,4 @@
     font-size: 22px;
     color:white;
     margin:10px;
-}
-
-/***** mission 1 *******/
-.container--container-title-text{
-    max-width:65vw;
-    margin:auto;
 }

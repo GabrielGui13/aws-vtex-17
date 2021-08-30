@@ -103,16 +103,16 @@
   // parte dos icones de baixo do s3
   "flex-layout.row#s3Icons": {
     "children": [
-      "flex-layout.col#icon1",
-      "flex-layout.col#icon2",
-      "flex-layout.col#icon3"
+      "flex-layout.col#icon1S3",
+      "flex-layout.col#icon2S3",
+      "flex-layout.col#icon3S3"
     ],
     "props": {
       "width": "90%",
       "blockClass": "productpageIcons"
     }
   },
-  "flex-layout.col#icon1": { //icon 1 services
+  "flex-layout.col#icon1S3": { //icon 1 services
     "children": [
       "image#s3Icon1",
       "rich-text#s3IconTitle1",
@@ -143,11 +143,12 @@
       "textAlignment": "CENTER"
     }
   },
-  "flex-layout.col#icon2": { //icon 2 cadastro
+  "flex-layout.col#icon2S3": { //icon 2 cadastro
     "children": [
       "image#s3Icon2",
       "rich-text#s3IconTitle2",
-      "rich-text#s3IconDesc2"
+      "rich-text#s3IconDesc2",
+      "link#icon2S3"
     ],
     "props": {
       "blockClass": "iconCol"
@@ -174,7 +175,13 @@
       "textAlignment": "CENTER"
     }
   },
-  "flex-layout.col#icon3": { //icon 3 ferramentas
+  "link#icon2S3": { // Botão CTA S3 icon 2
+    "props": {
+      "href": "/lead",
+      "label": ">> Cadastrar-se"
+    }
+  },
+  "flex-layout.col#icon3S3": { //icon 3 ferramentas
     "children": [
       "image#s3Icon3",
       "rich-text#s3IconTitle3",
@@ -226,7 +233,8 @@
   "responsive-layout.mobile#s3": {
     "children": [
       "stack-layout#s3Mobile",
-      "flex-layout.row#s3Mobile"
+      "flex-layout.row#s3Mobile",
+      "flex-layout.row#s3Icons"
     ]
   },
   "stack-layout#s3Mobile": { // Banner s3 com CTA button (Mobile)
