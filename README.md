@@ -14,7 +14,7 @@ Hiring Coders FASE#3- Desafio Final (Gama Academy, Vtex. AWS)<br>
     <li><a href="#planejamento">Planejamento</a></li>
     <li><a href="#ferramentas">Ferramentas e Linguagens</a></li>
     <li><a href="#arquitetura">Arquitetura</a></li>
-    <li><a href="#implementacoes">Implementações</a></li>
+    <li><a href="#implementações">Implementações</a></li>
     <li><a href="#referencias">Referências</a></li>
   </ol>
 </details>
