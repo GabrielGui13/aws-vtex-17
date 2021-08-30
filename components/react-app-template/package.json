@@ -45,5 +45,9 @@
     "prettier": "^2.2.0",
     "react-intl": "3",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "sweetalert2": "^11.1.4"
   }
 }

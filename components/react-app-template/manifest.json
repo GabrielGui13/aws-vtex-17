@@ -1,8 +1,8 @@
 {
-  "vendor": "vtex",
-  "name": "aws17deb",
+  "vendor": "appliancetheme",
+  "name": "admin-sandbox",
   "version": "0.0.1",
-  "title": "formLead",
+  "title": "React apps",
   "description": "componente react para captar leads",
   "builders": {
     "react": "3.x",

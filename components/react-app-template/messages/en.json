@@ -1,4 +1,5 @@
 {
   "admin/test": "test",
-  "store/test": "test"
+  "store/test": "test",
+  "admin-get-clients.navigation.label": "Customers management"
 }

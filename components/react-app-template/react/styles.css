@@ -6,7 +6,7 @@
     padding: 20px;
     font: 14px "Helvetica Neue", arial, sans-serif;
 }
-.button{
+.formButton{
     background-color:#EC7211;
     color:white;
     border:none;
@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 
-.input{
+.formInput{
     border-radius:5px;
     padding:10px;
     border-color: rgb(155, 155, 155);
