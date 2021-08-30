@@ -25,5 +25,11 @@
   },
   "store.custom#s3": {
     "path": "/s3"
+  },
+  "store.custom#aurora":{
+    "path": "/aurora"
+  },
+  "store.custom#dynamo":{
+    "path": "/dynamoDB"
   }
 }
