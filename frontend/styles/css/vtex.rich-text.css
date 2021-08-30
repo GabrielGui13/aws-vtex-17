@@ -61,8 +61,22 @@
 
 /***** SOLUTIONS *****/
 
+.headingLevel3--main-title-solutions {
+    font-size: 36px;
+    padding-top: 15px;
+}
 .strong--container-title-text {
     margin-left: 90px;
+}
+
+.container--container-title-text {
+    margin-top: -30px;
+    margin-bottom: -20px;
+}
+
+.strong--containers-titles {
+    color: #007eb9;
+    font-size: 18px;
 }
 
 .paragraph--container-content-text {

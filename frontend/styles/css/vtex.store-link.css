@@ -27,6 +27,9 @@
 .label--link-know-more {
     position: absolute;
     bottom: 10px;
+    font-size: 14px;
+    color: #007eb9;
+
 }
 
 .label--link-know-more :hover {
@@ -35,6 +38,14 @@
 
 .link--link-columns {
     text-decoration: none !important;
+}
+
+.label--link-all {
+    font-size: 18px;
+    color: #007eb9;
+    margin-left: 76%;
+    position: relative;
+    bottom: 25px;
 }
 
 

@@ -23,7 +23,8 @@
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "textColor": "#333333",
-            "font": "Helvetica Neue, Helvetica, Arial, sans-serif;" 
+            "font": "Helvetica Neue, Helvetica, Arial, sans-serif;",
+            "blockClass": "main-title-solutions" 
         }
     },
     "rich-text#container-sectors": { //  TEXTO-TÍTULO DA LINHA SECTORS
@@ -84,7 +85,8 @@
          "props": {
             "text": "**Publicidade e marketing**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#sectors-content-1": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 1
@@ -137,7 +139,8 @@
         "props": {
             "text": "**Serviços financeiros**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#sectors-content-2": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 2
@@ -190,7 +193,8 @@
         "props": {
             "text": "**Tecnologia de jogos**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#sectors-content-3": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 3
@@ -243,7 +247,8 @@
         "props": {
             "text": "**Mídia e entretenimento**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#sectors-content-4": {  //  CONTEÚDO DO CONTAINER SECTORS TEXT 4
@@ -264,7 +269,8 @@
     "link#container-all-sectors": { //  TEXTO-LINK PARA REDIRECIONAMENTO DO ALL SECTORS (PARA EXIBIR TODOS OS SETORES)
         "props": {
             "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
-            "label": "Exibir todos os setores >>"
+            "label": "Exibir todos os setores >>",
+            "blockClass": "link-all"
         }
     },
     "rich-text#container-technologies": { //  TEXTO-TÍTULO DA LINHA TECHNOLOGIES
@@ -325,7 +331,8 @@
         "props": {
             "text": "**Análises e data lakes**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#technologies-content-1": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 1
@@ -379,7 +386,8 @@
         "props": {
             "text": "**Machine Learning**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#technologies-content-2": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 2
@@ -432,7 +440,8 @@
         "props": {
             "text": "**Computação sem servidor**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#technologies-content-3": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 3
@@ -485,7 +494,8 @@
         "props": {
             "text": "**Armazenamento**",
             "textAlignment": "LEFT",
-            "textPosition": "LEFT"
+            "textPosition": "LEFT",
+            "blockClass": "containers-titles"
         }
     },
     "rich-text#technologies-content-4": {  //  CONTEÚDO DO CONTAINER TECHNOLOGIES TEXT 4
@@ -506,7 +516,8 @@
     "link#container-all-solutions": {  //  TEXTO-LINK PARA REDIRECIONAMENTO DO ALL SOLUCTIONS (PARA EXIBIR TODAS AS SOLUÇÕES)
         "props": {
             "href": "#", // **** LINK DE REDIRECIONAMENTO DA PÁGINA AQUI****
-            "label": "Exibir todas as soluções >>"
+            "label": "Exibir todas as soluções >>",
+            "blockClass": "link-all"
         }
     },
 
