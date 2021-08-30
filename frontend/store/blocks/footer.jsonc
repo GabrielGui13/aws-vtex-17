@@ -164,7 +164,7 @@
     "rich-text#TituloFooter3": { 
       "props": { 
         "blockClass": "tittle-footer",
-        "text": "Recursos da AWS"
+        "text": "Desenvolvedores na AWS"
       }
     },
 
