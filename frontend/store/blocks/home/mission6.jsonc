@@ -1,7 +1,7 @@
 {
     "flex-layout.row#main-title": {
         "props": {
-            "blockClass": "aws-characteristics",
+            "blockClass": "aws-characteristics1",
             "fullWidth": true
         },
         "children": [
@@ -33,7 +33,10 @@
             "image#security",
             "rich-text#security-title",
             "rich-text#security-description"
-        ]
+        ],
+        "props":{
+           "blockClass":"requisitos"
+        }
     },
     "image#security": {
         "props": {
@@ -62,7 +65,10 @@
             "image#conformity",
             "rich-text#conformity-title",
             "rich-text#conformity-description"
-        ]
+        ],
+        "props":{
+           "blockClass":"requisitos"
+        }
     },
     "image#conformity": {
         "props": {
@@ -91,7 +97,10 @@
             "image#hybrid-model",
             "rich-text#hybrid-model-title",
             "rich-text#hybrid-model-description"
-        ]
+        ],
+        "props":{
+           "blockClass":"requisitos"
+        }
     },
     "image#hybrid-model": {
         "props": {
@@ -120,7 +129,10 @@
             "image#scalability",
             "rich-text#scalability-title",
             "rich-text#scalability-description"
-        ]
+        ],
+        "props":{
+           "blockClass":"requisitos"
+        }
     },
     "image#scalability": {
         "props": {

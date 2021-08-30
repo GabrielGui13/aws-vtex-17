@@ -168,15 +168,17 @@
 }
 
 .container--characteristics-title {
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
 }
 
 .container--characteristics-description {
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
 }
-
+.paragraph--characteristics-description{
+    margin-bottom: 10px;
+}
 /***** aboutus ******/
 .paragraph--about-Title{
     color:white;

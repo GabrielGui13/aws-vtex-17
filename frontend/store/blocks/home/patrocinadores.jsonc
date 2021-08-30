@@ -18,7 +18,10 @@
     "flex-layout.row#patro1": { // Linha do Título - Regions - Desktop
         "children": [
             "rich-text#regionsTitle2"
-        ]
+        ],
+        "props":{
+            "blockClass":"titulo-logos"
+        }
     },
     "rich-text#regionsTitle2": { // Título - Regions - Desktop
         "props": {
@@ -34,7 +37,6 @@
     "flex-layout.row#logos1":{
         "children":[
             "flex-layout.col#logo1",
-            "flex-layout.col#logo2",
             "flex-layout.col#logo3",
             "flex-layout.col#logo4"
         ],
@@ -63,25 +65,12 @@
 
         "image#logop1":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/870/original/logo-vtex.png?1630281613",
+              "width": "140px",
+              "height": "auto"
             }
           },
-
-        "flex-layout.col#logo2":{
-            "children": ["image#logop2"],
-            "props":{
-                "blockClass":"logospatro"
-            }
-        },
-
-        "image#logop2":{
-            "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
-            }
-          },
-
 
         "flex-layout.col#logo3":{
             "children": ["image#logop3"],
@@ -92,8 +81,10 @@
 
         "image#logop3":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/872/original/logo-gama.png?1630281640",
+              "width": "230px",
+              "height": "auto"
             }
           },
 
@@ -107,8 +98,10 @@
 
         "image#logop4":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/873/original/logo-corebiz.png?1630281650",
+              "width": "190px",
+              "height": "auto"
             }
           },
 
@@ -122,8 +115,10 @@
 
         "image#logop5":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/882/original/logo-acct.png?1630282347",
+              "width": "150px",
+              "height": "auto"
             }
           },
 
@@ -137,23 +132,25 @@
 
         "image#logop6":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/875/original/logo-wedigi.png?1630281673"
             }
           },
-
-
         "flex-layout.col#logo7":{
             "children": ["image#logop7"],
             "props":{
-                "blockClass":"logospatro"
+                "blockClass":"logospatro",
+                "width": "210px",
+                "height": "auto"
             }
         },
 
         "image#logop7":{
             "props":{
-              "blockClass":"imageCadastro",
-              "src":"https://uploaddeimagens.com.br/images/003/401/267/original/logo-aws.png?1630015097"
+              "blockClass":"imagePatro",
+              "src":"https://uploaddeimagens.com.br/images/003/404/879/original/logo-whirlpool.png?1630281804",
+              "width": "180px",
+              "height": "auto"
             }
           },
 
