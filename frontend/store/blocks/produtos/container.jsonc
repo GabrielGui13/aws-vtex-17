@@ -214,7 +214,7 @@
         "orderByField": "OrderByPriceASC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 1,
-        "queryField": "contai"
+        "queryField": "contain"
       }
     }
   },
