@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#slider",
+      "responsive-layout.desktop#slider-home",
       "responsive-layout.desktop#mission4",
       "responsive-layout.desktop#carousselserv",
       "__fold__", // inicilamnete carrega a página só até aqui, sendo que o restante é carregado apenas quando o usuário dá scroll. Isso melhora a performance do site.

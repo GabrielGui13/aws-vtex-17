@@ -1,4 +1,15 @@
 {
+    "store.custom#slider-home": {
+        "blocks": [
+            "responsive-layout.desktop#slider-home",
+            "responsive-layout.mobile#slider-home"
+        ]
+    },
+    "responsive-layout.desktop#slider-home": {
+        "children": [
+            "flex-layout.row#slider"
+        ]
+    },
     "flex-layout.row#slider": {
         "props": {
             "blockClass":"Slider",
@@ -42,6 +53,60 @@
         "props": {
             "src": "https://uploaddeimagens.com.br/images/003/405/052/original/banner4.png?1630300130",
             "blockClass":"Slider"
+        }
+    },
+
+
+    // ********** MOBILE **********
+
+    "responsive-layout.mobile#slider-home": {
+        "children": [
+            "flex-layout.row#sliderMobile"
+        ]
+    },
+    "flex-layout.row#sliderMobile": {
+        "props": {
+            "blockClass":"slider-mobile",
+            "fullWidth": true
+        },
+        "children": [
+            "slider-layout#home1Mobile"
+        ]
+    },
+    "slider-layout#home1Mobile": {
+        "children": [
+            "image#featured-products1Mobile",
+            "image#featured-products2Mobile",
+            "image#featured-products3Mobile",
+            "image#featured-products4Mobile"
+        ],
+        "props": {
+            "itemsPerPage":1,
+            "adaptToScreen":true
+        }
+    },
+    "image#featured-products1Mobile": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/405/044/original/banner1.png?1630299194",
+            "blockClass":"slider-mobile"
+        }
+    },
+    "image#featured-products2Mobile": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/405/050/original/banner2.png?1630299665",
+            "blockClass":"slider-mobile"
+        }
+    },
+    "image#featured-products3Mobile": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/405/051/original/banner3.png?1630300103",
+            "blockClass":"slider-mobile"
+        }
+    },
+    "image#featured-products4Mobile": {
+        "props": {
+            "src": "https://uploaddeimagens.com.br/images/003/405/052/original/banner4.png?1630300130",
+            "blockClass":"slider-mobile"
         }
     }
 }

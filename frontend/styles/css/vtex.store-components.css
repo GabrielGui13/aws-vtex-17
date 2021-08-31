@@ -48,11 +48,8 @@
 }
 /******* about us*********/
 .imageElement--Slider{
-    margin: auto;  
-    align-self: center;
-    margin-left: 100%;
-    height:400px;
-    max-width:15000px;
+    height: 280px;
+    width: 100vw;
 }
 
 .imageElement--imageAbout3{
