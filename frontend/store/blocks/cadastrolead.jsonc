@@ -13,7 +13,7 @@
        "children":[
          "flex-layout.col#image",
          "flex-layout.col#linha",
-         "flex-layout.col#form"
+         "flex-layout.col#formulario"
        ],
        "props": {
          "blockClass":"cadastro"
@@ -26,12 +26,12 @@
        }
      },
    //componente react
-     "flex-layout.col#form":{
+     "flex-layout.col#formulario":{
        "children":[
          "Formulario"
        ],
          "props":{
-           "blockClass":"form"
+           "blockClass":"formulario"
          }
      },
    // parte esquerda da tela  
