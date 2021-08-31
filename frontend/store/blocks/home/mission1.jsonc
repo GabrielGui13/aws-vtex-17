@@ -1,4 +1,4 @@
-{ //arrumar customizacao aqui -props das documentações- e criar os css//
+{
     "store.custom#mission1": {
         "blocks": [
             "responsive-layout.desktop#mission1",

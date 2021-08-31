@@ -1,15 +1,20 @@
 {
     "store.custom#aboutus":{
        "blocks": [
-           "flex-layout.row#deskaboutus1",
-           "flex-layout.row#telamold1",
-           "flex-layout.row#telamold2",
-           "flex-layout.row#telamold3",
-           "flex-layout.row#telamold4",
-           "flex-layout.row#mapaabout",
-           "flex-layout.row#liderança"
-
+            "responsive-layout.desktop#aboutus",
+            "responsive-layout.mobile#aboutus"
          ]
+        },
+        "responsive-layout.desktop#aboutus": {
+            "children": [
+                "flex-layout.row#deskaboutus1",
+                "flex-layout.row#telamold1",
+                "flex-layout.row#telamold2",
+                "flex-layout.row#telamold3",
+                "flex-layout.row#telamold4",
+                "flex-layout.row#mapaabout",
+                "flex-layout.row#liderança"
+            ]
         },
         //---definindo primeiro bloco----///
          "flex-layout.row#deskaboutus1":{
@@ -76,7 +81,7 @@
 
 
 
-//-------- bloco 2 regions gif---------///
+//-------- bloco 2 Aboutus gif---------///
 
     // ******** DESKTOP ******** //
     "flex-layout.row#mapaabout":{
@@ -87,7 +92,7 @@
             "blockClass":"maparow"    
         }
     },
-    "flex-layout.col#mapaabout": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Regions)
+    "flex-layout.col#mapaabout": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Aboutus)
         "children": [
             "flex-layout.row#mapa1",
             "flex-layout.row#mapa2",
@@ -98,12 +103,12 @@
         }
         
     },
-    "flex-layout.row#mapa1": { // Linha do Título - Regions - Desktop
+    "flex-layout.row#mapa1": { // Linha do Título - Aboutus - Desktop
         "children": [
             "rich-text#mapaTitle"
         ]
     },
-    "rich-text#mapaTitle": { // Título - Regions - Desktop
+    "rich-text#mapaTitle": { // Título - Aboutus - Desktop
         "props": {
             "blockClass": "mapaTitle",
             "text": "Rede global de regiões da AWS",
@@ -112,12 +117,12 @@
             "textAlignment": "CENTER"
         }
     },
-    "flex-layout.row#mapa2": { // Linha do Subtítulo - Regions - Desktop
+    "flex-layout.row#mapa2": { // Linha do Subtítulo - Aboutus - Desktop
         "children": [
             "rich-text#mapaSubTitle"
         ]
     },
-    "rich-text#mapaSubTitle": { // Subtítulo - Regions - Desktop
+    "rich-text#mapaSubTitle": { // Subtítulo - Aboutus - Desktop
         "props": {
             "blockClass": "mapaSubTitle",
             "text": "A AWS tem a mais extensa infraestrutura de nuvem global. Nenhum outro provedor de nuvem oferece tantas regiões com múltiplas Zonas de Disponibilidade conectadas por redes altamente redundantes com baixa latência e alta taxa de transferência. A AWS tem 81 Zonas de Disponibilidade em 25 regiões geográficas em todo o mundo e anunciou planos para mais 21 Zonas de Disponibilidade e mais 7 regiões da AWS na Austrália, Emirados Árabes Unidos (EAU), Espanha, Índia, Indonésia, Israel, e Suíça. O modelo de região e Zona de Disponibilidade da AWS foi reconhecido pela Gartner como a abordagem recomendada para a execução de aplicações empresariais que exigem alta disponibilidade.",
@@ -125,7 +130,7 @@
             "textAlignment": "CENTER"
         }
     },
-    "flex-layout.row#mapa3": { // Linha da Imagem - Regions - Desktop
+    "flex-layout.row#mapa3": { // Linha da Imagem - Aboutus - Desktop
         "children": [
             "image#mapa"
         ],
@@ -133,7 +138,7 @@
             "blockClass": "imageAboutRow"
         }
     },
-    "image#mapa": { // Imagem - Regions - Desktop
+    "image#mapa": { // Imagem - Aboutus - Desktop
         "props": {
             "blockClass": "image-mapa",
             "src": "https://s9.gifyu.com/images/mapagif.gif",
@@ -372,12 +377,12 @@
         }
         
     },
-    "flex-layout.row#lider1": { // Linha do Título - Regions - Desktop
+    "flex-layout.row#lider1": { // Linha do Título - Aboutus - Desktop
         "children": [
             "rich-text#lidertitle"
         ]
     },
-    "rich-text#lidertitle": { // Título - Regions - Desktop
+    "rich-text#lidertitle": { // Título - Aboutus - Desktop
         "props": {
             "blockClass": "mapaTitle",
             "text": "Liderança em computação na nuvem",
@@ -386,12 +391,12 @@
             "textAlignment": "CENTER"
         }
     },
-    "flex-layout.row#lider2": { // Linha do Subtítulo - Regions - Desktop
+    "flex-layout.row#lider2": { // Linha do Subtítulo - Aboutus - Desktop
         "children": [
             "rich-text#liderSubTitle"
         ]
     },
-    "rich-text#liderSubTitle": { // Subtítulo - Regions - Desktop
+    "rich-text#liderSubTitle": { // Subtítulo - Aboutus - Desktop
         "props": {
             "blockClass": "mapaSubTitle",
             "text": "Pesquisa da Gartner posiciona a AWS no quadrante de líderes no novo Quadrante Mágico 2021 de Serviços de infraestrutura e plataforma de nuvem (CIPS). CIPS, no contexto desse quadrante mágico, são definidos como “ofertas padronizadas e altamente automatizadas em que recursos de infraestrutura (por exemplo, computação, redes e armazenamento) são complementados por serviços de plataforma integrados”.",
@@ -399,7 +404,7 @@
             "textAlignment": "CENTER"
         }
     },
-    "flex-layout.row#lider3": { // Linha da Imagem - Regions - Desktop
+    "flex-layout.row#lider3": { // Linha da Imagem - Aboutus - Desktop
         "children": [
             "image#lider"
         ],
@@ -407,12 +412,344 @@
             "blockClass": "imageAboutRow"
         }
     },
-    "image#lider": { // Imagem - Regions - Desktop
+    "image#lider": { // Imagem - Aboutus - Desktop
         "props": {
             "blockClass": "image-grafico",
             "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/G-MQ_2021.f8d428e0c92aeed021da825ab20894710ec7cf2f.jpg",
             "width": "600px",
             "height": "auto"
         }
-    }
+    },
+
+
+    // ****************************************************************MOBILE ****************************************************************
+
+
+    "responsive-layout.mobile#aboutus": {
+        "children": [
+            "flex-layout.row#aboutus1Mobile",
+            "flex-layout.row#telamold1Mobile",
+            "flex-layout.row#telamold2Mobile",
+            "flex-layout.row#telamold3Mobile",
+            "flex-layout.row#telamold4Mobile",
+            "flex-layout.row#mapaaboutMobile",
+            "flex-layout.row#liderançaMobile"
+        ]
+    },
+            //---definindo primeiro bloco----///
+            "flex-layout.row#aboutus1Mobile":{
+                "props": {
+                    "fullWidth": true
+                },
+                "children":[
+                    "flex-layout.row#about11Mobile"
+                ]
+            },
+            "flex-layout.row#about11Mobile":{
+                "props": {
+                    "fullWidth": true
+                },
+                "children": [
+                   "flex-layout.col#elementabout11Mobile",
+                   "flex-layout.col#elementabout12Mobile"
+               ]
+            },
+       ///----definindo elesmentos do bloco1---///
+       "flex-layout.col#elementabout11Mobile":{
+           "children":[
+               "rich-text#tituloabout1Mobile",
+               "rich-text#subtituloabout1Mobile"
+           ]
+       },
+       "rich-text#tituloabout1Mobile":{
+           "props":{
+           "text": "Computação em nuvem com a AWS",
+           "font": "t-heading-3",
+           "textPosition": "CENTER",
+           "textAlignment": "CENTER"
+           }
+       },
+       "rich-text#subtituloabout1Mobile":{
+           "props":{
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text": "A Amazon Web Services (AWS) é a plataforma de nuvem mais adotada e mais abrangente do mundo, oferecendo mais de 200 serviços completos de datacenters em todo o mundo. Milhões de clientes, incluindo as startups de crescimento mais rápido, grandes empresas e os maiores órgãos governamentais, estão usando a AWS para reduzirem seus custos, ficarem mais ágeis e inovarem mais rapidamente."}
+       },
+       "flex-layout.col#elementabout12Mobile": {
+           "children":[
+               "video#background2Mobile"
+           ]
+        },
+       //--- video do youtube ----//
+       "video#background2Mobile": {
+           "props": {
+             "name": "aws about us",
+             "width": "100%",
+             "height": "300px",
+             "loop": false,
+             "autoPlay": false,
+             "muted": false,
+             "src": "https://www.youtube.com/watch?v=a9__D53WsUs",
+             "blockClass": "videoEl",
+             "poster":"https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg"
+           }
+         },
+   
+   
+   
+   //-------- bloco 2 Aboutus gif---------///
+   
+       // ******** MOBILE ******** //
+       "flex-layout.row#mapaaboutMobile":{
+        "props": {
+            "fullWidth": true
+        },
+           "children":[
+               "flex-layout.col#mapaaboutMobile"
+           ]
+       },
+       "flex-layout.col#mapaaboutMobile": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem Aboutus)
+           "children": [
+               "flex-layout.row#mapa1Mobile",
+               "flex-layout.row#mapa2Mobile",
+               "flex-layout.row#mapa3Mobile"
+           ]           
+       },
+       "flex-layout.row#mapa1Mobile": { // Linha do Título - aboutus - Mobile
+            "props": {
+                "fullWidth": true
+            },
+            "children": [
+               "rich-text#mapaTitleMobile"
+           ]
+       },
+       "rich-text#mapaTitleMobile": { // Título - aboutus - Mobile
+           "props": {
+               "text": "Rede global de regiões da AWS",
+               "font": "t-heading-3",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+           }
+       },
+       "flex-layout.row#mapa2Mobile": { // Linha do Subtítulo - aboutus - Mobile
+            "props": {
+                "fullWidth": true
+            },
+            "children": [
+               "rich-text#mapaSubTitleMobile"
+           ]
+       },
+       "rich-text#mapaSubTitleMobile": { // Subtítulo - aboutus - Mobile
+            "props": {
+               "text": "A AWS tem a mais extensa infraestrutura de nuvem global. Nenhum outro provedor de nuvem oferece tantas regiões com múltiplas Zonas de Disponibilidade conectadas por redes altamente redundantes com baixa latência e alta taxa de transferência. A AWS tem 81 Zonas de Disponibilidade em 25 regiões geográficas em todo o mundo e anunciou planos para mais 21 Zonas de Disponibilidade e mais 7 regiões da AWS na Austrália, Emirados Árabes Unidos (EAU), Espanha, Índia, Indonésia, Israel, e Suíça. O modelo de região e Zona de Disponibilidade da AWS foi reconhecido pela Gartner como a abordagem recomendada para a execução de aplicações empresariais que exigem alta disponibilidade.",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+            }
+       },
+       "flex-layout.row#mapa3Mobile": { // Linha da Imagem - aboutus - Mobile
+                "props": {
+                    "fullWidth": true
+                },   
+                "children": [
+                "image#mapaMobile"
+           ]
+       },
+       "image#mapaMobile": { // Imagem - aboutus - Mobile
+           "props": {
+               "src": "https://s9.gifyu.com/images/mapagif.gif",
+               "width": "1200px",
+               "height": "auto"
+           }
+       },
+   
+       //**** tela 3 Plataforma nuvem *******/*
+       "flex-layout.row#telamold1Mobile":{
+          "children": [
+              "flex-layout.col#telamold1Mobile"]
+   },//*** definindo elementos da tela 3***///
+       "flex-layout.col#telamold1Mobile":{
+           "children":[
+               "rich-text#abouttela3TitleMobile",
+               "flex-layout.row#aboutela3Mobile"
+           ]
+       },
+       "rich-text#abouttela3TitleMobile":{
+           "props": {
+               "text": "A maior plataforma de nuvem",
+               "font": "t-heading-3",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+           }
+       },
+       "flex-layout.row#aboutela3Mobile":{  /// criando itens dentro da moldura
+           "children": [
+               "flex-layout.col#t3colchild2Mobile"
+           ]
+       },
+       "flex-layout.col#t3colchild2Mobile":{
+           "children":[
+               "rich-text#aboutUs3TitleMobile",
+               "rich-text#aboutUs3SubTitleMobile"
+           ]
+       },
+       "rich-text#aboutUs3TitleMobile":{
+           "props":{
+               "text":"A maior funcionalidade",
+               "font": "t-heading-5",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+           }
+       },
+       "rich-text#aboutUs3SubTitleMobile":{
+           "props":{
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text":"A AWS tem a mais extensa infraestrutura de nuvem global. Nenhum outro provedor de nuvem oferece tantas regiões com múltiplas Zonas de Disponibilidade conectadas por redes altamente redundantes com baixa latência e alta taxa de transferência. A AWS tem 81 Zonas de Disponibilidade em 25 regiões geográficas em todo o mundo e anunciou planos para mais 21 Zonas de Disponibilidade e mais 7 regiões da AWS na Austrália, Emirados Árabes Unidos (EAU), Espanha, Índia, Indonésia, Israel, e Suíça. O modelo de região e Zona de Disponibilidade da AWS foi reconhecido pela Gartner como a abordagem recomendada para a execução de aplicações empresariais que exigem alta disponibilidade."
+           }
+       },
+   
+       // criando quarta parte sobre comunidade de clientes e parceiros
+   
+       "flex-layout.row#telamold2Mobile":{
+           "children":[
+               "flex-layout.col#t3colchild3Mobile"
+           ]
+       },
+   
+       "flex-layout.col#t3colchild3Mobile":{
+           "children":[
+               "rich-text#aboutUs4TitleMobile",
+               "rich-text#aboutUs4SubTitleMobile"
+           ]
+       },
+       "rich-text#aboutUs4TitleMobile":{
+           "props":{
+               "text":"A maior comunidade de clientes e parceiros",
+               "font": "t-heading-5",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+           }
+       },
+       "rich-text#aboutUs4SubTitleMobile":{
+           "props":{
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text":"A AWS tem a maior e mais dinâmica comunidade, com milhões de clientes ativos e dezenas de milhares de parceiros no mundo todo. Clientes em praticamente todos os setores e de todos os tamanhos, incluindo startups, corporações e organizações do setor público, estão executando todo tipo imaginável de caso de uso na AWS. A Rede de parceiros da AWS (APN) inclui milhares de integradores de sistemas especializados nos serviços da AWS e dezenas de milhares de provedores independentes de software (ISVs) que adaptam suas tecnologias para funcionar com a AWS."
+           }
+       },
+   
+   //------- criando a quinta divisão ---------//
+   "flex-layout.row#telamold3Mobile":{
+       "children": [
+           "flex-layout.col#telamold5Mobile"]
+   },//*** definindo elementos da tela 3***///
+    "flex-layout.col#telamold5Mobile":{
+        "children":[
+            "flex-layout.row#aboutela5Mobile"
+        ]
+    },
+    "flex-layout.row#aboutela5Mobile":{  /// criando itens dentro da moldura
+        "children": [
+            "flex-layout.col#t5colchild2Mobile"
+        ]
+    },
+    "flex-layout.col#t5colchild2Mobile":{
+        "children":[
+            "rich-text#aboutUs5TitleMobile",
+            "rich-text#aboutUs5SubTitleMobile"
+        ]
+    },
+    "rich-text#aboutUs5TitleMobile":{
+        "props":{
+            "text":"O conhecimento operacional mais comprovado",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+    "rich-text#aboutUs5SubTitleMobile":{
+        "props":{
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text":"A AWS tem experiência, maturidade, confiabilidade, segurança e performance incomparáveis nas quais você pode confiar para suas aplicações mais importantes. Há mais de 15 anos, a AWS entrega serviços em nuvem a milhões de clientes no mundo todo que realizam uma grande variedade de casos de uso. Além disso, a AWS possui a mais longa experiência operacional e em maior escala do que qualquer outro provedor de nuvem."
+        }
+    },
+    //*** criando sexta parte ritmo acelerado
+    
+    "flex-layout.row#telamold4Mobile":{
+       "children":[
+           "flex-layout.col#t6colchild3Mobile"
+       ]
+   },
+   
+   "flex-layout.col#t6colchild3Mobile":{
+       "children":[
+           "rich-text#aboutUs6TitleMobile",
+           "rich-text#aboutUs6SubTitleMobile"
+       ]
+   },
+   "rich-text#aboutUs6TitleMobile":{
+       "props":{
+           "text":"O ritmo de inovação mais acelerado",
+           "textPosition": "CENTER",
+           "textAlignment": "CENTER"
+       }
+   },
+   "rich-text#aboutUs6SubTitleMobile":{
+       "props":{
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER",
+        "text":"Com a AWS, você pode utilizar as últimas tecnologias para conduzir testes e inovar mais rapidamente. Estamos sempre inovando a um ritmo cada vez mais acelerado para criar tecnologias completamente novas que você pode usar para transformar seus negócios. Por exemplo, em 2014, a AWS abriu o espaço de computação sem servidor com o lançamento do AWS Lambda, que permite que desenvolvedores executem códigos sem provisionar nem gerenciar servidores. E a AWS construiu o Amazon SageMaker, um serviço completamente gerenciado de machine learning que permite que desenvolvedores e cientistas usem essa tecnologia sem qualquer experiência anterior."
+       }
+   },
+   
+   /*** criando ultma tela liderança****/
+   "flex-layout.row#liderançaMobile":{
+          "children":[
+               "flex-layout.col#aboutliderMobile"
+           ]
+       },
+       "flex-layout.col#aboutliderMobile": { // Linhas da página (1ª Título, 2ª Subtítulo e 3ª Imagem)
+           "children": [
+               "flex-layout.row#lider1Mobile",
+               "flex-layout.row#lider2Mobile",
+               "flex-layout.row#lider3Mobile"
+           ]           
+       },
+       "flex-layout.row#lider1Mobile": { // Linha do Título - aboutus - Mobile
+           "children": [
+               "rich-text#lidertitleMobile"
+           ]
+       },
+       "rich-text#lidertitleMobile": { // Título - aboutus - Mobile
+           "props": {
+               "text": "Liderança em computação na nuvem",
+               "font": "t-heading-3",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+           }
+       },
+       "flex-layout.row#lider2Mobile": { // Linha do Subtítulo - aboutus - Mobile
+           "children": [
+               "rich-text#liderSubTitleMobile"
+           ]
+       },
+       "rich-text#liderSubTitleMobile": { // Subtítulo - aboutus - Mobile
+           "props": {
+               "text": "Pesquisa da Gartner posiciona a AWS no quadrante de líderes no novo Quadrante Mágico 2021 de Serviços de infraestrutura e plataforma de nuvem (CIPS). CIPS, no contexto desse quadrante mágico, são definidos como “ofertas padronizadas e altamente automatizadas em que recursos de infraestrutura (por exemplo, computação, redes e armazenamento) são complementados por serviços de plataforma integrados”.",
+               "textPosition": "CENTER",
+               "textAlignment": "CENTER"
+           }
+       },
+       "flex-layout.row#lider3Mobile": { // Linha da Imagem - aboutus - Mobile
+           "children": [
+               "image#liderMobile"
+           ]
+       },
+       "image#liderMobile": { // Imagem - aboutus - Mobile
+           "props": {
+               "src": "https://d1.awsstatic.com/aws-key-pages/homepage-key-pages/G-MQ_2021.f8d428e0c92aeed021da825ab20894710ec7cf2f.jpg",
+               "width": "600px",
+               "height": "auto"
+           }
+       }
 }
