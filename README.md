@@ -69,7 +69,7 @@ Composta por dez participantes:<br>
 | Alessandro de Albuquerque Apolinário | Dev Back End                  |
 | Cássio Alves                         | Dev Back End                  |
 | Daniel Campos Soares                 | Dev Front End                 |
-| Gabriel Guilherme                    | Dev Back End                  |
+| Gabriel Guilherme                    | Dev Back End e Front End      |
 | João Paulo Muner Lenat               | Dev Back End                  |
 | Josana Klagenberg                    | Dev Front End                 |
 | Karine Freitas Maciel Momose         | Dev Front End                 |

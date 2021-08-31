@@ -1,5 +1,6 @@
 {
   "admin/test": "teste",
   "store/test": "teste",
-  "admin-get-clients.navigation.label": "Gerenciamento de clientes"
+  "admin-get-clients.navigation.label": "Gerenciamento de clientes",
+  "admin-get-clients.navigation.search.kws": "cliente, gerenciamento, administrar, prospecto"
 }

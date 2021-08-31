@@ -1,5 +1,6 @@
 {
   "admin/test": "test",
   "store/test": "test",
-  "admin-get-clients.navigation.label": "Customers management"
+  "admin-get-clients.navigation.label": "Customers management",
+  "admin-get-clients.navigation.search.kws": "customer, management, administrate, prospect"
 }

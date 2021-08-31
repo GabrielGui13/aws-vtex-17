@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "vtex.styleguide": "9.x",
-    "vtex.css-handles": "0.x"
+    "vtex.css-handles": "0.x",
+    "vtex.order-placed": "2.x"
   },
   "registries": [
     "smartcheckout"

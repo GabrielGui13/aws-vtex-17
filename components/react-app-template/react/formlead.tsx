@@ -1,28 +1,59 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, FormEvent } from 'react'
+import axios from 'axios'
+import Swal from 'sweetalert2'
 
 import styles from './styles.css';
 
 const Formulario = () => {
-    
+    const endpoint = 'https://gabrielvtex--hiringcoders202117.myvtex.com/leads'
+
     const [nameField, setNameField] = useState('')
     const [emailField, setEmailField] = useState('')
     const [phoneField, setPhoneField] = useState('')
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         
         const formData = {
-            name: nameField,
+            nome: nameField,
             email: emailField,
-            phone: phoneField
+            telefone: phoneField
+        }
+
+        const dataAtualArray = new Date().toLocaleDateString().split('/')
+        const dataAtual = `${dataAtualArray[2]}-${dataAtualArray[1]}-${dataAtualArray[0]}`
+
+        const reqBody = {
+            ...formData,
+            tipo: "Prospecto",
+            data_criacao: dataAtual
+        }
+
+        const response = await axios.post(endpoint, reqBody)
+
+        if (response.data.res.statusCode == 200) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Prospecto criado!',
+                text: `O prospecto ${formData.nome} foi criado com sucesso!`,
+                backdrop: `rgba(0,0,0,0.05)`,
+                confirmButtonColor: '#EC7211'
+            })
+        }
+        else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Algo aconteceu...!',
+                text: `Houve algum erro (Status: ${response.data.res.statusCode})`,
+                backdrop: `rgba(0,0,0,0.05)`,
+                confirmButtonColor: '#EC7211'
+            })
         }
 
         setNameField('')
         setEmailField('')
         setPhoneField('')
-
-        console.log(formData)
     }
 
     return (

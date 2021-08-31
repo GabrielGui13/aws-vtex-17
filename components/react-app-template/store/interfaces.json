@@ -1,5 +1,8 @@
 {
     "Formulario":{
         "component":"formlead"
+    },
+    "orderData":{
+        "component":"OrderContext"
     }
 }
