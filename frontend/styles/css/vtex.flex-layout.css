@@ -150,7 +150,8 @@
      background-color:white;
      border-top: 6px solid #333;
      padding: 15px;
-     height: 280px;
+     width: auto;
+     height: auto;
      position: relative;
      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%), 0 0 0 1px rgb(0 0 0 / 4%); 
  }

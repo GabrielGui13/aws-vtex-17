@@ -527,10 +527,8 @@
             "rich-text#container-solutions",
             "rich-text#container-sectors",
             "flex-layout.row#line-sectors",
-            "link#container-all-sectors",
             "rich-text#container-technologies",
-            "flex-layout.row#line-technologies",
-            "link#container-all-solutions"
+            "flex-layout.row#line-technologies"
         ]
     }
 }

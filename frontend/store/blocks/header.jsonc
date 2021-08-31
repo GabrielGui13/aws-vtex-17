@@ -111,6 +111,8 @@
     "props": {
       "blockClass": "menu-header-aws",
       "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "horizontalAlign": "center"
     },
     "children": [
@@ -130,10 +132,7 @@
       "menu-item#documentacao",
       "menu-item#aprenda",
       "menu-item#rede-de-parceiros",
-      "menu-item#aws-marketplace",
-      "menu-item#capacitacao-de-clientes",
-      "menu-item#eventos",
-      "menu-item#explore-mais"
+      "menu-item#aws-marketplace"
     ]
   },
   "menu-item#produtos": { // MENU ITEM - PRODUTOS
@@ -700,51 +699,6 @@
         "noFollow": true,
         "tagTitle": "AWS Marketplace",
         "text": "AWS Marketplace"
-      }
-    }
-  },
-  "menu-item#capacitacao-de-clientes": { // MENU ITEM - CAPACITAÇÃO DE CLIENTES
-    "props": {
-      "id": "capacitacao-de-clientes",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Capacitação de Clientes",
-        "text": "Capacitação de Clientes"
-      }
-    }
-  },
-  "menu-item#eventos": { // MENU ITEM - EVENTOS
-    "props": {
-      "id": "eventos",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Eventos",
-        "text": "Eventos"
-      }
-    }
-  },
-  "menu-item#explore-mais": { // MENU ITEM - EXPLORE MAIS
-    "props": {
-      "id": "explore-mais",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Explore Mais",
-        "text": "Explore Mais"
       }
     }
   }
