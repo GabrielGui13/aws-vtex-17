@@ -1,4 +1,5 @@
 {
+
     "store.custom#aboutus":{
        "blocks": [
            "flex-layout.row#deskaboutus1",
@@ -7,7 +8,8 @@
            "flex-layout.row#telamold3",
            "flex-layout.row#telamold4",
            "flex-layout.row#mapaabout",
-           "flex-layout.row#liderança"
+           "flex-layout.row#liderança",
+           "responsive-layout.desktop#tababout"
 
          ]
         },

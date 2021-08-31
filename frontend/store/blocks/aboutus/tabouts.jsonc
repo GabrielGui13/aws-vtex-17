@@ -1,0 +1,118 @@
+{   
+    "responsive-layout.desktop#tababout":{
+        "children": [
+        "flex-layout.row#tababout"
+        ]
+    },
+    "flex-layout.row#tababout":{
+        "children":[
+            "tab-layout#aboutab"
+        ],
+        "props":{
+            "blockClass":"abouttab"
+        }
+    },
+    "tab-layout#aboutab": {
+      "children": [
+          "tab-list#about",
+          "tab-content#about"
+        ]
+    },
+    "tab-list#about": {
+      "children": [
+          "tab-list.item#about1",
+          "tab-list.item#about2",
+          "tab-list.item#about3",
+          "tab-list.item#about4"
+        ]
+    },
+    "tab-list.item#about1": {
+      "props": {
+        "tabId": "1",
+        "label": "Jogos",
+        "defaultActiveTab": true
+      }
+    },
+    "tab-list.item#about2": {
+      "props": {
+        "label": "Saúde",
+        "tabId": "2"
+      }
+    },
+
+    "tab-list.item#about3": {
+        "props": {
+          "label": "Mídia e entretenimento",
+          "tabId": "3"
+        }
+      },
+
+      "tab-list.item#about4": {
+        "props": {
+          "label": "Manufatura",
+          "tabId": "4"
+        }
+      },
+
+    "tab-content#about": {
+      "children": [
+          "tab-content.item#about1",
+          "tab-content.item#about2",
+          "tab-content.item#about3",
+          "tab-content.item#about4"
+        ]
+    },
+    "tab-content.item#about1": {
+      "children": ["image#about1tab"],
+      "props": {
+        "tabId": "1"
+      }
+    },
+    "tab-content.item#about2": {
+      "children": ["image#abou2tab"],
+      "props": {
+        "tabId": "2"
+      }
+    },
+    "tab-content.item#about3": {
+        "children": ["image#about3tab"],
+        "props": {
+          "tabId": "3"
+        }
+      },
+      "tab-content.item#about4": {
+        "children": ["image#about4tab"],
+        "props": {
+          "tabId": "4"
+        }
+      },
+      "image#about1tab":{
+        "props": {
+            "blockClass": "imageaboutab",
+            "width": "100%",
+            "src": "https://uploaddeimagens.com.br/images/003/406/653/original/background-about3.png?1630370913"
+          }
+        },
+        "image#abou2tab":{
+        "props": {
+            "blockClass": "imageaboutab",
+            "width": "100%",
+            "src": "https://uploaddeimagens.com.br/images/003/406/655/original/background-about2.png?1630370977"
+          }
+        },
+      "image#about3tab":{
+        "props": {
+            "blockClass": "imageaboutab",
+            "width": "100%",
+            "src": "https://uploaddeimagens.com.br/images/003/406/656/original/background-about4.png?1630371071"
+          }
+        },
+      "image#about4tab":{
+        "props": {
+            "blockClass": "imageaboutab",
+            "width": "100%",
+            "height": 200,
+            "src": "https://uploaddeimagens.com.br/images/003/406/659/original/background-about1.png?1630371138"
+          }
+        }
+  }

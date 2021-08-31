@@ -228,6 +228,12 @@
     background-image:url("https://uploaddeimagens.com.br/images/003/405/083/original/background3.png?1630311641");
     background-size:cover;
 }
+
+    .flexRow--abouttab{
+        padding-top: 40px;
+        background-color:#1d252f;
+    }
+
 /***** treinamento *******/
 .flexRow--treinamentobloco{
     background-color:#1d252f;
