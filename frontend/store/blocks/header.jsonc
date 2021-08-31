@@ -98,8 +98,8 @@
   "drawer": { // Menu sanduiche - Mobile
     "props": {
       "blockClass": "drawer",
-      "isFullWidth": false,
-      "maxWidth": 200,
+      "isFullWidth": true,
+    
       "slideDirection": "leftToRight",
       "renderingStrategy": "lazy" // carrega os submenus apenas quando clicado. Isso melhora a renderização da página
     },
