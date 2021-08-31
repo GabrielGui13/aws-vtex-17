@@ -110,8 +110,7 @@
       "image#about4tab":{
         "props": {
             "blockClass": "imageaboutab",
-            "width": "100%",
-            "height": 200,
+            "width": "100vw",
             "src": "https://uploaddeimagens.com.br/images/003/406/659/original/background-about1.png?1630371138"
           }
         }
