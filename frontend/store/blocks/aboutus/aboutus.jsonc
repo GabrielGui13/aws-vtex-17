@@ -1,9 +1,12 @@
 {
+
     "store.custom#aboutus":{
        "blocks": [
             "responsive-layout.desktop#aboutus",
-            "responsive-layout.mobile#aboutus"
-         ]
+            "responsive-layout.mobile#aboutus",
+            "responsive-layout.desktop#tababout"
+        ]
+            
         },
         "responsive-layout.desktop#aboutus": {
             "children": [
