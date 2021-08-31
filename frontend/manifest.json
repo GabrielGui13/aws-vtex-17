@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders202117",
   "name": "aws-store",
-  "version": "0.1.1",
+  "version": "1.0.0-beta.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
