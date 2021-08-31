@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Layout, PageBlock, Table, Tag } from 'vtex.styleguide'
 import Swal from 'sweetalert2';
@@ -13,12 +13,12 @@ type UserType = {
 }
 
 const Clients = () => {
-    const endpoint = 'https://gabrielvtex--hiringcoders202117.myvtex.com/leads'
+    const endpoint = 'https://kjnud826rd.execute-api.us-east-2.amazonaws.com/development/leads'
     const [users, setUsers] = useState<UserType[]>([])
     const [allClients, setAllClients] = useState(0)
     const [allProspects, setAllProspects] = useState(0)
 
-    useEffect(() => {
+    function AtualizarArrayUsers(){
         let qtdClients = 0
         let qtdProspects = 0
 
@@ -35,8 +35,14 @@ const Clients = () => {
 
             setAllClients(qtdClients)
             setAllProspects(qtdProspects)
+            console.log(`oi ${qtdClients} - ${qtdProspects}`)
         }
         getClients()
+        console.log('oi')
+    }
+
+    useEffect(() => {
+        AtualizarArrayUsers()
     }, [])
 
     const defaultSchema = {
@@ -89,12 +95,12 @@ const Clients = () => {
 
                 async function deleteClient() {
                     await axios.delete(`https://gabrielvtex--hiringcoders202117.myvtex.com/leads/${rowData.email}`).then(() => {
-                            Swal.fire({
-                                title: `Deletado!`,
-                                text: `O ${rowData.tipo.toLowerCase()} ${rowData.nome} foi excluido com sucesso!`,
-                                icon: 'success',
-                                backdrop: `rgba(0,0,0,0.05)`
-                            })
+                        Swal.fire({
+                            title: `Deletado!`,
+                            text: `O ${rowData.tipo.toLowerCase()} ${rowData.nome} foi excluido com sucesso!`,
+                            icon: 'success',
+                            backdrop: `rgba(0,0,0,0.05)`
+                        })
                     })
                 }
 
@@ -116,8 +122,44 @@ const Clients = () => {
         },
         {
             label: ({ rowData }: any) => `Atualizar ${rowData.tipo.toLowerCase()} ${rowData.nome} `,
+            onClick: async ({ rowData }: any) => {
+
+                if (rowData.tipo.toUpperCase() === 'CLIENTE') {
+                    Swal.fire('Registro já é um Cliente!')
+                    return;
+                }
+
+                const tipoCliente = { tipo: 'Cliente' };
+
+                async function atualizaClient() {
+                    await axios.put(`https://cassiodev--hiringcoders202117.myvtex.com/leads/${rowData.email}`, tipoCliente).then(() => {
+                        Swal.fire({
+                            title: `Atualizado!!`,
+                            text: `O ${rowData.tipo.toLowerCase()} ${rowData.nome} foi atualizado com sucesso!`,
+                            icon: 'success',
+                            backdrop: `rgba(0,0,0,0.05)`
+                        }).then((result) => {
+                            AtualizarArrayUsers()
+                        })
+                    })
+                }
+
+                Swal.fire({
+                    title: `Atualizar ${rowData.nome}?`,
+                    icon: 'warning',
+                    showCancelButton: true,
+                    cancelButtonColor: '#d33',
+                    confirmButtonColor: '#dd1659',
+                    confirmButtonText: 'Atualizar',
+                    backdrop: `rgba(0,0,0,0.05)`
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        atualizaClient()
+                    }
+                })
+            }
         }
-      ]
+    ]
 
     return (
         <>
@@ -141,7 +183,7 @@ const Clients = () => {
                             },
                         ]}
                         lineActions={lineActions}
-                        toolbar = {{
+                        toolbar={{
                             density: {
                                 buttonLabel: 'Altura das linhas',
                                 lowOptionLabel: 'Alto',
@@ -200,7 +242,7 @@ const Clients = () => {
                                     }
                                 },
                             },
-                        }}  
+                        }}
                     />
                 </PageBlock>
             </Layout>)
