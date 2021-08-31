@@ -1,5 +1,6 @@
 {
     "section": "customer",
     "titleId": "admin-get-clients.navigation.label",
-    "path": "/admin/clients"
+    "path": "/admin/clients",
+    "searchKeyWordsHelpers": "admin-get-clients.navigation.search.kws"
 }

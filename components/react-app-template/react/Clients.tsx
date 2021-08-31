@@ -13,7 +13,7 @@ type UserType = {
 }
 
 const Clients = () => {
-    const endpoint = 'https://kjnud826rd.execute-api.us-east-2.amazonaws.com/development/leads'
+    const endpoint = 'https://gabrielvtex--hiringcoders202117.myvtex.com/leads'
     const [users, setUsers] = useState<UserType[]>([])
     const [allClients, setAllClients] = useState(0)
     const [allProspects, setAllProspects] = useState(0)
@@ -94,7 +94,7 @@ const Clients = () => {
             onClick: async ({ rowData }: any) => {
 
                 async function deleteClient() {
-                    await axios.delete(`https://gabrielvtex--hiringcoders202117.myvtex.com/leads/${rowData.email}`).then(() => {
+                    await axios.delete(`${endpoint}/${rowData.email}`).then(() => {
                         Swal.fire({
                             title: `Deletado!`,
                             text: `O ${rowData.tipo.toLowerCase()} ${rowData.nome} foi excluido com sucesso!`,
@@ -132,13 +132,13 @@ const Clients = () => {
                 const tipoCliente = { tipo: 'Cliente' };
 
                 async function atualizaClient() {
-                    await axios.put(`https://cassiodev--hiringcoders202117.myvtex.com/leads/${rowData.email}`, tipoCliente).then(() => {
+                    await axios.put(`${endpoint}/${rowData.email}`, tipoCliente).then(() => {
                         Swal.fire({
                             title: `Atualizado!!`,
                             text: `O ${rowData.tipo.toLowerCase()} ${rowData.nome} foi atualizado com sucesso!`,
                             icon: 'success',
                             backdrop: `rgba(0,0,0,0.05)`
-                        }).then((result) => {
+                        }).then(() => {
                             AtualizarArrayUsers()
                         })
                     })
@@ -222,20 +222,25 @@ const Clients = () => {
                                                 data_criacao: dataAtual
                                             }
 
-                                            const response = await axios.post('https://gabrielvtex--hiringcoders202117.myvtex.com/leads', req)
+                                            const response = await axios.post(endpoint, req)
+                                            console.log(response)
 
-                                            if (response.res.statusCode == 200 || response.res.statusCode == '200') {
+                                            if (response.data.res.statusCode == 200) {
                                                 Swal.fire({
                                                     icon: 'success',
                                                     title: 'Prospecto criado!',
-                                                    text: `O prospecto ${req.nome} foi criado com sucesso!`
+                                                    text: `O prospecto ${req.nome} foi criado com sucesso!`,
+                                                    backdrop: `rgba(0,0,0,0.05)`,
+                                                    confirmButtonColor: '#dd1659'
                                                 })
                                             }
                                             else {
                                                 Swal.fire({
                                                     icon: 'error',
                                                     title: 'Algo aconteceu...!',
-                                                    text: `Houve algum erro (Status: ${response.res.statusCode})`
+                                                    text: `Houve algum erro (Status: ${response.data.res.statusCode})`,
+                                                    backdrop: `rgba(0,0,0,0.05)`,
+                                                    confirmButtonColor: '#dd1659'
                                                 })
                                             }
                                         }
