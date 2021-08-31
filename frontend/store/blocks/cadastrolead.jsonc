@@ -28,7 +28,7 @@
    //componente react
      "flex-layout.col#formulario":{
        "children":[
-         "Formulario"
+         "flex-layout-row#formulario"
        ],
          "props":{
            "blockClass":"formulario"
